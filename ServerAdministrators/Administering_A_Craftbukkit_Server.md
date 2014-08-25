@@ -16,7 +16,7 @@
   * 1 第 1 部分: 开天辟地
     * 1.1 “纯净”服务器和“插件”服务器
     * 1.2 Bukkit项目
-    * 1.3 The Hosting Plans
+    * 1.3 租用服务器的套餐
     * 1.4 CraftBukkit or Bukkit?
     * 1.5 Pick your Operating System, Memory, and RAM!
     * 1.6 Pricing
@@ -85,14 +85,14 @@ Craftbukkit则是经过封装的Bukkit的jar，设计为为服主提供简单易
 Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开服的，而不是为开发
 者提供的环境。
 
-## The Hosting Plans
+## 租用服务器的套餐
 
-There are two primary paid hosting plans, or at-least two categories: Game
-Hosting Plans and Freeform Plans (VDS, VPS, Dedicated Hardware, etc.)
+目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS,
+ 独立机等）
 
-**Game Hosting Plans**. You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
+**按人数计的套餐** You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
 
-**Freeform Plans**. These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
+**Freeform Plans** These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
 
 ## CraftBukkit or Bukkit?
 
