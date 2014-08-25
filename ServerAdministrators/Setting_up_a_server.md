@@ -15,10 +15,10 @@ page](/Talk:Setting_up_a_server).
 
 ##  Preliminary notes
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: In this guide we refer to the server file as **craftbukkit.jar** but the file you download may be named differently. The file name used in your start script **must** match the name of the file you download. 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: Unless you have a multi-homed machine and know what this means/requires, **server-ip=** in server.properties MUST remain unchanged from default and be blank. 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: When running a server for the first time, errors will show up. Do not worry as this is normal; the server is generating files and folders needed to run as they do not exist yet. 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: The Bukkit server is intended as a _complete replacement_ for the official Minecraft Server downloaded from Minecraft.net and is not normally ran at the same time on a single computer. It is possible however, to copy your 'World' data files previously created within a Minecraft Server into your Bukkit folders to continue use of your previous game. As always, backup your data and configuration prior to migrating to Bukkit. 
+**Note**: In this guide we refer to the server file as **craftbukkit.jar** but the file you download may be named differently. The file name used in your start script **must** match the name of the file you download. 
+**Note**: Unless you have a multi-homed machine and know what this means/requires, **server-ip=** in server.properties MUST remain unchanged from default and be blank. 
+**Note**: When running a server for the first time, errors will show up. Do not worry as this is normal; the server is generating files and folders needed to run as they do not exist yet. 
+**Note**: The Bukkit server is intended as a _complete replacement_ for the official Minecraft Server downloaded from Minecraft.net and is not normally ran at the same time on a single computer. It is possible however, to copy your 'World' data files previously created within a Minecraft Server into your Bukkit folders to continue use of your previous game. As always, backup your data and configuration prior to migrating to Bukkit. 
 
 ##  Windows
 
