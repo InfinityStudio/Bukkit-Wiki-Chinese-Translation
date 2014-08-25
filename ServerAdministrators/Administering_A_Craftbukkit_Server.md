@@ -1,25 +1,26 @@
-#  Administering A Craftbukkit Server
+#  管理一个Craftbukkit服务器
+原文来自BukkitWiki
 
-Opening Notes
-This tutorial is for current Craftbukkit Server admins and aspiring server
-admins. Whether you own the place, or are simply running the show (or even a
-little of both) this tutorial is meant to provide you with a set list of
-guidelines and valuable resources to running a successful server. Everything
-from the grits and gravy, to the day to day handling of yourself and your
-server.
+介绍  
 
-Alright Let’s get into it from ground Zero!
+开宗立意  
+这个教程是提供给目前的Craftbukkit服务器管理员，或是那些想申请服务器管理员的人的。
+无论你是否拥有这个服务器，还是你只是开起来玩玩（甚至是这两种成分都有）。这个教程
+旨在为你开启一个成功的服务器提供大量的指南和十分珍贵的资源。从细微的小事，再到每
+天对你自己的自我管理和对服务器的管理。
 
-## Contents
+让我们从零基础开始！开启你的服务器吧！
 
-  * 1 Section 1: Ground Breaking
-    * 1.1 “Vanilla” Minecraft and “Modified” Minecraft Servers
-    * 1.2 The Bukkit Project
+## 目录
+
+  * 1 第 1 部分: 开天辟地
+    * 1.1 “纯净”服务器和“插件”服务器
+    * 1.2 Bukkit项目
     * 1.3 The Hosting Plans
     * 1.4 CraftBukkit or Bukkit?
     * 1.5 Pick your Operating System, Memory, and RAM!
     * 1.6 Pricing
-  * 2 Section 2: The Community
+  * 2 第 2 部分: The Community
     * 2.1 As an administrator, how you should act with players.
       * 2.1.1 What you should do:
     * 2.2 Appointing moderators
@@ -37,43 +38,36 @@ Alright Let’s get into it from ground Zero!
     * 2.7 Preparing for the unexpected
     * 2.8 Somewhere to meet when the server is offline
     * 2.9 "It might be your server but it was made for them"
-  * 3 Section 3: Keeping it Rolling
+  * 3 第 3 部分: Keeping it Rolling
     * 3.1 Help! Minecraft Updated!
     * 3.2 Are my plugins updated? How can I tell?
     * 3.3 Updating your plugins
     * 3.4 Asking Others
 
-# Section 1: Ground Breaking
+# 第 1 部分：开天辟地
 
-This section is meant to introduce you to the differences between a few
-simple, but need to know basics:
+这个部分意旨给你介绍几个十分简单的、基本的常识：
 
-  1. The difference between “Vanilla” and “Modified” Servers.
-  2. What is the Bukkit Project?
-  3. The differences between a Game Hosting Plan and a Freeform Plan (VDS, VPS, or Dedicated Hardware)
+  1. “原版”服务器和“MOD”服务器之间的区别
+  2. Bukkit是什么？
+  3. 按照人数租用的服务器 和 自由的服务器（VPS, VDS或独立机）之间的区别
 
-Really this section is the gritty “Where do I want to start my adventure?”
-portion!
+这一部分就是你开服苦旅的开始，也是它的一部分
 
-##“Vanilla” Minecraft and “Modified” Minecraft Servers
 
-The first bit you need to realize is the difference between “Vanilla” flavored
-Minecraft Servers and “Modified” Minecraft Servers, such as CraftBukkit.
-Really, these terms can be applied to any video game and can simply confuse
-someone who is brand new to the scene so it’s imperative that we talk about it
-first. A “Vanilla” Minecraft Server is the minecraft_server.jar file you
-download from <http://www.minecraft.net/> without any modifications,
-tampering, or additions on in any way. In a sense, it’s Minecraft SMP in its
-purest form: unaltered and vulnerable; thats what most server owners are
-afraid of. Thanks to the addition of “griefers” to the Minecraft community and
-a load of other issues, Vanilla servers are seen as gaping targets for every
-type of mischief and discord to happen. It really gets under the skin of
-anyone who runs one because you have to constantly keep an eye on it to make
-sure nothing goes wrong. This is where “Modified” servers come into play; not
-just CraftBukkit, but hundreds of Minecraft players feel the need to modify
-the original code to better suit servers and the growing concerns of the
-administators running them. Modified servers mix it up to better secure or
-improve on the current gameplay mechanics of the Minecraft Multiplayer server.
+##“原版”服务器和“插件”服务器
+
+开服之前，你首先需要知道的是“纯净”服和“插件”服（如Craftbukkit）之间的区别。
+由于这些东西能够应用在几乎任何的游戏上面，而通常会搞得一些新人晕头转向，所
+以介绍这方面的知识十分必要。
+“纯净”服是你从<http://www.minecraft.net>上面下载下来的 minecraft_server.jar，
+而它通常没有任何的修改。从一种角度来说，这是一种最纯净、最未被更改、最易被破坏
+的插件，而这正是大多数服主所畏惧的。“感谢”一种叫做熊孩子的生物和其他的一些问题
+存在于Minecraft这个群体中，“原版”服务器是各种恶作剧和各种混乱所发生的地方，
+管理一个原版服务器会令人很心烦，因为你必须监事每一个玩家来保证一切都在正轨上。
+而这正是“插件”服务器派上用场的时候，而不仅仅是Craftbukkit的作者，还有成百上千
+的玩家有一种对于修改原本的代码的强烈需求，因为他们在玩家增长的同时，也感受到了
+强烈的管理需求。“插件服”将更好的安全性和更好的游戏性结合到了一起，构成了插件多人服务器。
 
 The main difference between “Vanilla” and “Modified” is that Mojang only
 supports Vanilla servers as of this article. Currently Mojang is developing a
