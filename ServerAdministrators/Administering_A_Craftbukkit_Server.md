@@ -260,4 +260,271 @@ use an invisibility plugin to watch them as they're unaware of your presence.
 One thing you should not do at any cost is **tell them that you're considering
 them**! This will alert them and they will most likely change their behavior
 patterns to satisfy you - then destroy all of your work in one keystroke.
+Again, you should search for friendly, active, and helpful players.
 
+
+**Don't op them straight away** This cannot be stressed enough. DO NOT give your new staff all permissions straight away. This is a very bad idea and you should always test the new staff members to see if they're capable of being responsible. This is why it's usually best to have a "sub-mod" rank that doesn't have as many permissions as the "full mod" rank, but still has basic staff capabilities. 
+
+  
+
+With that, you should be able to make wise choices with your staff!
+
+  
+
+## The ban hammer of legend
+
+An entire novel could be written about the ban hammer. This simple tool has
+the power to remove anyone you want from the server indefinitely. That's why
+it's important to understand the basics of banning.
+
+  
+
+There's a few parts to this:
+
+  * Responsible banning and how it will affect your community 
+  * Lenience and sternness 
+  * Global bans 
+
+  
+
+#### Responsible banning and how irresponsible banning is bad for the community
+
+As has been mentioned, the ban hammer is a very powerful tool. That's why it's
+important to exercise caution and use it only when necessary.
+
+You should NEVER ban someone just cause they're getting on your nerves. As a
+starting server, you don't want to intimidate your players into leaving.
+Admins who ban for "sh*ts and giggles" will lose a lot of players. On the
+other side, you shouldn't be overly lenient. You shouldn't let a guy who's
+built offensive things out of blocks he stole from other players stay on your
+server. That will also cause you to lose a lot of players.
+
+  
+
+#### Lenience and sternness
+
+It is important to let your players know the limits of what they can do on
+your server. This means telling them that, "Yes, you will be banned if you
+grief", or, "No, you don't get banned for caps". Stay true to what you tell
+them, too. Don't let someone off for griefing after you told them that they
+would be banned, and don't ban for caps if you told players that caps lock
+wouldn't get them banned. No one likes a two-faced server admin.
+
+  
+
+#### Global bans - responsibility
+
+Global ban services are used to keep track of a player's bans across multiple
+servers and warn other servers about bad players. With that said, it is
+important to be responsible with a global ban service. Don't global ban people
+for random reasons. Most global ban services have a local ban functionality.
+Even so, you should NOT local ban them for no reason. This will drive away a
+lot of players and that is bad for your server. Too many invalid bans and some
+global ban services may review your server. Remember to read your global ban
+service's banning guideline to make sure you don't get in trouble with the
+service.
+
+## Keeping your community involved
+
+In order for your server's community to grow, you will always have to keep you
+and the players active within it.
+
+Drop parties are known to attract players and can be good for the community.
+With those you can attract players and give out free items. In a drop party do
+not give out too many good items, try to balance the diamonds, or other rare
+items, with more common items, such as flint, plant seeds, or other craftable
+items. Make sure you don't have too many drop parties either, as they can
+attract players to stay, they can also ruin the server's economy by having
+certain players get good free items without having to do any of the hard work
+in order to normally get those items. Make sure players know about the drop
+parties as well, if they don't know, no one will show up. Once you find a
+schedule, stick to it, players will soon get used to it and learn to expect
+it, making the community grow.
+
+Another good way at keeping the community involved is by opening public forums
+on the server's official webpage. Players can then discus ideas, strategies,
+and even review and suggest new things to make your server better. It is
+always good to make announcements and upcoming things on those forums. As
+people have free speech, make sure you don't over react to bad posts, if they
+are too offensive take them down. Also set guidelines and sections for the
+forums so it is easily navigable, the players won't stick around if they
+cannot find what they are looking for.
+
+One good idea is to run a YouTube channel dedicated to the server, players can
+submit videos to you and you may post them on the page. This will give the
+players a sense of participation within the community and can help boost
+player activity. Allow players to record server spotlights or reviews on their
+channels, never be afraid of getting out there. Try and encourage players to
+make those videos and maybe give them a small reward, such as a diamond or in
+game money.
+
+As these all can help your server, it can also destroy it. Make sure you don't
+over do something and ruin the way players look at the server. Don't give out
+too many things or it will make some players TOO powerful and can make players
+no longer want to play because of the players who have too much power. MAke
+sure that the videos and posts are good about the server, anything bad can put
+the wrong image into a new players mind.
+
+## Choosing the correct plugins
+
+This is very important for a successful server. Choosing the right plugins
+keeps the gameplay fresh, fun, and original - three things your server needs
+to be fun. Don't choose plugins that no one will ever have permissions for
+except you (for example, a plugin where you can attack others with fire and
+lightning and explosions). These only bog your server down and add nothing for
+your players except a cool new "permission denied" message. Yeah, it isn't
+fun.
+
+  
+
+Be sure to do extensive testing on a test server. This makes sure that the
+plugin works properly and isn't going to corrupt your map data or make
+everyone an op or something dangerous.
+
+**Tip**: Remember, download plugins from bukkit.org and ONLY bukkit.org. This is the only site where plugins are checked for maximum security. 
+
+  
+
+#### Development
+
+Can't find that plugin you want really badly? You can either ask someone to
+develop it for you or develop it yourself. It takes a lot of practice to
+become a good developer, but once you get the hang of it, you will be able to
+develop anything you want for your server! This also contributes to your
+server while adding some knowledge to your own brain.
+
+  
+
+## Scheduling
+
+Scheduling is an important part of running a successful Minecraft server. You
+should always keep your players notified of upcoming updates. Of course, you
+can't really schedule a Minecraft update, but you should definitely schedule
+when you perform plugin updates, add cool new features, etc. No one likes to
+join and then be told that the server will be whitelisted for a week to fix a
+critical error (this is where a test server comes in handy). You should always
+schedule changes so players can know when they'll need to do something else.
+
+  
+
+## Preparing for the unexpected
+
+Face it, you won't always have time to run your server. You'll have
+school/work, and other things will arise that keep you from having fun on your
+server. But these things happen, and they're nothing to be afraid of! You will
+always find SOME free time to run your server and build that giant mansion
+you've always dreamed of. You should always tell your players when you'll be
+gone for a long time. If an error occurs, tell your players that you're
+working on the issue.
+
+  
+
+## Somewhere to meet when the server is offline
+
+You should have somewhere to talk to your players when the server is offline.
+In most cases, this will be a website or a forum where you can quickly inform
+your players of upcoming downtime and other changes happening. Websites make a
+great place to hang out and talk to other players.
+
+  
+
+Speaking of websites... don't make your server website look ugly. A lot of
+people might actually google your server by accident and then be driven away
+by a crappy, ad-infested website.
+
+  
+
+## "It might be your server but it was made for them"
+
+This is very, very, VERY important. This basically sums up this entire
+section. You made the server for its players, not for yourself. You spend time
+helping players, they spend time making houses. You spend money paying for a
+server, they repay you with hours of entertainment. They are who you made this
+server for, not yourself:
+
+_**Do. what. the. players. want.**_
+
+_(as long as it's reasonable)_
+
+  
+
+* * *
+
+  
+
+Well, this should be enough to get you started. Good luck!
+
+# Section 3: Keeping it Rolling
+
+A community is like a garden, it grows from a small community into a big one.
+But that doesn’t happen overnight! You need to keep it rolling so everyone is
+happy!
+
+This section will show you:
+
+  * Useful sites to bookmark and keep your eye on 
+  * How to update your plugins 
+  * Updating your server/Recommended Builds 
+
+## Help! Minecraft Updated!
+
+It’s that time again! Craftbukkit is updating and so are your plugins!
+Unfortunately this means that most of the time updating your server will not
+be enough and most if not all of your plugins will break. Keeping this in
+mind, here are some useful places to keep bookmarked as you expand your
+Craftbukkit Server.  
+
+Firstly: <http://www.bukkit.org/> should be kept a close eye on. The homepage
+of the Bukkit Project always tells you the recommended build of Craftbukkit
+and when it’s time to update.
+
+Secondly: <http://plugins.bukkit.org/> is THE website to bookmark to look up
+documentation of your plugins or help expand on the plugins you currently
+have. With that being said...
+
+Third: EVERY TOPIC FOR ANY PLUGIN ON YOUR SERVER. These should be bookmarked
+indefinitely so you can return to check for updates and how to work out the
+documentation and commands.
+
+Fourth: <http://dev.bukkit.org/> BukkitDev Is swiftly replacing the old forum
+system(linked above) for interaction between plugin developers and the
+community(you) and your users. Bukkit dev has many strengths including the
+ability to subscribe to alerts by email when your plugins are updated
+
+Fifth: <http://wiki.bukkit.org/> always has a counter for the current
+Craftbukkit build and tons of tutorials on how to run servers.
+
+## Are my plugins updated? How can I tell?
+
+  
+Normally, you can’t tell what version your plugin or server is... without a
+little searching, that is! If you log in to your server and type /version you
+can immediately find out what version is your Craftbukkit server and
+immediately compare it to the Recommended Build. Additionally, /version
+[pluginName] can tell you the version of your Plugin and the Recommended Build
+it was Built for.  
+  
+There are also plugins that can be used as a guiding resource that an admin
+can use as a helping hand to keep plugins as well as CraftBukkit itself up to
+date. These resources however are not a full replacement for doing the
+research on your own as blindly updating can often cause more trouble than it
+saves.  
+
+## Updating your plugins
+
+  
+To update your plugins, simply stop your server, delete the Jar file, and
+replace it with the new one. If the changelog for the plugin (usually
+displayed on the plugin’s forum post) says there is a change in the config
+files, make the appropriate changes before finishing and restarting your
+server.
+
+## Asking Others
+
+  
+People who have already been there done that are extremely valuable resources
+for you to use. Never EVER be afraid to ask others for help! Most of the time
+ex-server admins or current server admins will try to assist you as much as
+they know, or try to refer you to someone who does know. If you don't know
+anyone, the [Bukkit IRC Channel](/IRC) is a plethora of Admins, Plugin
+Developers, and other people who know how to do what you may not!
