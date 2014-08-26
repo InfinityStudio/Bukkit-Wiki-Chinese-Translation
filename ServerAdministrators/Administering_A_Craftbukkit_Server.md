@@ -1,8 +1,5 @@
 #  管理一个Craftbukkit服务器
 
-介绍  
-
-开宗立意  
 这个教程是提供给目前的Craftbukkit服务器管理员，或是那些想申请服务器管理员的人的。
 无论你是否拥有这个服务器，还是你只是开起来玩玩（甚至是这两种成分都有）。这个教程
 旨在为你开启一个成功的服务器提供大量的指南和十分珍贵的资源。从细微的小事，再到每
@@ -12,7 +9,7 @@
 
 ## 目录
 
-  * 1 第 1 部分: 开天辟地
+  * 1 第 1 部分: 基础知识
     * 1.1 “纯净”服务器和“插件”服务器
     * 1.2 Bukkit项目
     * 1.3 租用服务器的套餐
@@ -42,7 +39,7 @@
     * 3.2 我的插件升级了吗？我怎么判断呢？
     * 3.3 升级你的插件
     * 3.4 向别人问问题
-# 第 1 部分：开天辟地
+# 第 1 部分：基础知识
 
 这个部分意旨给你介绍几个十分简单的、基本的常识：
 
@@ -107,27 +104,23 @@ Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开
 
 ## 选择你的操作系统，存储设备大小和内存大小
 
-Seeing as this tutorial will help you run a Craftbukkit Server, here are some
-quick tips to look at when choosing a plan. Firstly: More Plugins for
-Craftbukkit Support Linux and Linux derivatives only, so it’s recommended that
-you get a Linux plan. That being said if you are a new user, Windows will be
-more useful for you because it has a clean GUI (Graphical User Interface) and
-is easy for server hosting.
+阅读这篇教程将会帮助你学会运行一个Craftbukkit服务端。这里有几个关于选择租用套
+餐的小提示。首先：由于Linux和它的衍生物对于Craftbukkit的插件兼容性更好，所以
+使用Linux系统的套餐是更被支持的（译者注：使用Linux系统请务必注意将所有设定转化
+为**UTF-8**编码）。话虽如此，如果你不会用Linux，你可以使用Windows，因为它有更
+好的GUI支持，易用性好。
 
-When you come across the fabled 32-bit versus 64-bit decision; it’s
-recommended that you choose a 64-bit plan as it will allow you to have more
-(4GB or higher) RAM than a 32-bit plan will. If you're not sure, or simply
-don’t care, choose what you fancy.
+当你需要决定使用64位系统还是32位系统的时候，我们推荐你使用64为系统，因为
+它能让你使用大于4G的内存。当然，如果不知道怎么选的话，你看哪个爽就选哪个
+吧。
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: 32-bit may be also displayed as x86, this isn't more!
+ **注意**: 32位和x86是一个意思，x86并不是68位！
 
-When choosing RAM amounts, it is HIGHLY recommended to run a Craftbukkit
-Server 1024MB (1GB) of RAM per 10 Player Slots. If your player slot amount is
-below 10, we recommend a 768MB plan at minimum. Due to Java's high memory
-consumption of the server and plugins you can (_and will_) never have enough
-RAM.
+在选择内存大小是，我们**强烈**建议你每增加10个玩家，就添加1024MB（1GB）的
+内存。如果你的玩家数量小于10个，我们建议你最少使用768MB的内存。由于Java对
+于服务端插件极高的内存消耗，你可能(_绝对_)不会有足够的内存。
 
-## Pricing
+## 价格
 
 Likewise, pricing is a huge issue for server admins because the money is
 coming out of your pocket! If you want to run a successful community: Have a
