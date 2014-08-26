@@ -2,22 +2,22 @@
 
 ## Contents
 
-  * 1 预备工作[#预备工作]
-  * 2 Windows系统[#Windows系统]
-  * 3 Linux系统[#Linux系统]
-  * 4 Mac OS X系统[#Mac OS X系统]
-  * 5 错误诊断[#错误诊断]
-  * 6 相关教程[#相关教程]
+  * 1 [预备工作](#预备工作)
+  * 2 [Windows系统](#Windows系统)
+  * 3 [Linux系统](#Linux系统)
+  * 4 [Mac OS X系统](#Mac OS X系统)
+  * 5 [错误诊断](#错误诊断)
+  * 6 [相关教程](#相关教程)
 
 ## 预备工作
 
-**Note**：在这个教程中我们将使用这个**craftbukkit.jar**文件不过文件下载完成后你可以将其命名为其他的名字。不过你的启动脚本**必须**使用你重命名后的文件名。
+**注意**：在这个教程中我们将使用这个**craftbukkit.jar**文件，文件下载完成后你可以将其命名为其他的名字。不过你的启动脚本**必须**使用你重命名后的文件名。
 
-**Note**：至少你需要有一台**多用户**服务器，你必须明白这到底是什么和其至关重要的原因。在server.properties中的**server-ip=**请保持默认值或者留空。 
+**注意**：至少你需要有一台**多用户**服务器，你必须明白这到底是什么和其至关重要的原因。在server.properties中的**server-ip=**请保持默认值或者留空。 
 
-**Note**：当你第一次启动服务器的时候你会看到ERROR字样的提示。请不要担心，这是服务器发现有一些文件不存在而建立它们。
+**注意**：当你第一次启动服务器的时候你会看到ERROR字样的提示。请不要担心，这是服务器发现有一些文件不存在而建立它们。
 
-**Note**： The Bukkit server is intended as a _complete replacement_ for the official Minecraft Server downloaded from Minecraft.net and is not normally ran at the same time on a single computer. It is possible however, to copy your 'World' data files previously created within a Minecraft Server into your Bukkit folders to continue use of your previous game. As always, backup your data and configuration prior to migrating to Bukkit. 
+**注意**： The Bukkit server is intended as a _complete replacement_ for the official Minecraft Server downloaded from Minecraft.net and is not normally ran at the same time on a single computer. It is possible however, to copy your 'World' data files previously created within a Minecraft Server into your Bukkit folders to continue use of your previous game. As always, backup your data and configuration prior to migrating to Bukkit. 
 
 ##  Windows系统
 
