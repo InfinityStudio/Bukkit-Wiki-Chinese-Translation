@@ -17,7 +17,7 @@
 
 **注意**：当你第一次启动服务器的时候你会看到ERROR字样的提示。请不要担心，这是服务器发现有一些文件不存在而建立它们。
 
-**注意**： The Bukkit server is intended as a _complete replacement_ for the official Minecraft Server downloaded from Minecraft.net and is not normally ran at the same time on a single computer. It is possible however, to copy your 'World' data files previously created within a Minecraft Server into your Bukkit folders to continue use of your previous game. As always, backup your data and configuration prior to migrating to Bukkit. 
+**注意**：Bukkit服务端旨在_完全替代_你从Minecraft.com下载的官方服务器的全部功能。基本上Bukkit服务端和官方服务端无法同时运行在一台电脑上。不过你可以将以前使用官方服务端时生成的所有数据包括world或者其他的配置文件全部拷贝到Bukkit的文件夹中从而继续使用以前的游戏。 
 
 ##  Windows系统
 
