@@ -16,7 +16,7 @@
   * 1 第 1 部分: 开天辟地
     * 1.1 “纯净”服务器和“插件”服务器
     * 1.2 Bukkit项目
-    * 1.3 The Hosting Plans
+    * 1.3 租用服务器的套餐
     * 1.4 CraftBukkit or Bukkit?
     * 1.5 Pick your Operating System, Memory, and RAM!
     * 1.6 Pricing
@@ -69,36 +69,30 @@
 的玩家有一种对于修改原本的代码的强烈需求，因为他们在玩家增长的同时，也感受到了
 强烈的管理需求。“插件服”将更好的安全性和更好的游戏性结合到了一起，构成了插件多人服务器。
 
-The main difference between “Vanilla” and “Modified” is that Mojang only
-supports Vanilla servers as of this article. Currently Mojang is developing a
-Mod API for modification makers to use, but aside from that the communities
-built around the Modified servers are the only official support for their
-mods. For example, Bukkit. Bukkit answers questions about Bukkit and
-Craftbukkit Mods, not CanaryMod.
+“原版”服务器和“插件”服务器之间的主要区别是。“原版”服务器是受Mojang官方支持的服务端，
+目前Mojang正在开发Mod的API来供给给针对服务端和客户端的修改。对于每一种服务端来说，
+他们的社区仅仅支持他们自己的服务端。比如说Bukkit，它的社区只会回答关于Bukkit和
+Craftbukkit的问题，而不会回答关于CanaryMod服务端的问题。
 
-## The Bukkit Project
+## Bukkit项目
 
-The Bukkit project is seen to many as the successor of the Hey0 server mod as
-started by Hey0. However, Bukkit is an independent project which seeks to
-improve Minecraft like any mod would, but at a different level that offers
-convenience and ease to the people running it. Normally there is only one
-instance of the modification, but the Bukkit project releases two versions:
-One is called Bukkit, like the project, and is the “Missing API” of a Vanilla
-Server; Normally, server owners would **not** use Bukkit, as it is only an API
-for Bukkit (the platform in which plugins are created). CraftBukkit is the
-sealed up Bukkit .jar file in an easy-to-use environment for server
-administrators, made specifically for running the Minecraft server. This
-tutorial primarily works with CraftBukkit over Bukkit seeing as CraftBukkit is
-used by the Bukkit Project for server admins rather than for developers.
+Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之一。但实际上，Bukkit
+是一个独立的项目，它的目的是在为运行它的人提供方便和简洁的环境的情况下，像任何
+其他的Mod一样来改进Minecraft。一般来说，只会发布一种版本的修改，但是Bukkit项目
+发布了两种版本：第一种称之为Bukkit，它和这个项目同名，它是作为“原版”服务器的API
+来使用的。一般情况下，服主们 **不会** 使用Bukkit，因为它只是Bukkit项目的一个API（创建插件的平台）。
+Craftbukkit则是经过封装的Bukkit的jar，设计为为服主提供简单易用的运行环境，和对
+Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开服的，而不是为开发
+者提供的环境。
 
-## The Hosting Plans
+## 租用服务器的套餐
 
-There are two primary paid hosting plans, or at-least two categories: Game
-Hosting Plans and Freeform Plans (VDS, VPS, Dedicated Hardware, etc.)
+目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS,
+ 独立机等）
 
-**Game Hosting Plans**. You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
+**按人数计的套餐** You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
 
-**Freeform Plans**. These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
+**Freeform Plans** These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
 
 ## CraftBukkit or Bukkit?
 
