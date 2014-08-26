@@ -17,8 +17,8 @@
     * 1.1 “纯净”服务器和“插件”服务器
     * 1.2 Bukkit项目
     * 1.3 租用服务器的套餐
-    * 1.4 CraftBukkit or Bukkit?
-    * 1.5 Pick your Operating System, Memory, and RAM!
+    * 1.4 CraftBukkit 还是 Bukkit？
+    * 1.5 选择你的操作系统，存储设备大小和内存大小
     * 1.6 Pricing
   * 2 第 2 部分: The Community
     * 2.1 As an administrator, how you should act with players.
@@ -90,18 +90,24 @@ Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开
 目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS,
  独立机等）
 
-**按人数计的套餐** You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
+**按人数计的套餐** 你会被授予网络后台（如Multicraft）和FTP（或者类似的东西）。这些东西
+通常都对用户很友好。但是这些套餐有的时候限制会过多，并且无法使用特定的软件
 
-**Freeform Plans** These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
+**自由的硬件平台** 从基本上来讲，这些设备是在数据中心之中的一台电脑，它拥有网络连接和一个
+操作系统。VDS、VPS和独立机都是这种种类的机器。你拥有这台服务器的完全控制权，你可以在你的
+出租商的服务条款的允许范围内做任何事情。几乎大多数人都喜欢这种租用方式，因为这种租用方式
+能够给你服务器的完全控制，包括他里面运行了什么、存储着什么。当然，你也失去了那些网络后台
+能够基于你的方便，除非你自己安装一个。总而言之，由于这种方式没有太多的限制，所以本教程认
+为这种方式是最好的部署服务器的方式。[请注意：你的独立机必须开启25565端口(Minecraft使用的端口)]。
+当然，你也可以使用[SRV记录](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_)
+这篇教程可以使用在这两种开服方式之中。
 
-## CraftBukkit or Bukkit?
+## CraftBukkit 还是 Bukkit？
 
-As explained in the previous sections, CraftBukkit is the modification for
-servers, as opposed to Bukkit which is an API so developers can make plugins.
-This tutorial will focus only on CraftBukkit as Bukkit is only useful for
-plugin developers.
+前文已解释过，Craftbukkit是Minecraft服务器的插件服务端。相对来说，Bukkit只是
+提供给开发者开发插件的API。因为Bukkit是提供给开发者的API，故这篇教程仅会针对Craftbukkit
 
-## Pick your Operating System, Memory, and RAM!
+## 选择你的操作系统，存储设备大小和内存大小
 
 Seeing as this tutorial will help you run a Craftbukkit Server, here are some
 quick tips to look at when choosing a plan. Firstly: More Plugins for
