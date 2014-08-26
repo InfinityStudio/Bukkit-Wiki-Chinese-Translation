@@ -123,34 +123,30 @@ Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开
 
 ## 价格
 
-Likewise, pricing is a huge issue for server admins because the money is
-coming out of your pocket! If you want to run a successful community: Have a
-lot of money to burn, or setup a donation system with rewards for members to
-entice continuous play on your server and to help pay for it. That being said,
-if you’re just starting out a small package should do you just fine. Don’t
-start big and go small! A large community of players always starts from a
-small one.
+就和上面的一样，价格对于服务器管理者来说也十分重要，因为它涉及到了管理员的钱。
+如果你想要建立一个成功的社群，你需要如下条件：有很多钱烧或者建立一套捐款体制。
+曾经有一句话这样说：“如果你从小型服务器开始，你的成果应该不差。不要从大型服务
+器开始然后越来越小！”请记住，一个大型的玩家社群通常是从小的社群发展出来的。
 
 # 第 2 部分： 玩家社群
 
-Like the pricing and the specs of the machine, the community itself and who
-runs it is extremely crucial to your community’s success. If you run it “half-
-assed” and don’t really care to learn about or keep your users happy... you
-won’t do too well at all. Yes! Running a Minecraft server is a job! And if you
-can’t commit to it then you should exit your browser right now and go back to
-whatever it is you do.
+玩家社群的本身和运行它的人，同服务器的配置和价格一样，都对于你的社群的成功极其
+重要。如果你像一个混蛋一样运行着他，又不去关心玩家们真正能让玩家高兴的东西……你
+根本就不可能成功。对！开一个Minecraft服务器就应该像职业一样对待！如果你不能把自
+己的全心全力投入到这上面上来的话，我建议你立刻关闭你的浏览器并去做你刚刚在做的
+事情，什么都可以，请不要开服。
 
-This section will show you:
+这个部分将会告诉你：
 
-  * How to successfuly advertise your server
-  * As an Administrator, how you should act while with players
-  * Hire Moderators, know when to lay down the ban-hammer!
-  * Keep the community involved
-  * Choose correct plugins and abilities your players will love!
+  * 如何成功地宣传你的服务器
+  * 作为一名管理员，你应该如何与玩家相处？
+  * 招募管理员，并了解什么时候应该封禁玩家
+  * 让你的玩家社群真正地参与进服务器中
+  * 选择你真正需要的正确的插件！
 
-  * Planning in advance for things and dealing with unexpected events
-  * Somewhere to meet if the server is offline
-  * "It's your server but it's for the players"
+  * 为一些事情提前做出计划，并处理意外事件
+  * 你的服务器暂时关闭时你所需要做的事
+  * “这或许是你的服务器，但你的它是为玩家而生的”
 
 
 
