@@ -224,33 +224,17 @@ a lot of hassle later on.
 
 #### 仁慈和严厉
 
-It is important to let your players know the limits of what they can do on
-your server. This means telling them that, "Yes, you will be banned if you
-grief", or, "No, you don't get banned for caps". Stay true to what you tell
-them, too. Don't let someone off for griefing after you told them that they
-would be banned, and don't ban for caps if you told players that caps lock
-wouldn't get them banned. No one likes a two-faced server admin.
-
-  
+让玩家明白服务器管理员们的底线和服务器的规定是很重要的一点。也就是说你需要告诉他们：“是的，如果你破坏别人的物品会被封禁”、“不，你不会因为用大写字符就被封禁”。如果你跟玩家说做某些事情并不会被封禁，那就千万不要封禁他们。没有人会喜欢当面一套背后一套的管理员。
 
 #### 全局封禁 - 你的志高责任
 
-Global ban services are used to keep track of a player's bans across multiple
-servers and warn other servers about bad players. With that said, it is
-important to be responsible with a global ban service. Don't global ban people
-for random reasons. Most global ban services have a local ban functionality.
-Even so, you should NOT local ban them for no reason. This will drive away a
-lot of players and that is bad for your server. Too many invalid bans and some
-global ban services may review your server. Remember to read your global ban
-service's banning guideline to make sure you don't get in trouble with the
-service.
+全局封禁是用于多服联结的服务。就和标题一样，对待全局封禁，你必须要负责人。不要因为一些很奇怪的原因去封禁玩家。大多数全局封禁服务器都有一些本地的封禁系统，但这并不代表你能够随便封禁人，你应该按照你自己定下的服规来执行封禁，如果随便封禁人的话，会流失许多玩家。一个服务器管理层的素质能够表现出你的服务器的整体素质。记得一定要阅读好你的全局封禁的说明，以便不遇到太多的麻烦。
 
 ## 让你的玩家社群真正参与进服务器中
 
-In order for your server's community to grow, you will always have to keep you
-and the players active within it.
-
-Drop parties are known to attract players and can be good for the community.
+为了让你的服务器的社群持续成长，你应该让你的玩家一直活跃。
+Drop parties are known to attr
+act players and can be good for the community.
 With those you can attract players and give out free items. In a drop party do
 not give out too many good items, try to balance the diamonds, or other rare
 items, with more common items, such as flint, plant seeds, or other craftable
