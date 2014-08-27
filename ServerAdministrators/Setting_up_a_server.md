@@ -58,7 +58,7 @@
 
    如果你想通过启动脚本来持续性的运行服务器即便关闭终端，请参阅 [minecraft-init](https：//github.com/Ahtenus/minecraft-init)
 
-   如果你想使用screen指令来巡行服务器，请参阅 [ABM](http：//dev.bukkit.org/server-mods/ascii-bukkit-menu/)
+   如果你想使用screen指令来运行服务器，请参阅 [ABM](http：//dev.bukkit.org/server-mods/ascii-bukkit-menu/)
 
 ##  Mac OS X
 
