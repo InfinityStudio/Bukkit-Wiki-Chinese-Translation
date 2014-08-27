@@ -1,55 +1,51 @@
 #  管理一个Craftbukkit服务器
-原文来自BukkitWiki
 
-介绍  
-
-开宗立意  
-这个教程是提供给目前的Craftbukkit服务器管理员，或是那些想申请服务器管理员的人的。
-无论你是否拥有这个服务器，还是你只是开起来玩玩（甚至是这两种成分都有）。这个教程
-旨在为你开启一个成功的服务器提供大量的指南和十分珍贵的资源。从细微的小事，再到每
-天对你自己的自我管理和对服务器的管理。
+如果你是一名使用Craftbukkit的服务器管理员，或者是想要申请成为服务器的管理员的人，
+甚至是为了玩玩的人，你可以将这个教程作为你开服的参考资料。这个教程旨在通过为管理
+员们提供大量的指南和一些十分珍贵的资源，来引导他们开启一个从各个方面看都是成功的
+服务器。这个教程从细琐的小事介绍起，再到服务器每一天的运行、维护和管理，包含着开
+启一个Minecraft服务器所需的大部分知识。
 
 让我们从零基础开始！开启你的服务器吧！
 
 ## 目录
 
-  * 1 第 1 部分: 开天辟地
+  * 1 第 1 部分: 基础知识
     * 1.1 “纯净”服务器和“插件”服务器
     * 1.2 Bukkit项目
     * 1.3 租用服务器的套餐
-    * 1.4 CraftBukkit or Bukkit?
-    * 1.5 Pick your Operating System, Memory, and RAM!
-    * 1.6 Pricing
-  * 2 第 2 部分: The Community
-    * 2.1 As an administrator, how you should act with players.
-      * 2.1.1 What you should do:
-    * 2.2 Appointing moderators
-      * 2.2.1 Application system:
-        * 2.2.1.1 Reviewing
-      * 2.2.2 Watching your players
-    * 2.3 The ban hammer of legend
-      * 2.3.1 Responsible banning and how irresponsible banning is bad for the community
-      * 2.3.2 Lenience and sternness
-      * 2.3.3 Global bans - responsibility
-    * 2.4 Keeping your community involved
-    * 2.5 Choosing the correct plugins
-      * 2.5.1 Development
-    * 2.6 Scheduling
-    * 2.7 Preparing for the unexpected
-    * 2.8 Somewhere to meet when the server is offline
-    * 2.9 "It might be your server but it was made for them"
-  * 3 第 3 部分: Keeping it Rolling
-    * 3.1 Help! Minecraft Updated!
-    * 3.2 Are my plugins updated? How can I tell?
-    * 3.3 Updating your plugins
-    * 3.4 Asking Others
+    * 1.4 CraftBukkit 还是 Bukkit？
+    * 1.5 选择你的操作系统，存储设备大小和内存大小
+    * 1.6 价格
+  * 2 第 2 部分: 玩家社群
+    * 2.1 作为服务器管理员，你应该如何对待自己的玩家
+      * 2.1.1 你应该怎样做
+    * 2.2 招收管理员
+      * 2.2.1 申请系统
+        * 2.2.1.1 审核
+      * 2.2.2 观察你的玩家
+    * 2.3 关于封禁
+      * 2.3.1 什么是对玩家负责任的封禁。不负责任的封禁对玩家社群有什么影响？
+      * 2.3.2 仁慈和严厉
+      * 2.3.3 全局封禁 - 你的志高责任
+    * 2.4 让你的玩家社群真正参与进服务器中
+    * 2.5 选择你真正所需的插件
+      * 2.5.1 开发插件
+    * 2.6 日程编排
+    * 2.7 做好最坏的准备
+    * 2.8 当你的服务器暂时关闭的时候
+    * 2.9 “这或许是你的服务器，但你的它是为玩家而生的”
+  * 3 第 3 部分: 服务器运维
+    * 3.1 救命！Minecraft升级了！
+    * 3.2 我的插件升级了吗？我怎么判断呢？
+    * 3.3 升级你的插件
+    * 3.4 向别人问问题
+# 第 1 部分：基础知识
 
-# 第 1 部分：开天辟地
+这个部分旨在给你介绍几个简单的常识：
 
-这个部分意旨给你介绍几个十分简单的、基本的常识：
-
-  1. “原版”服务器和“MOD”服务器之间的区别
-  2. Bukkit是什么？
+  1. “原版”服务器和“插件”服务器之间的区别
+  2. 什么是Bukkit项目？
   3. 按照人数租用的服务器 和 自由的服务器（VPS, VDS或独立机）之间的区别
 
 这一部分就是你开服苦旅的开始，也是它的一部分
@@ -90,75 +86,73 @@ Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开
 目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS,
  独立机等）
 
-**按人数计的套餐** You are given a web panel and a FTP access (or something along these lines) and are very user friendly. However, the downside to this is that some plans are too restrictive and proprietary software gets into conflicts with the Modifications.
+**按人数计的套餐** 你会被授予网络后台（如Multicraft）和FTP（或者类似的东西）。这些东西
+通常都对用户很友好。但是这些套餐有的时候限制会过多，并且无法使用特定的软件
 
-**Freeform Plans** These plans are, in the basic sense, a computer in a datacenter with a permanent internet connection and an Operating System. Virtual Dedicated Servers, Virtual Private Servers, and Dedicated Servers all fall under this category. You are given complete control of the system and are free to do as you please with your allowance within the host’s terms of service. This is the most favored type of plan because you have total control of your server and what is put in it, but you also lose the convenience of a simple user interface, unless you install a graphical server wrapper. However, in the end, this tutorial believes that it’s the best choice for server hosting due to the fact that there are no restrictions. (_Note: Make sure your host allows port 25565, which is Minecraft's port, or you can use [SRV Records](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_). This tutorial will work under both interfaces for convenience.
+**自由的硬件平台** 从基本上来讲，这些设备是在数据中心之中的一台电脑，它拥有网络连接和一个
+操作系统。VDS、VPS和独立机都是这种种类的机器。你拥有这台服务器的完全控制权，你可以在你的
+出租商的服务条款的允许范围内做任何事情。几乎大多数人都喜欢这种租用方式，因为这种租用方式
+能够给你服务器的完全控制，包括他里面运行了什么、存储着什么。当然，你也失去了那些网络后台
+能够基于你的方便，除非你自己安装一个。总而言之，由于这种方式没有太多的限制，所以本教程认
+为这种方式是最好的部署服务器的方式。[请注意：你的独立机必须开启25565端口(Minecraft使用的端口)]。
+当然，你也可以使用[SRV记录](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_)
+这篇教程可以使用在这两种开服方式之中。
 
-## CraftBukkit or Bukkit?
+## CraftBukkit 还是 Bukkit？
 
-As explained in the previous sections, CraftBukkit is the modification for
-servers, as opposed to Bukkit which is an API so developers can make plugins.
-This tutorial will focus only on CraftBukkit as Bukkit is only useful for
-plugin developers.
+前文已解释过，Craftbukkit是Minecraft服务器的插件服务端。相对来说，Bukkit只是
+提供给开发者开发插件的API。因为Bukkit是提供给开发者的API，故这篇教程仅会针对Craftbukkit
 
-## Pick your Operating System, Memory, and RAM!
+## 选择你的操作系统，存储设备大小和内存大小
 
-Seeing as this tutorial will help you run a Craftbukkit Server, here are some
-quick tips to look at when choosing a plan. Firstly: More Plugins for
-Craftbukkit Support Linux and Linux derivatives only, so it’s recommended that
-you get a Linux plan. That being said if you are a new user, Windows will be
-more useful for you because it has a clean GUI (Graphical User Interface) and
-is easy for server hosting.
+阅读这篇教程将会帮助你学会运行一个Craftbukkit服务端。这里有几个关于选择租用套
+餐的小提示。首先：由于Linux和它的衍生物对于Craftbukkit的插件兼容性更好，所以
+使用Linux系统的套餐是更好的（译者注：使用Linux系统请务必注意将所有设定转化
+为**UTF-8**编码）。话虽如此，如果你不会用Linux，你可以使用Windows，因为它有更
+好的GUI支持，易用性好。
 
-When you come across the fabled 32-bit versus 64-bit decision; it’s
-recommended that you choose a 64-bit plan as it will allow you to have more
-(4GB or higher) RAM than a 32-bit plan will. If you're not sure, or simply
-don’t care, choose what you fancy.
+当你需要决定使用64位系统还是32位系统的时候，我们推荐你使用64为系统，因为
+它能让你使用大于4G的内存。当然，如果不知道怎么选的话，你看哪个爽就选哪个
+吧。
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: 32-bit may be also displayed as x86, this isn't more!
+ **注意**: 32位和x86是一个意思，x86并不是68位！
 
-When choosing RAM amounts, it is HIGHLY recommended to run a Craftbukkit
-Server 1024MB (1GB) of RAM per 10 Player Slots. If your player slot amount is
-below 10, we recommend a 768MB plan at minimum. Due to Java's high memory
-consumption of the server and plugins you can (_and will_) never have enough
-RAM.
+在选择内存大小是，我们**强烈**建议你每增加10个玩家，就添加1024MB（1GB）的
+内存。如果你的玩家数量小于10个，我们建议你最少使用768MB的内存。由于Java对
+于服务端插件极高的内存消耗，你可能(_绝对_)不会有足够的内存。
 
-## Pricing
+## 价格
 
-Likewise, pricing is a huge issue for server admins because the money is
-coming out of your pocket! If you want to run a successful community: Have a
-lot of money to burn, or setup a donation system with rewards for members to
-entice continuous play on your server and to help pay for it. That being said,
-if you’re just starting out a small package should do you just fine. Don’t
-start big and go small! A large community of players always starts from a
-small one.
+就和上面的一样，价格对于服务器管理者来说也十分重要，因为它涉及到了管理员的钱。
+如果你想要建立一个成功的社群，你需要如下条件：有很多钱烧或者建立一套捐款体制。
+曾经有一句话这样说：“如果你从小型服务器开始，你的成果应该不差。不要从大型服务
+器开始然后越来越小！”请记住，一个大型的玩家社群通常是从小的社群发展出来的。
 
-# Section 2: The Community
+# 第 2 部分： 玩家社群
 
-Like the pricing and the specs of the machine, the community itself and who
-runs it is extremely crucial to your community’s success. If you run it “half-
-assed” and don’t really care to learn about or keep your users happy... you
-won’t do too well at all. Yes! Running a Minecraft server is a job! And if you
-can’t commit to it then you should exit your browser right now and go back to
-whatever it is you do.
+玩家社群的本身和运行它的人，同服务器的配置和价格一样，都对于你的社群的成功极其
+重要。如果你像一个混蛋一样运行着他，又不去关心玩家们真正能让玩家高兴的东西……你
+根本就不可能成功。对！开一个Minecraft服务器就应该像职业一样对待！如果你不能把自
+己的全心全力投入到这上面上来的话，我建议你立刻关闭你的浏览器并去做你刚刚在做的
+事情，什么都可以，请不要开服。
 
-This section will show you:
+这个部分将会告诉你：
 
-  * How to successfuly advertise your server
-  * As an Administrator, how you should act while with players
-  * Hire Moderators, know when to lay down the ban-hammer!
-  * Keep the community involved
-  * Choose correct plugins and abilities your players will love!
+  * 如何成功地宣传你的服务器
+  * 作为一名管理员，你应该如何与玩家相处？
+  * 招募管理员，并了解什么时候应该封禁玩家
+  * 让你的玩家社群真正地参与进服务器中
+  * 选择你真正需要的正确的插件！
 
-  * Planning in advance for things and dealing with unexpected events
-  * Somewhere to meet if the server is offline
-  * "It's your server but it's for the players"
+  * 为一些事情提前做出计划，并处理意外事件
+  * 你的服务器暂时关闭时你所需要做的事
+  * “这或许是你的服务器，但你的它是为玩家而生的”
 
 
 
-## As an administrator, how you should act with players.
+## 作为服务器管理员，你应该如何对待自己的玩家
 
-#### What you should do:
+#### 你应该怎样做
 
   * Be friendly and polite - be kind to your players, help them build something, maybe even protect their house from griefers.
   * Be able to answer questions - Know your plugins! No one likes a server admin who doesn't know how to use half of their plugins.
@@ -173,7 +167,7 @@ for you._
 
 
 
-## Appointing moderators
+## 招收管理员
 
 As your server expands in size, it will become more and more difficult for you
 to keep track of everyone's problems at the same time. You'll need to hire
@@ -182,7 +176,7 @@ moderators to help you out and keep server crime down to a low.
 There are two general ways that people hire moderators: applications and
 watching their players. Let's take a look at both.
 
-#### Application system:
+#### 申请系统
 
 Generally, this is used to see who is interested in becoming a moderator. You
 should have high standards and expectations.
@@ -235,7 +229,7 @@ Of course, this is still somewhat exploitable, as people can lie about their
 previous experience and how they'd help the community, but it is much more
 difficult to lie in this one than it is in the previous one.
 
-##### Reviewing
+##### 审核
 
 You should also review these applications and see who's more fit for the job.
 Do not make everyone who applied a moderator, that would defeat the purpose of
@@ -245,7 +239,7 @@ a lot of hassle later on.
 
 
 
-#### Watching your players
+#### 观察你的玩家
 
 This method is more favorable, as you can see people's real-time interaction
 with other players. Definitely spend some time watching those who are more
@@ -265,7 +259,7 @@ With that, you should be able to make wise choices with your staff!
 
   
 
-## The ban hammer of legend
+## 关于封禁
 
 An entire novel could be written about the ban hammer. This simple tool has
 the power to remove anyone you want from the server indefinitely. That's why
@@ -281,7 +275,7 @@ There's a few parts to this:
 
   
 
-#### Responsible banning and how irresponsible banning is bad for the community
+#### 什么是对玩家负责任的封禁。不负责任的封禁对玩家社群有什么影响？
 
 As has been mentioned, the ban hammer is a very powerful tool. That's why it's
 important to exercise caution and use it only when necessary.
@@ -295,7 +289,7 @@ server. That will also cause you to lose a lot of players.
 
   
 
-#### Lenience and sternness
+#### 仁慈和严厉
 
 It is important to let your players know the limits of what they can do on
 your server. This means telling them that, "Yes, you will be banned if you
@@ -306,7 +300,7 @@ wouldn't get them banned. No one likes a two-faced server admin.
 
   
 
-#### Global bans - responsibility
+#### 全局封禁 - 你的志高责任
 
 Global ban services are used to keep track of a player's bans across multiple
 servers and warn other servers about bad players. With that said, it is
@@ -318,7 +312,7 @@ global ban services may review your server. Remember to read your global ban
 service's banning guideline to make sure you don't get in trouble with the
 service.
 
-## Keeping your community involved
+## 让你的玩家社群真正参与进服务器中
 
 In order for your server's community to grow, you will always have to keep you
 and the players active within it.
@@ -359,7 +353,7 @@ no longer want to play because of the players who have too much power. MAke
 sure that the videos and posts are good about the server, anything bad can put
 the wrong image into a new players mind.
 
-## Choosing the correct plugins
+## 选择你真正所需的插件
 
 This is very important for a successful server. Choosing the right plugins
 keeps the gameplay fresh, fun, and original - three things your server needs
@@ -379,7 +373,7 @@ everyone an op or something dangerous.
 
   
 
-#### Development
+#### 开发插件
 
 Can't find that plugin you want really badly? You can either ask someone to
 develop it for you or develop it yourself. It takes a lot of practice to
@@ -389,7 +383,7 @@ server while adding some knowledge to your own brain.
 
   
 
-## Scheduling
+## 日程编排
 
 Scheduling is an important part of running a successful Minecraft server. You
 should always keep your players notified of upcoming updates. Of course, you
@@ -401,7 +395,7 @@ schedule changes so players can know when they'll need to do something else.
 
   
 
-## Preparing for the unexpected
+## 做好最坏的准备
 
 Face it, you won't always have time to run your server. You'll have
 school/work, and other things will arise that keep you from having fun on your
@@ -413,7 +407,7 @@ working on the issue.
 
   
 
-## Somewhere to meet when the server is offline
+## 当你的服务器暂时关闭的时候
 
 You should have somewhere to talk to your players when the server is offline.
 In most cases, this will be a website or a forum where you can quickly inform
@@ -428,7 +422,7 @@ by a crappy, ad-infested website.
 
   
 
-## "It might be your server but it was made for them"
+## “这或许是你的服务器，但它是为玩家而生的”
 
 This is very, very, VERY important. This basically sums up this entire
 section. You made the server for its players, not for yourself. You spend time
@@ -460,7 +454,7 @@ This section will show you:
   * How to update your plugins 
   * Updating your server/Recommended Builds 
 
-## Help! Minecraft Updated!
+## 救命！Minecraft升级了！
 
 It’s that time again! Craftbukkit is updating and so are your plugins!
 Unfortunately this means that most of the time updating your server will not
@@ -488,7 +482,7 @@ ability to subscribe to alerts by email when your plugins are updated
 Fifth: <http://wiki.bukkit.org/> always has a counter for the current
 Craftbukkit build and tons of tutorials on how to run servers.
 
-## Are my plugins updated? How can I tell?
+## 我的插件升级了吗？我怎么判断呢？
 
   
 Normally, you can’t tell what version your plugin or server is... without a
@@ -504,7 +498,7 @@ date. These resources however are not a full replacement for doing the
 research on your own as blindly updating can often cause more trouble than it
 saves.  
 
-## Updating your plugins
+## 升级你的插件
 
   
 To update your plugins, simply stop your server, delete the Jar file, and
@@ -513,7 +507,7 @@ displayed on the plugin’s forum post) says there is a change in the config
 files, make the appropriate changes before finishing and restarting your
 server.
 
-## Asking Others
+## 向别人问问题
 
   
 People who have already been there done that are extremely valuable resources
