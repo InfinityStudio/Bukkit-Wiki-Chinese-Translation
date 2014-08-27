@@ -30,7 +30,7 @@
     * 2.6 日程编排
     * 2.7 做好最坏的准备
     * 2.8 当你的服务器暂时关闭的时候
-    * 2.9 “这或许是你的服务器，但你的它是为玩家而生的”
+    * 2.9 “这或许是你的服务器，但它是为玩家而生的”
   * 3 第 3 部分: 服务器运维
     * 3.1 救命！Minecraft升级了！
     * 3.2 我的插件升级了吗？我怎么判断呢？
@@ -122,7 +122,7 @@ Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之
 
   * 为一些事情提前做出计划，并处理意外事件
   * 你的服务器暂时关闭时你所需要做的事
-  * “这或许是你的服务器，但你的它是为玩家而生的”
+  * “这或许是你的服务器，但它是为玩家而生的”
 
 
 
@@ -130,86 +130,69 @@ Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之
 
 #### 你应该怎样做
 
-  * Be friendly and polite - be kind to your players, help them build something, maybe even protect their house from griefers.
-  * Be able to answer questions - Know your plugins! No one likes a server admin who doesn't know how to use half of their plugins.
-  * Be able to tolerate insults - One thing that many admins will do is rage quit when a "butthurt jerk" insults all of their work. So what if someone insults you? Ban them, and move on!
+  * 友好并且有礼貌 - 对你的玩家友好一些，帮他们建点东西，甚至是在他们的房子被破坏者入侵的时候保护他们。
+  * 能够回答玩家的问题 - 你需要了解你的插件！没有人会喜欢对自己的插件半知半解的管理员！
+  * 能够承受侮辱 - 有一些熊孩子的辱骂有时候会导致很多管理员愤怒至极。如果有些人侮辱了你，封禁他们，然后继续做你应该做的事儿。
 
-
-
-_Don't be a jerk just because you have all permissions - No one likes a server
-owner that griefs their players and then makes them donate for a rollback.
-People will hate you, and they will tell other people - and that is very bad
-for you._
+_哪怕你拥有全部的权限，但也不要在你自己的服务器里面做一些很混球的事情 - 没有人会
+喜欢一个在破坏完他们的房子之后，又逼着他们捐钱回档的服主。玩家会恨死你的，他们还会
+告诉其他的人 - 而这对你来说很不好。_
 
 
 
 ## 招收管理员
 
-As your server expands in size, it will become more and more difficult for you
-to keep track of everyone's problems at the same time. You'll need to hire
-moderators to help you out and keep server crime down to a low.
+在你的服务器迅速扩张的同时，追踪每个玩家的不当行为会变得越来越难。在那时，你需要
+招收一些管理员来帮助你降低犯罪率。
 
-There are two general ways that people hire moderators: applications and
-watching their players. Let's take a look at both.
+基本上讲，有两种招收管理员的方式：玩家申请和观察现有玩家。那我们来看看这两种方法。
 
 #### 申请系统
 
-Generally, this is used to see who is interested in becoming a moderator. You
-should have high standards and expectations.
+一般来说，这个系统是用来观察谁有成为管理员的意愿的。你应该以高标准审核他们。
 
-Some things to look for:
+你需要观察的几个方面：
 
-  * Is the player active?
-  * Is the player friendly towards other players?
-  * Has the player followed the rules so far?
-  * Is the player mature?
+  * 这个玩家活跃嘛？
+  * 这个玩家对其他的玩家友好嘛？
+  * 这个玩家有没有触犯过服务器规则？
+  * 这个玩家的心理成熟嘛？
 
-
-
-These are some of the criteria to look for. Now, you should look at the
-application form itself. This should require a lot of detail and not be
-something stupid like this:
+以上是你招收管理的一些标准。现在你应该注意一下申请表本身了。申请表应该
+能够包含很多信息，而不是像下面这样简单：
 
 
+    姓名：
 
-    Name:
+    年龄：
 
-    Age:
+    你为什么想当管理：
 
-
-    Why you want it:
-
-With forms like this, it is extremely easy for someone to lie their way into a
-staff position.
+如果你用这种表格来审核管理员，那么其他人混进服务器管理员就十分简单了
 
 
+你应该用更详细的申请表
 
-You should use something more detailed like this:
+    姓名：
 
+    年龄：
 
+    之前的管理经验：
 
-    Name:
+    联系方式：
 
-    Age:
-
-    Previous experience:
-
-    Contact method:
-
-    How will you contribute to the community:
+    你会如何对玩家社群做出贡献：
 
 
-
-
-Of course, this is still somewhat exploitable, as people can lie about their
-previous experience and how they'd help the community, but it is much more
-difficult to lie in this one than it is in the previous one.
+当然，毕竟人们可以撒谎，所以这中申请表仍然会有些漏洞。但是使用这种申请表能够
+让尝试混进来的人更加少。
 
 ##### 审核
 
+你还应该审核这些申请表来判断谁更适合这些职位。
 You should also review these applications and see who's more fit for the job.
 Do not make everyone who applied a moderator, that would defeat the purpose of
-applications. Check their sources. If they say that they've been mods on
+applications. Check their sources. If they say that they've been mods on 
 previous servers, PM them asking for the IP and **cross-check! **It saves you
 a lot of hassle later on.
 
