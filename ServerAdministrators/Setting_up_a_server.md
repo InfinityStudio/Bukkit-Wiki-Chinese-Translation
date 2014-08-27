@@ -1,6 +1,6 @@
-#  Setting up a server
+# 如何建立一个CraftBukkit服务器
 
-## Contents
+## 目录
 
   * 1 [预备工作](#预备工作)
   * 2 [Windows系统](#Windows系统)
@@ -36,7 +36,7 @@
 
    如果你看到 "'Java' is not recognized as an internal or external command, operable program or batch file." 这说明你需要安装Java。如果正常安装之后依然不奏效的话，请参阅 [添加Java环境变量] (http：//www.java.com/en/download/help/path.xml) 来添加Java的环境变量。
 
-##  Linux
+##  Linux系统
 
    1. 首先从这个链接下载最新的稳定版本： [CraftBukkit - Recommended Build](http：//dl.bukkit.org/latest-rb/craftbukkit.jar)
    2. 将下载的jar文件放在一个文件夹中，在这个例子中我们以_~/craftbukkit_路径作为示例。
@@ -60,7 +60,7 @@
 
    如果你想使用screen指令来运行服务器，请参阅 [ABM](http：//dev.bukkit.org/server-mods/ascii-bukkit-menu/)
 
-##  Mac OS X
+##  Mac OS X系统
 
   1. Install Java
 
