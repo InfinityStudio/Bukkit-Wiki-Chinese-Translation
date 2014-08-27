@@ -26,8 +26,8 @@
    3. 使用文本编辑器新建一个文本文件并输入：
 
 
-    java -Xmx1024M -jar craftbukkit.jar -o true
-    PAUSE
+    	java -Xmx1024M -jar craftbukkit.jar -o true
+    	PAUSE
 
 
    4. 将文本文件保存为run.bat（注意！请不要保存为txt后缀）然后将保存好的文件拷贝到你选定的服务端文件夹中 **注意**：如果使用的是默认的windows记事本的话，文件可能会被保存为run.bat.txt。请在保存完毕后务必保证文件名称是run.bat。
