@@ -464,10 +464,4 @@ saves.
 
 ## 向别人问问题
 
-  
-People who have already been there done that are extremely valuable resources
-for you to use. Never EVER be afraid to ask others for help! Most of the time
-ex-server admins or current server admins will try to assist you as much as
-they know, or try to refer you to someone who does know. If you don't know
-anyone, the [Bukkit IRC Channel](/IRC) is a plethora of Admins, Plugin
-Developers, and other people who know how to do what you may not!
+那些已经成功开服的人的经验是你宝贵的资源。请不要畏惧向他人请教！大部分曾经担任服主或者正在担任服主的人都会尽可能的帮助你，或者向你推荐一些可以为你提供帮助的人。如果你认为没有任何认识的人了解相关的知识，那么请使用Bukkit IRC Channel。在IRC上有大量的服主，插件开发者和其他精通Bukkit的人乐于为你提供帮助。
