@@ -200,53 +200,27 @@ a lot of hassle later on.
 
 #### 观察你的玩家
 
-This method is more favorable, as you can see people's real-time interaction
-with other players. Definitely spend some time watching those who are more
-active. Look at their chat logs in server.log (found in your server folder) or
-use an invisibility plugin to watch them as they're unaware of your presence.
-One thing you should not do at any cost is **tell them that you're considering
-them**! This will alert them and they will most likely change their behavior
-patterns to satisfy you - then destroy all of your work in one keystroke.
-Again, you should search for friendly, active, and helpful players.
+这是一个非常常用的方法，观察在你服务器中的玩家正常活动和他们如何与其他玩家互动。特别关注那些特别活跃的玩家，查看他们的聊天记录和日志（你可以在服务器文件夹找到）或者使用隐身插件在他们毫无意识的情况下观察他们。请万万不要告诉他们**我在关注你！**，这将导致他们改变自己的行事准则从而让你满意，从而轻而易举的毁掉所有的先期工作。重复一遍！你需要寻找那些活跃、友好而且对于你非常有用的玩家去关注。
 
+**不要直接给任何人OP权限** 这一点无论如何强调都不过分！千万不要给你的新OP所有的权限。在你明确的确认他们有能力胜任OP这份工作前任何过分的权限都绝对不是一个好主意。这就是为什么通常你最好能在保证OP的基础权限基础上将权限拆分为几个等级而且不是一股脑的给予。
 
-**Don't op them straight away** This cannot be stressed enough. DO NOT give your new staff all permissions straight away. This is a very bad idea and you should always test the new staff members to see if they're capable of being responsible. This is why it's usually best to have a "sub-mod" rank that doesn't have as many permissions as the "full mod" rank, but still has basic staff capabilities. 
-
-  
-
-With that, you should be able to make wise choices with your staff!
-
-  
+综上所述，请明智的选择你的OP！
 
 ## 关于封禁
 
-An entire novel could be written about the ban hammer. This simple tool has
-the power to remove anyone you want from the server indefinitely. That's why
-it's important to understand the basics of banning.
+关于封禁的使用甚至可以写一本小说。这个简单的工具可以永久的将任何你不想看到的人从服务器中抹杀。这也是了解为什么封禁如此重要的原因。  
 
-  
+这一部分将分为几个小章节:
 
-There's a few parts to this:
-
-  * Responsible banning and how it will affect your community 
-  * Lenience and sternness 
-  * Global bans 
-
-  
+  * 什么是对玩家负责任的封禁。不负责任的封禁对玩家社群有什么影响？
+  * 仁慈和严厉
+  * 全局封禁 - 你的志高责任 
 
 #### 什么是对玩家负责任的封禁。不负责任的封禁对玩家社群有什么影响？
 
-As has been mentioned, the ban hammer is a very powerful tool. That's why it's
-important to exercise caution and use it only when necessary.
+正如前面所说，封禁是一个非常强力的工具。请务必明白其严重性并且在足够必要的情况下再去使用它。
 
-You should NEVER ban someone just cause they're getting on your nerves. As a
-starting server, you don't want to intimidate your players into leaving.
-Admins who ban for "sh*ts and giggles" will lose a lot of players. On the
-other side, you shouldn't be overly lenient. You shouldn't let a guy who's
-built offensive things out of blocks he stole from other players stay on your
-server. That will also cause you to lose a lot of players.
-
-  
+不要封禁那些仅仅令你神经紧张的人，你开服的目的可不是吓跑所有的玩家。如果你仅仅因为一些鸡毛蒜皮的小事就封禁某个玩家会导致玩家大量的流失。反之，你也不能过分的仁慈。你不能让一个建造了过分的建筑或者从其他玩家那里偷窃的玩家大摇大摆待在你的服务器里。这同样会导致玩家离开你的服务器。  
 
 #### 仁慈和严厉
 
@@ -445,11 +419,7 @@ Craftbukkit build and tons of tutorials on how to run servers.
 
 通常情况下，不仔细找寻一番是很难判断出你到底正在使用哪个版本。请打开你的插件控制台然后键入_/version_，马上你就可以找到你的CraftBukkit版本。将其与当前稳定的版本号相对比，你可以判断出来当前运行的版本是不是最新的稳定版本。此外，键入_/version [pluginName]_也可以很快的找到某一个正在运行的插件的版本。 
 
-There are also plugins that can be used as a guiding resource that an admin
-can use as a helping hand to keep plugins as well as CraftBukkit itself up to
-date. These resources however are not a full replacement for doing the
-research on your own as blindly updating can often cause more trouble than it
-saves.  
+有一些插件可以帮助服主令插件甚至是CraftBukkit本身保持最新版本。不过这些插件有的时候不做完全搜索就执行盲目的升级可能导致更大的麻烦。
 
 ## 升级你的插件
 
