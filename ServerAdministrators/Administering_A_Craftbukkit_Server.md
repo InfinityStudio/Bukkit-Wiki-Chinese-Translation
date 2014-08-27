@@ -443,14 +443,8 @@ Craftbukkit build and tons of tutorials on how to run servers.
 
 ## 我的插件升级了吗？我怎么判断呢？
 
-  
-Normally, you can’t tell what version your plugin or server is... without a
-little searching, that is! If you log in to your server and type /version you
-can immediately find out what version is your Craftbukkit server and
-immediately compare it to the Recommended Build. Additionally, /version
-[pluginName] can tell you the version of your Plugin and the Recommended Build
-it was Built for.  
-  
+通常情况下，不仔细找寻一番是很难判断出你到底正在使用哪个版本。请打开你的插件控制台然后键入_/version_，马上你就可以找到你的CraftBukkit版本。将其与当前稳定的版本号相对比，你可以判断出来当前运行的版本是不是最新的稳定版本。此外，键入_/version [pluginName]_也可以很快的找到某一个正在运行的插件的版本。 
+
 There are also plugins that can be used as a guiding resource that an admin
 can use as a helping hand to keep plugins as well as CraftBukkit itself up to
 date. These resources however are not a full replacement for doing the
