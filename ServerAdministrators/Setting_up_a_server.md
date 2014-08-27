@@ -44,11 +44,10 @@
    4. 在当前目录中创建一个名为_craftbukkit.sh_的文件。在大部分Linux系统中你可以使用_touch craftbukkit.sh_来创建。
    5. 使用_nano craftbukkit.sh_打开刚刚建立的文件，黏贴下面的内容后保存：
 
-
-	#!/bin/sh
-	BINDIR=$(dirname "$(readlink -fn "$0")")
-	cd "$BINDIR"
-	java -Xmx1024M -jar craftbukkit.jar -o true
+		#!/bin/sh
+		BINDIR=$(dirname "$(readlink -fn "$0")")
+		cd "$BINDIR"
+		java -Xmx1024M -jar craftbukkit.jar -o true
 
 
    6. 为了赋予文件执行的权限，请键入这个指令_chmod +x ~/craftbukkit/craftbukkit.sh_。
