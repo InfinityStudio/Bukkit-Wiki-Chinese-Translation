@@ -501,11 +501,7 @@ saves.
 ## 升级你的插件
 
   
-To update your plugins, simply stop your server, delete the Jar file, and
-replace it with the new one. If the changelog for the plugin (usually
-displayed on the plugin’s forum post) says there is a change in the config
-files, make the appropriate changes before finishing and restarting your
-server.
+如果你希望升级服务器插件，首先请关停服务器，删除老版本插件并将新的放入。如果你发现Changelog表示新的版本在Config文件上有变化，那么请对应合适的改动。通常这个过程会伴随着插件的升级自动完成，但很少情况下需要我们手动的更改。
 
 ## 向别人问问题
 
