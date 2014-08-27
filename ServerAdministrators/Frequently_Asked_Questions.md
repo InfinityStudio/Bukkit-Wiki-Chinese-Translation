@@ -44,8 +44,7 @@ From [dl.bukkit.org](http://dl.bukkit.org) you can also access beta and
 development builds by clicking the Alternate Versions link or at [www.dl.bukki
 t.org/downloads/craftbukkit/](http://dl.bukkit.org/downloads/craftbukkit/)
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=4)] What is the
-difference between the Recommended, Beta, and Development builds?
+#### What is the difference between the Recommended, Beta, and Development builds?
 
 A recommended build has met our highest requirements and testing for release
 and we believe it to be bug-free. A beta build is considered stable but has
@@ -56,8 +55,7 @@ post](http://forums.bukkit.org/threads/reminder-bukkit-is-following-a-new-
 release-system.65358/) by EvilSeph for more information on the difference
 between beta and recommended builds.
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=5)] Where do I find
-plugins? or How do I add features to my server?
+#### Where do I find plugins? or How do I add features to my server?
 
 Plugins can be installed to add new, interesting features to your CraftBukkit
 powered server. Generally, you just need to find a plugin and add it to your
@@ -70,8 +68,7 @@ and supported which can be found by using our [Plugin
 List](http://plugins.bukkit.org) Or [Bukkit Dev](http://dev.bukkit.org/server-
 mods).
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=6)] I made a plugin.
-Where do I submit it?
+#### I made a plugin. Where do I submit it?
 
 Create a project page for your plugin at [BukkitDev](http://dev.bukkit.org/),
 the community plugin resource site. The system is managed by the BukkitDev
@@ -79,14 +76,12 @@ Staff. See the [Project Submission
 Guidelines](/BukkitDev:Project_Submission_Guidelines) for information on what
 you should do when submitting.
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=7)] How do I get Bukkit
-source code?
+#### How do I get Bukkit source code?
 
 The source code can be found [here](https://github.com/Bukkit/). You will need
 [Maven3](http://maven.apache.org/) to build Bukkit.
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=8)] How do I rename a
-command?
+#### How do I rename a command?
 
 Commands can be renamed by creating aliases in the file bukkit.yml or
 commands.yml
@@ -94,7 +89,6 @@ commands.yml
 Have a look at [Commands.yml](/Commands.yml) for instructions on how to do
 this.
 
-#### [[edit](/index.php?title=FAQ&action=edit&section=9)] How do I customize
-my server's help pages?
+#### How do I customize my server's help pages?
 
 Help can be customized by editing the [Help.yml](/Help.yml) file.
