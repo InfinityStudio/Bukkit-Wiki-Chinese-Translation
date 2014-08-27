@@ -17,25 +17,24 @@
 
 **注意**：当你第一次启动服务器的时候你会看到ERROR字样的提示。请不要担心，这是服务器发现有一些文件不存在而建立它们。
 
-**注意**：Bukkit服务端旨在_完全替代_你从Minecraft.com下载的官方服务器的全部功能。基本上Bukkit服务端和官方服务端无法同时运行在一台电脑上。不过你可以将以前使用官方服务端时生成的所有数据包括world或者其他的配置文件全部拷贝到Bukkit的文件夹中从而继续使用以前的游戏。 
+**注意**：Bukkit服务端旨在_完全替代_你从Minecraft.com下载的官方服务器的全部功能。基本上Bukkit服务端和官方服务端无法同时运行在一台电脑上。不过你可以将以前使用官方服务端时生成的所有数据包括world或者其他的配置文件全部拷贝到Bukkit的文件夹中从而继续使用以前的游戏。它们是完全兼容的。 
 
 ##  Windows系统
 
-    1\. Download CraftBukkit's latest recommended build： [CraftBukkit - Recommended Build](http：//dl.bukkit.org/latest-rb/craftbukkit.jar)
-    2\. Put the .jar file in the directory you'd like the server to run from 
-    3\. Open a text editor such as Notepad and type： 
+   1. 首先从这个链接下载最新的稳定版本：[CraftBukkit - Recommended Build](http：//dl.bukkit.org/latest-rb/craftbukkit.jar)
+   2. 选择一个你想作为服务端的文件夹，将下载的jar文件放入这个文件夹。
+   3. 使用文本编辑器新建一个文本文件并输入： 
     
     
     java -Xmx1024M -jar craftbukkit.jar -o true
     PAUSE
     
 
-    4\. Save the document as run.bat (not as a .txt) in the same directory as craftbukkit.jar. 
-    ![Lightbulb.png](http：//hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**： With some programs such as Notepad, it may try saving as run.bat.txt. When saving to a file name, put the name in quotes： "run.bat" 
-    5\. Double click run.bat and you're away! 
-    6\. To shut down, issue the "stop" command in console. 
+   4. 将文本文件保存为run.bat（注意！请不要保存为txt后缀）然后将保存好的文件拷贝到你选定的服务端文件夹中 **注意**：如果使用的是默认的windows记事本的话，文件可能会被保存为run.bat.txt。请在保存完毕后务必保证文件名称是run.bat。
+   5. 双击run.bat后你会看到一个黑色的控制台! 
+   6. 在所有文件生成完成后你可以在控制台中看到Done的字样，这时请键入stop来停止服务器。
 
-     If you see "'Java' is not recognized as an internal or external command, operable program or batch file." then you need to reinstall Java. Still get this error? Follow this [guide](http：//www.java.com/en/download/help/path.xml) to adding Java to your system path. 
+   如果你看到 "'Java' is not recognized as an internal or external command, operable program or batch file." 这说明你需要安装Java。如果正常安装之后依然不奏效的话，请参阅[guide](http：//www.java.com/en/download/help/path.xml) 来添加Java的环境变量。 
 
 ##  Linux
 
