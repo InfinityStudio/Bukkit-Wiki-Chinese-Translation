@@ -55,62 +55,37 @@
 
 ## Bukkit项目
 
-Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之一。但实际上，Bukkit是一个独立的项目，它的目的是在为运行它的人提供方便和简洁的环境的情况下，像任何其他的Mod一样来改进Minecraft。一般来说，只会发布一种版本的修改，但是Bukkit项目发布了两种版本：第一种称之为Bukkit，它和这个项目同名，它是作为“原版”服务器的API来使用的。一般情况下，服主们 **不会** 使用Bukkit，因为它只是Bukkit项目的一个API（创建插件的平台）。Craftbukkit则是经过封装的Bukkit的jar，设计为为服主提供简单易用的运行环境，和对Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开服的，而不是为开发者提供的环境。
+Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之一。但实际上，Bukkit是一个独立的项目，它的目的是在为运行它的人提供方便和简洁的环境的情况下，像任何其他的Mod一样来改进Minecraft。一般来说，只会发布一种版本的修改，但是Bukki项目发布了两种版本：第一种称之为Bukkit，它和这个项目同名，它是作为“原版”服务器的API来使用的。一般情况下，服主们 **不会**使用Bukkit，因为它只是Bukkit项目的一个API（创建插件的平台）。Craftbukkit则是经过封装的Bukkit的jar，设计为为服主提供简单易用的运行环境，和对Minecraft服务器支持。这个教程中的Craftbukkit是提供给服主们开服的，而不是为开发者提供的环。
 
 ## 租用服务器的套餐
 
-目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS,
- 独立机等）
+目前市面上有两种主要的服务器租用套餐：按人数计的套餐和自由的硬件平台（VDS, VPS, 独立机等）
 
-**按人数计的套餐** 你会被授予网络后台（如Multicraft）和FTP（或者类似的东西）。这些东西
-通常都对用户很友好。但是这些套餐有的时候限制会过多，并且无法使用特定的软件
+**按人数计的套餐** 你会被授予网络后台（如Multicraft）和FTP（或者类似的东西）。这些东西通常都对用户很友好。但是这些套餐有的时候限制会过多，并且无法使用特定的软件
 
-**自由的硬件平台** 从基本上来讲，这些设备是在数据中心之中的一台电脑，它拥有网络连接和一个
-操作系统。VDS、VPS和独立机都是这种种类的机器。你拥有这台服务器的完全控制权，你可以在你的
-出租商的服务条款的允许范围内做任何事情。几乎大多数人都喜欢这种租用方式，因为这种租用方式
-能够给你服务器的完全控制，包括他里面运行了什么、存储着什么。当然，你也失去了那些网络后台
-能够基于你的方便，除非你自己安装一个。总而言之，由于这种方式没有太多的限制，所以本教程认
-为这种方式是最好的部署服务器的方式。[请注意：你的独立机必须开启25565端口(Minecraft使用的端口)]。
-当然，你也可以使用[SRV记录](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_)
-这篇教程可以使用在这两种开服方式之中。
+**自由的硬件平台** 从基本上来讲，这些设备是在数据中心之中的一台电脑，它拥有网络连接和一个操作系统。VDS、VPS和独立机都是这种种类的机器。你拥有这台服务器的完全控制权，你可以在你的出租商的服务条款的允许范围内做任何事情。几乎大多数人都喜欢这种租用方式，因为这种租用方式能够给你服务器的完全控制，包括他里面运行了什么、存储着什么。当然，你也失去了那些网络后台能够基于你的方便，除非你自己安装一个。总而言之，由于这种方式没有太多的限制，所以本教程认为这种方式是最好的部署服务器的方式。[请注意：你的独立机必须开启25565端口(Minecraft使用的端口)]。当然，你也可以使用[SRV记录](http://www.reddit.com/r/admincraft/comments/16cac2/srv_records_tutorial_revisited/)_)这篇教程可以使用在这两种开服方式之中。
 
 ## CraftBukkit 还是 Bukkit？
 
-前文已解释过，Craftbukkit是Minecraft服务器的插件服务端。相对来说，Bukkit只是
-提供给开发者开发插件的API。因为Bukkit是提供给开发者的API，故这篇教程仅会针对Craftbukkit
+前文已解释过，Craftbukkit是Minecraft服务器的插件服务端。相对来说，Bukkit只是提供给开发者开发插件的API。因为Bukkit是提供给开发者的API，故这篇教程仅会针对Craftbukkit
 
 ## 选择你的操作系统，存储设备大小和内存大小
 
-阅读这篇教程将会帮助你学会运行一个Craftbukkit服务端。这里有几个关于选择租用套
-餐的小提示。首先：由于Linux和它的衍生物对于Craftbukkit的插件兼容性更好，所以
-使用Linux系统的套餐是更好的（译者注：使用Linux系统请务必注意将所有设定转化
-为**UTF-8**编码）。话虽如此，如果你不会用Linux，你可以使用Windows，因为它有更
-好的GUI支持，易用性好。
+阅读这篇教程将会帮助你学会运行一个Craftbukkit服务端。这里有几个关于选择租用套餐的小提示。首先：由于Linux和它的衍生物对于Craftbukkit的插件兼容性更好，所以使用Linux系统的套餐是更好的（译者注：使用Linux系统请务必注意将所有设定转化为**UTF-8**编码）。话虽如此，如果你不会用Linux，你可以使用Windows，因为它有更好的GUI支持，易用性好。
 
-当你需要决定使用64位系统还是32位系统的时候，我们推荐你使用64为系统，因为
-它能让你使用大于4G的内存。当然，如果不知道怎么选的话，你看哪个爽就选哪个
-吧。
+当你需要决定使用64位系统还是32位系统的时候，我们推荐你使用64为系统，因为它能让你使用大于4G的内存。当然，如果不知道怎么选的话，你看哪个爽就选哪个吧。
 
  **注意**: 32位和x86是一个意思，x86并不是68位！
 
-在选择内存大小是，我们**强烈**建议你每增加10个玩家，就添加1024MB（1GB）的
-内存。如果你的玩家数量小于10个，我们建议你最少使用768MB的内存。由于Java对
-于服务端插件极高的内存消耗，你可能(_绝对_)不会有足够的内存。
+在选择内存大小是，我们**强烈**建议你每增加10个玩家，就添加1024MB（1GB）的内存。如果你的玩家数量小于10个，我们建议你最少使用768MB的内存。由于Java对于服务端插件极高的内存消耗，你可能(_绝对_)不会有足够的内存。
 
 ## 价格
 
-就和上面的一样，价格对于服务器管理者来说也十分重要，因为它涉及到了管理员的钱。
-如果你想要建立一个成功的社群，你需要如下条件：有很多钱烧或者建立一套捐款体制。
-曾经有一句话这样说：“如果你从小型服务器开始，你的成果应该不差。不要从大型服务
-器开始然后越来越小！”请记住，一个大型的玩家社群通常是从小的社群发展出来的。
+就和上面的一样，价格对于服务器管理者来说也十分重要，因为它涉及到了管理员的钱。如果你想要建立一个成功的社群，你需要如下条件：有很多钱烧或者建立一套捐款体制。曾经有一句话这样说：“如果你从小型服务器开始，你的成果应该不差。不要从大型服务器开始然后越来越小！”请记住，一个大型的玩家社群通常是从小的社群发展出来的。
 
 # 第 2 部分： 玩家社群
 
-玩家社群的本身和运行它的人，同服务器的配置和价格一样，都对于你的社群的成功极其
-重要。如果你像一个混蛋一样运行着他，又不去关心玩家们真正能让玩家高兴的东西……你
-根本就不可能成功。对！开一个Minecraft服务器就应该像职业一样对待！如果你不能把自
-己的全心全力投入到这上面上来的话，我建议你立刻关闭你的浏览器并去做你刚刚在做的
-事情，什么都可以，请不要开服。
+玩家社群的本身和运行它的人，同服务器的配置和价格一样，都对于你的社群的成功极其重要。如果你像一个混蛋一样运行着他，又不去关心玩家们真正能让玩家高兴的东西……你根本就不可能成功。对！开一个Minecraft服务器就应该像职业一样对待！如果你不能把自己的全心全力投入到这上面上来的话，我建议你立刻关闭你的浏览器并去做你刚刚在做的事情，什么都可以，请不要开服。
 
 这个部分将会告诉你：
 
@@ -134,16 +109,13 @@ Bukkit项目看上去是由Hey0启动的Hey0服务端模组的一个成功者之
   * 能够回答玩家的问题 - 你需要了解你的插件！没有人会喜欢对自己的插件半知半解的管理员！
   * 能够承受侮辱 - 有一些熊孩子的辱骂有时候会导致很多管理员愤怒至极。如果有些人侮辱了你，封禁他们，然后继续做你应该做的事儿。
 
-_哪怕你拥有全部的权限，但也不要在你自己的服务器里面做一些很混球的事情 - 没有人会
-喜欢一个在破坏完他们的房子之后，又逼着他们捐钱回档的服主。玩家会恨死你的，他们还会
-告诉其他的人 - 而这对你来说很不好。_
+_哪怕你拥有全部的权限，但也不要在你自己的服务器里面做一些很混球的事情 - 没有人会喜欢一个在破坏完他们的房子之后，又逼着他们捐钱回档的服主。玩家会恨死你的，他们还会告诉其他的人 - 而这对你来说很不好。_
 
 
 
 ## 招收管理员
 
-在你的服务器迅速扩张的同时，追踪每个玩家的不当行为会变得越来越难。在那时，你需要
-招收一些管理员来帮助你降低犯罪率。
+在你的服务器迅速扩张的同时，追踪每个玩家的不当行为会变得越来越难。在那时，你需要招收一些管理员来帮助你降低犯罪率。
 
 基本上讲，有两种招收管理员的方式：玩家申请和观察现有玩家。那我们来看看这两种方法。
 
@@ -189,13 +161,7 @@ _哪怕你拥有全部的权限，但也不要在你自己的服务器里面做�
 
 ##### 审核
 
-你还应该审核这些申请表来判断谁更适合这些职位。
-You should also review these applications and see who's more fit for the job.
-Do not make everyone who applied a moderator, that would defeat the purpose of
-applications. Check their sources. If they say that they've been mods on 
-previous servers, PM them asking for the IP and **cross-check! **It saves you
-a lot of hassle later on.
-
+你还应该审核这些申请表来判断谁更适合这些职位。不要让每个申请了的人都当管理员，这样会破坏了申请的原本意义。看看他们是从哪里来的？如果他们说他们在之前的服务器当过管理员，私聊他们并询问他之前服务器的IP，并且**多次检查**。这样会让你之后的麻烦少很多
 
 
 #### 观察你的玩家
@@ -224,31 +190,16 @@ a lot of hassle later on.
 
 #### 仁慈和严厉
 
-It is important to let your players know the limits of what they can do on
-your server. This means telling them that, "Yes, you will be banned if you
-grief", or, "No, you don't get banned for caps". Stay true to what you tell
-them, too. Don't let someone off for griefing after you told them that they
-would be banned, and don't ban for caps if you told players that caps lock
-wouldn't get them banned. No one likes a two-faced server admin.
-
+让玩家明白服务器管理员们的底线和服务器的规定是很重要的一点。也就是说你需要告诉他们：“是的，如果你破坏别人的物品会被封禁”、“不，你不会因为用大写字符就被封禁”。如果你跟玩家说做某些事情并不会被封禁，那就千万不要封禁他们。没有人会喜欢当面一套背后一套的管理员。
   
 
 #### 全局封禁 - 你的志高责任
 
-Global ban services are used to keep track of a player's bans across multiple
-servers and warn other servers about bad players. With that said, it is
-important to be responsible with a global ban service. Don't global ban people
-for random reasons. Most global ban services have a local ban functionality.
-Even so, you should NOT local ban them for no reason. This will drive away a
-lot of players and that is bad for your server. Too many invalid bans and some
-global ban services may review your server. Remember to read your global ban
-service's banning guideline to make sure you don't get in trouble with the
-service.
+全局封禁是用于多服联结的服务。就和标题一样，对待全局封禁，你必须要负责人。不要因为一些很奇怪的原因去封禁玩家。大多数全局封禁服务器都有一些本地的封禁系统，但这并不代表你能够随便封禁人，你应该按照你自己定下的服规来执行封禁，如果随便封禁人的话，会流失许多玩家。一个服务器管理层的素质能够表现出你的服务器的整体素质。记得一定要阅读好你的全局封禁的说明，以便不遇到太多的麻烦。
 
 ## 让你的玩家社群真正参与进服务器中
 
-In order for your server's community to grow, you will always have to keep you
-and the players active within it.
+为了让你的服务器的社群持续成长，你应该让你的玩家一直活跃。
 
 Drop parties are known to attract players and can be good for the community.
 With those you can attract players and give out free items. In a drop party do
