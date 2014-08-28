@@ -273,6 +273,7 @@ server while adding some knowledge to your own brain.
 
 ## 日程编排
 
+日程编排是运营一个成功服务器的关键因素。
 Scheduling is an important part of running a successful Minecraft server. You
 should always keep your players notified of upcoming updates. Of course, you
 can't really schedule a Minecraft update, but you should definitely schedule
@@ -285,42 +286,21 @@ schedule changes so players can know when they'll need to do something else.
 
 ## 做好最坏的准备
 
-Face it, you won't always have time to run your server. You'll have
-school/work, and other things will arise that keep you from having fun on your
-server. But these things happen, and they're nothing to be afraid of! You will
-always find SOME free time to run your server and build that giant mansion
-you've always dreamed of. You should always tell your players when you'll be
-gone for a long time. If an error occurs, tell your players that you're
-working on the issue.
-
-  
+面对现实吧！你不可能永远有时间来运营你的服务器。你肯定会有工作或者学习挤压你的时间，也许有一天你发现你无法从运营服务器上获得快乐。不过当这些发生的时候，请不要畏惧！你总能抽出一点空余时间来运行服务器，和朋友们一同建造梦想中的大宅子。不过当你想离开，请务必告诉你服务器的玩家，也许发生了一些问题，也许你的时间需要花在工作上。
 
 ## 当你的服务器暂时关闭的时候
 
-You should have somewhere to talk to your players when the server is offline.
-In most cases, this will be a website or a forum where you can quickly inform
-your players of upcoming downtime and other changes happening. Websites make a
-great place to hang out and talk to other players.
+当服务器离线的时候你必须明确的和玩家说明。大部分情况下，你需要一个论坛或者网站来快速发布服务器离线信息或者其他信息。论坛可以为与玩家交流建立很好的平台。
 
-  
-
-Speaking of websites... don't make your server website look ugly. A lot of
-people might actually google your server by accident and then be driven away
-by a crappy, ad-infested website.
-
-  
+说到网站——尽可能让你的网站保持美观。很多的人会偶然谷歌到你的服务器地址，不过一个不但界面丑陋而且充斥着广告的主页可没法让玩家产生兴趣。
 
 ## “这或许是你的服务器，但它是为玩家而生的”
 
-This is very, very, VERY important. This basically sums up this entire
-section. You made the server for its players, not for yourself. You spend time
-helping players, they spend time making houses. You spend money paying for a
-server, they repay you with hours of entertainment. They are who you made this
-server for, not yourself:
+这一点非常非常的重要！你可以理解为这是整章的总结。你建立服务器是为了玩家能够快乐的玩耍而不是仅仅为了你自己！你花费时间帮助那些玩家，让他们能够建造房屋；你花费金钱租赁服务器，同样你也能从中获得快乐！这才是你运营服务器的真正原因，不仅仅为了你自己。
 
-_**Do. what. the. players. want.**_
+_**做 玩 家 喜 欢 的 服 务 器 ！**_
 
-_(as long as it's reasonable)_
+_(永远不要忘记这一点)_
 
   
 
