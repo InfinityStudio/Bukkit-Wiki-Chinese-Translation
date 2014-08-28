@@ -1,113 +1,4 @@
-  * Curse Sites __
-    * Top Sites
-    * __[Gamepedia](http://www.gamepedia.com/)
-    * __[MMO-Champion](http://www.mmo-champion.com/)
-    * __[Arena Junkies](http://www.arenajunkies.com/)
-    * __[Reign of Gaming](http://www.reignofgaming.net)
-    * __[LoL Pro](http://lolpro.com)
-    * __[Minecraft Forums](http://www.minecraftforum.net/)
-    * __[Guild Wars 2 Guru](http://guildwars2guru.com)
-    * __[FPS General](http://fpsgeneral.com)
-    * [Curse.com](http://www.curse.com/)
-  * [Help](http://support.curse.com/)
-  * [Get an Epic Experience with Premium](http://www.curse.com/premium)
-  * [Support This Wiki](http://store.curse.com/products/gamepedia?pagesize=12)
-
-  * **[Login**](http://wiki.bukkit.org/Special:UserLogin?returnto=CraftBukkit_Commands)
-  * [Don't have an account? **Register**](http://wiki.bukkit.org/Special:UserLogin/signup)
-
-##### Namespaces
-
-  * [Page](/CraftBukkit_Commands)
-  * [Discussion](/Talk:CraftBukkit_Commands)
-
-####
-
-##### Variants
-
-#### Share
-
-##### Share
-
-  * ![](/extensions/Social/images/square_icons/twitter.png)![](/extensions/Social/images/square_icons/facebook.png)![](/extensions/Social/images/square_icons/googleplus.png)![](/extensions/Social/images/square_icons/reddit.png)![](/extensions/Social/images/square_icons/tumblr.png)
-
-##### Views
-
-  * [View](/CraftBukkit_Commands)
-  * [Edit](/index.php?title=CraftBukkit_Commands&action=edit)
-  * [History](/index.php?title=CraftBukkit_Commands&action=history)
-
-##### Actions
-
-##### Search
-
-![](http://hydra-media.cursecdn.com/wiki.bukkit.org/b/bc/Wiki.png?version=0a20
-81b450303b747b43d45d178fd129)
-
-##### Wiki
-
-  * [Main page](/Main_Page)
-  * [Recent changes](/Special:RecentChanges)
-  * [Random page](/Special:Random)
-  * [Wiki Issue Tracker](https://bukkit.atlassian.net/browse/WIKI)
-  * [Help](/Help:Contents)
-
-##### Community
-
-  * [Bukkit Website](http://www.bukkit.org)
-  * [Bukkit Forums](http://forums.bukkit.org)
-  * [BukkitDev](http://dev.bukkit.org)
-  * [Get Bukkit](http://dl.bukkit.org)
-  * [Minecraft Website](http://minecraft.net)
-  * [Minecraft Wiki](http://www.minecraftwiki.net)
-
-##### Tools
-
-  * [What links here](/Special:WhatLinksHere/CraftBukkit_Commands)
-  * [Related changes](/Special:RecentChangesLinked/CraftBukkit_Commands)
-  * [Special pages](/Special:SpecialPages)
-  * [Printable version](/index.php?title=CraftBukkit_Commands&printable=yes)
-  * [Permanent link](/index.php?title=CraftBukkit_Commands&oldid=10675)
-  * [Page information](/index.php?title=CraftBukkit_Commands&action=info)
-
-#####
-
-![](http://media-mercury.cursecdn.com/attachments/1/806/mccapepromo.png)
-![](http://media-
-mercury.cursecdn.com/attachments/1/809/pacmanfriends_sidebadge_tall.png)
-![](http://media-
-mercury.cursecdn.com/attachments/1/810/outcast_sidebadge_tall.png) ![](http
-://media-mercury.cursecdn.com/attachments/0/180/warface.png) ![](http://media-
-mercury.cursecdn.com/attachments/0/95/destiny.png) ![](http://media-
-mercury.cursecdn.com/attachments/0/365/gardenwarfare_sidebadge_tall.png)
-
-#####
-
-![](/extensions/Social/images/square_icons/twitter.png)
-
-![](/extensions/Social/images/square_icons/facebook.png)
-
-![](/extensions/Social/images/square_icons/youtube.png)
-
-![](/extensions/Social/images/square_icons/googleplus.png)
-
-_Welcome to the BukkitWiki!_
-
-This Wiki is home to Bukkit's documentation and regulations surrounding the
-Bukkit Project and it's services. Want to help out? We would love to have you!
-Signup to get started!
-
-[Home](/Main_Page)
-
 #  CraftBukkit Commands
-
-From BukkitWiki
-
-(Redirected from [CraftBukkit
-commands](/index.php?title=CraftBukkit_commands&redirect=no))
-
-Jump to: navigation, search
-
 **This page has been suggested for inclusion in the Official Documentation**
 
 This page has been **marked for inclusion in the Bukkit Offical Documentation
@@ -123,7 +14,6 @@ built-in permissions which can be used in a permissions manager. Defaults are
 also observed for the permissions. There are also additional permissions which
 group together several of the single permissions.
 
-## [[edit](/index.php?title=CraftBukkit_Commands&action=edit&section=1)]
 Bukkit Commands and Permissions
 
 Command  Description  Usage  Permission  Permission Default
@@ -168,7 +58,6 @@ bukkit.command.timings
 
 Operators
 
-## [[edit](/index.php?title=CraftBukkit_Commands&action=edit&section=2)]
 Default Minecraft Commands and Permissions
 
 Command  Description  Usage  Bukkit Permission  Mojang Permission  Permission
@@ -677,7 +566,6 @@ minecraft.command.achievement
 
 Operators
 
-## [[edit](/index.php?title=CraftBukkit_Commands&action=edit&section=3)]
 Additional Permissions
 
 Permission  Description  Default
@@ -735,134 +623,3 @@ bukkit.broadcast.admin
 Allows the user to receive administrative broadcasts.
 
 Operators
-
-Retrieved from "[http://wiki.bukkit.org/index.php?title=CraftBukkit_Commands&o
-ldid=10675](http://wiki.bukkit.org/index.php?title=CraftBukkit_Commands&oldid=
-10675)"
-
-[Category](/Special:Categories):
-
-  * [DocsNominees](/Category:DocsNominees)
-
-  * This page was last modified on 23 August 2014, at 21:14.
-  * Content is available under [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) unless otherwise noted. Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.  
-This site is a part of Curse, Inc. and is not affiliated with the game
-publisher.
-
-  * [Privacy policy](/BukkitWiki:Privacy_policy)
-  * [About BukkitWiki](/BukkitWiki:About)
-  * [Disclaimers](/BukkitWiki:General_disclaimer)
-  * [Mobile view](http://wiki.bukkit.org/index.php?title=CraftBukkit_Commands&mobileaction=toggle_view_mobile)
-  * ![CC BY-NC-SA 3.0](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)
-  * ![Powered by MediaWiki](/skins/common/images/poweredby_mediawiki_88x31.png) ![Part of Gamepedia](/extensions/Curse/Icons/gamepedia_poweredby.png)
-
-# Curse
-
-## Curse is the **#1 Resource** for core online gamers.
-
-#### Not a Member?
-
-##### Get your Free Account!
-
-[Sign up for Free!](http://www.curse.com)
-
-  * __
-  * __
-  * __
-  * __
-
-#### Featured Sites
-
-[More](http://www.curse.com)
-
-  * [
-
-#### Guild Wars 2 Guru
-
-__Guild Wars 2 Guru
-
-    The latest and greatest on Tyria.
-](http://www.guildwars2guru.com)
-
-  * [
-
-#### LoL Pro
-
-__LoL Pro
-
-    Dominate with Pro LoL guides.
-](http://www.lolpro.com)
-
-  * [
-
-#### MMO-Champion
-
-__MMO-Champion
-
-    Keep ahead with the champions of WoW coverage.
-](http://www.mmo-champion.com)
-
-  * [
-
-#### GW2DB
-
-__GW2DB
-
-    Explore Tyria with Curse and GW2DB.
-](http://www.gw2db.com)
-
-#### Browse
-
-  * [Core]()
-    * [Curse](http://www.curse.com/)
-    * [MMO-Champion](http://www.mmo-champion.com/)
-    * [WowStead](http://www.wowstead.com/)
-    * [CurseForge](http://www.curseforge.com/)
-    * [WowAce](http://www.wowace.com/)
-    * [SkyrimForge](http://www.skyrimforge.com/)
-    * [SC2Mapster](http://www.sc2mapster.com/)
-    * [LoLPro](http://www.lolpro.com/)
-    * [ExilePro](http://www.exilepro.com)
-  * [Community]()
-    * [Minecraft Forum](http://www.minecraftforum.net/)
-    * [Terraria Online](http://www.terrariaonline.com/)
-    * [Arena Junkies](http://www.arenajunkies.com/)
-    * [Guild Wars 2 Guru](http://guildwars2guru.com/)
-    * [DiabloFans](http://www.diablofans.com/)
-    * [FPS General](http://www.fpsgeneral.com/)
-    * [DarthHater](http://www.darthhater.com/)
-    * [Defiance Forum](http://www.defianceforum.com/)
-    * [Wildstar Forums](http://www.wildstarforums.com/)
-  * [Database]()
-    * [Guild Wars 2 DB](http://www.gw2db.com/)
-    * [Zybez](http://www.zybez.net/)
-    * [DarthHater DB](http://db.darthhater.com/)
-    * [Aion Armory](http://www.aionarmory.com/)
-    * [WoW Database](http://www.wowdb.com/)
-    * [Marriland](http://www.marriland.com)
-  * [Wiki]()
-    * [Minecraft Wiki](http://www.minecraftwiki.net/)
-    * [Terraria Wiki](http://wiki.terrariaonline.com/)
-    * [Wowpedia](http://www.wowpedia.org/)
-    * [Skyrim Wiki](http://www.skyrimwiki.com/)
-    * [Wiki SWTOR](http://www.wikiswtor.com/)
-    * [Dragon Nest Wiki](http://www.dragonnestwiki.com/)
-    * [Vindictus Wiki](http://www.vindictuswiki.com/)
-
-Back to Top
-
-  * [About Us](http://www.curse.com/about)
-  * [Advertising](http://www.curse.com/advertising/overview)
-  * [Privacy Policy](http://www.curse.com/privacy)
-  * [Terms of Service](http://www.curse.com/terms)
-  * [Premium Terms of Service](http://www.curse.com/premiumterms)
-  * [Curse Newsletter](http://www.curse.com/newsletter)
-  * [Jobs at Curse](http://www.curse.com/jobs)
-
-Handcrafted in San Francisco & Huntsville
-
-![](http://b.scorecardresearch.com/p?c1=2&c2=6035118&cv=2.0&cj=1)
-
-![](//secure-us.imrworldwide.com/cgi-bin/m?ci=us-
-603339h&cg=0&cc=1&ts=noscript)
-

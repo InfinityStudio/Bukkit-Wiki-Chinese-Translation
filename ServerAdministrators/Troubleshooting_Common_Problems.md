@@ -47,8 +47,7 @@ It is **UP TO YOU** to do your due diligence when searching for help.
     * 15.12 endOfStream while joining a server
     * 15.13 java.lang.NullPointerException at java.io.Reader.<init>
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=1)] Diagnosing Plugin Issues
+#### Diagnosing Plugin Issues
 
 * * *
 
@@ -64,8 +63,7 @@ This is the accepted method for isolating general plugin issues.
 
      Read the documentation associated with that particular plugin before contacting the author of that plugin to report the issue. 
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=2)] Help, Someone has logged in as me!
+#### Help, Someone has logged in as me!
 
 * * *
 
@@ -80,8 +78,7 @@ If this option is set to `false`, your server is running in offline mode, and
 will receive no support. There is only one good way to protect your server,
 and that is by running online-mode=true.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=3)] Help, No one can build!
+#### Help, No one can build!
 
 * * *
 
@@ -98,8 +95,7 @@ There are multiple possible causes of this:
     * Read the documentation of the plugin that is causing the issue, and make sure any permissions requiring building are set. 
     * Plugins that contain anti-build measures include (but are not limited to): Anti-Cheat plugins, Permission plugins, General plugins (ex. Essentials), or World-based plugins (ex. WorldBorder, Multiverse) 
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=4)] Only OP's can place and break blocks near the spawn
+#### Only OP's can place and break blocks near the spawn
 
 * * *
 
@@ -110,8 +106,7 @@ file and set this line to be zero:
     
     spawn-protection=0
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=5)] Friends are unable to connect?
+#### Friends are unable to connect?
 
 * * *
 
@@ -125,8 +120,7 @@ test.server.org, not 123.123.123.123). A simple test is to ping your DNS name
 (ex: ping test.server.org). If you do not see a IP address being resolved
 (even if it doesn't respond to a ping) you have a DNS problem.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=6)] Friends are now unable to connect... but could X time ago!
+#### Friends are now unable to connect... but could X time ago!
 
 * * *
 
@@ -151,8 +145,7 @@ test.server.org, not 123.123.123.123). A simple test is to ping your DNS name
 (ex: ping test.server.org). If you do not see a IP address being resolved
 (even if it doesn't respond to a ping) you have a DNS problem.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=7)] How do I find my server IP?
+#### How do I find my server IP?
 
 * * *
 
@@ -162,8 +155,7 @@ address of your computer by running the command: ipconfig (Windows) or
 ifconfig (Unix based systems) You still want to keep the server-ip setting in
 your server.properties blank, however.
 
-##### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sec
-tion=8)] How to find your local IP (windows only)
+##### How to find your local IP (windows only)
 
 To find your local IP, check this informative
 article:<http://www.groovypost.com/howto/microsoft/windows-7/find-your-local-
@@ -171,8 +163,7 @@ ip-address-windows-7-cmd/> (steps 1&2 only) (Also works on vista) For XP,
 press the windows flag key and "r" at the same time, then type "cmd.exe" in
 the window. Then do step 2.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=9)] How do I change the map seed?
+#### How do I change the map seed?
 
 * * *
 
@@ -185,16 +176,14 @@ There is an option in your server.properties file:
 Just change that as you would when creating a single player world, and
 move/rename/delete the current world to generate a new one.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=10)] I keep getting kicked for flying.
+#### I keep getting kicked for flying.
 
 * * *
 
 Open up your server.properties and make sure allow-flight is set to true.
 allow-flight=true
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=11)] Permissions doesn't work and/or returns errors
+#### Permissions doesn't work and/or returns errors
 
 * * *
 
@@ -207,8 +196,7 @@ must never have tabs.
 If this doesn't fix your problem, it may be a bug with the plugin or some
 other problem preventing your permissions plugin from working correctly.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=12)] I get an error on the console! What's the problem?
+#### I get an error on the console! What's the problem?
 
 * * *
 
@@ -241,8 +229,7 @@ Here you can see that the error is in org.getspout.spout. You should get help
 from the Spout developer for a fix. (PS: This is an example. It could also say
 me.dadaemon.MyOwnProPlugin.)
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=13)] Client crashes when something happens on a server.
+#### Client crashes when something happens on a server.
 
 * * *
 
@@ -257,8 +244,7 @@ To un-corrupt/redownload, open minecraft, and before logging in, click
 "options" then click "force redownload". When you log in, it will redownload
 minecraft.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=14)] People cannot join hamachi-based server
+#### People cannot join hamachi-based server
 
 * * *
 
@@ -268,8 +254,7 @@ server without hamachi, and connect with your local ip. (See how to find your
 local IP below) If it works with your local ip, try to port forward. Visit
 <http://portforward.com/> if you don't know how.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=15)] I am getting Lag! What can I do?
+#### I am getting Lag! What can I do?
 
 * * *
 
@@ -289,13 +274,11 @@ Alternatively, use a Java profiler. Here is a good tutorial on a free Java
 profiler called VisualVM: <http://forums.bukkit.org/threads/wip-analysis-of-
 your-server-jvm-using-visualvm.66536/>
 
-### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&secti
-on=16)] Common Errors
+### Common Errors
 
 * * *
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=17)] java.lang.NoClassDefFoundError: Could not initialize class
+#### java.lang.NoClassDefFoundError: Could not initialize class
 org.fusesource.jansi.internal.kernel32
 
 Full error:
@@ -327,8 +310,7 @@ x64, or install Visual C++ 2008 Redistributable x86.
 
 Alternatively, add in the -nojline option which turns off jline.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=18)] [SEVERE] java.io.IOException: Not in GZIP format
+#### [SEVERE] java.io.IOException: Not in GZIP format
 
 [spoiler=solution] Your world may be corrupt. Try removing all plugins first.
 If you still get this error, try running your worlds through MCEdit. If that
@@ -336,15 +318,13 @@ fails, restore from backups. [Here](http://forums.bukkit.org/threads/how-to-
 fix-your-world-errors-corrupt-chunks.54254/) is a tutorial for fixing worlds,
 give it a try.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=19)] [SEVERE] Chunk (x, y) stored at (x, y) in world '<world name>'
+#### [SEVERE] Chunk (x, y) stored at (x, y) in world '<world name>'
 
 [spoiler=solution] You have another form of world corruption. Try using
 chunkster or MCEdit. If that fails, restore from backups. Try this tutorial
 for fixing worlds.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=20)] [WARNING] **** FAILED TO BIND TO PORT!
+#### [WARNING] **** FAILED TO BIND TO PORT!
 
 ![](http://hydra-media.cursecdn.com/wiki.bukkit.org/thumb/f/fa/Netstat.png
 /450px-Netstat.png?version=059e893514b5933c576d6519d0b310fb)
@@ -357,8 +337,7 @@ Stop your minecraft server and make sure you have no instances running. Make
 sure you have your server-ip= blank (in server.properties). If that fails,
 reboot.
 
-##### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sec
-tion=21)] Finding programs using the same port (Windows)
+##### Finding programs using the same port (Windows)
 
 To check what program could be using it, go to CMD and type
 
@@ -379,11 +358,9 @@ that will tell you the program.
 
 From there you can remove that program or change the port for that program.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=22)] Error: Unable to access jarfile craftbukkit.jar
+#### Error: Unable to access jarfile craftbukkit.jar
 
-##### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sec
-tion=23)] After downloading the new CB, my server closes immediately after
+##### After downloading the new CB, my server closes immediately after
 opening and says file or directory not found
 
 Not all versions of CraftBukkit are named exactly CraftBukkit.jar. You
@@ -398,8 +375,7 @@ default, so try renaming the file to just: craftbukkit
 
 Alternatively, unhide file extensions.
 
-##### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sec
-tion=24)] The system cannot find path specified
+##### The system cannot find path specified
 
 This is normally fixed by changing the location of where the CraftBukkit jar
 is in the bat file
@@ -441,30 +417,26 @@ x64(64 Bit)
     pause
     
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=25)] NoSuchMethodError or ClassNotFoundException in error message
+#### NoSuchMethodError or ClassNotFoundException in error message
 
 If you are seeing any of these phrases in your error, something new is most
 likely conflicting with something old. Search the error for a plugin name, if
 found, update the plugin in the error. If not found, update Java.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=26)] Outdated Server
+#### Outdated Server
 
 The client version of Minecraft you are using is newer than the server version
 of Minecraft you are connecting to. Downgrade your client, or try connecting
 to the server once they have updated.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=27)] ConcurrentModificationException
+#### ConcurrentModificationException
 
 This fatal exception is caused in CraftBukkit by a poorly written plugin. Try
 removing any of your recently added plugins first. If you still get this
 error, try removing all of your plugins and adding them back in one by one
 until the problem comes back. Updating the plugin to a newer version may help.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=28)] [SEVERE] java.net.SocketException: Socket Closed
+#### [SEVERE] java.net.SocketException: Socket Closed
 
 Example Error:
 
@@ -483,24 +455,21 @@ Example Error:
 This error is harmless, it occurs when someone disconnects using the 'x'
 button instead of disconnecting and then quitting minecraft.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=29)] [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
+#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
 major.minor version 51.0
 
 This means your java version (java6) is out of date, and a plugin you are
 using uses a newer java version (java7) than you have installed. Please
 install either java7 or java8. (Preferably sun/oracle version)
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=30)] [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
+#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
 major.minor version 52.0
 
 This means your java version (java6 or java7) is out of date, and a plugin you
 are using uses a newer java version (java8) than you have installed. Please
 install java8. (Preferably sun/oracle version)
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=31)] endOfStream while joining a server
+#### endOfStream while joining a server
 
 endOfStream is a network error in java that occurs when either the client or
 server hang up on each other. It is typically a problem with the server. A
@@ -510,8 +479,7 @@ Restarting periodically may also be a good idea, and there are plugins that do
 just that. Note: restarting is NOT the same as reloading. Reloading often
 glitches, especially with the new beta builds.
 
-#### [[edit](/index.php?title=Troubleshooting_Common_Problems&action=edit&sect
-ion=32)] java.lang.NullPointerException at java.io.Reader.<init>
+#### java.lang.NullPointerException at java.io.Reader.<init>
 
 Full Error:
 
@@ -552,19 +520,3 @@ Full Error:
 Most likely you have unallowed characters in your server folder path, such as
 a '!'. Make sure to use only a-z A-Z 0-9 . - and _ in the full path of your
 server folder.
-
-Retrieved from "[http://wiki.bukkit.org/index.php?title=Troubleshooting_Common
-_Problems&oldid=10627](http://wiki.bukkit.org/index.php?title=Troubleshooting_
-Common_Problems&oldid=10627)"
-
-  * This page was last modified on 7 August 2014, at 18:22.
-  * Content is available under [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) unless otherwise noted. Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.  
-This site is a part of Curse, Inc. and is not affiliated with the game
-publisher.
-
-  * [Privacy policy](/BukkitWiki:Privacy_policy)
-  * [About BukkitWiki](/BukkitWiki:About)
-  * [Disclaimers](/BukkitWiki:General_disclaimer)
-  * [Mobile view](http://wiki.bukkit.org/index.php?title=Troubleshooting_Common_Problems&mobileaction=toggle_view_mobile)
-  * ![CC BY-NC-SA 3.0](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)
-  * ![Powered by MediaWiki](/skins/common/images/poweredby_mediawiki_88x31.png) ![Part of Gamepedia](/extensions/Curse/Icons/gamepedia_poweredby.png)
