@@ -160,13 +160,7 @@ _哪怕你拥有全部的权限，但也不要在你自己的服务器里面做�
 
 ##### 审核
 
-你还应该审核这些申请表来判断谁更适合这些职位。
-You should also review these applications and see who's more fit for the job.
-Do not make everyone who applied a moderator, that would defeat the purpose of
-applications. Check their sources. If they say that they've been mods on 
-previous servers, PM them asking for the IP and **cross-check! **It saves you
-a lot of hassle later on.
-
+你还应该审核这些申请表来判断谁更适合这些职位。将审核规定订的严格一点，这样的话不是任何人都能够适合这些职位，否则你的审核规定就没有意义了不是么？查看他们从何而来，当然如果他们说他们在别的服务器曾经任过管理员的工作，那么联系以前的服主仔细询问关于这个人的相关信息并反复核对，这将在后续工作中节省你很多的时间。
 
 
 #### 观察你的玩家
