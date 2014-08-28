@@ -142,9 +142,9 @@ double click "LaunchServer.command".
 
 ## 错误诊断
 
-[Troubleshooting Common Problems](/Troubleshooting_Common_Problems)
+[Troubleshooting Common Problems](ServerAdministrators/Troubleshooting_Common_Problems)
 
 ## 相关教程
 
-[Ubuntu Server x64 Setup.](http：//forums.bukkit.org/threads/how-to-setup-a
+[Ubuntu Server x64 教程](http：//forums.bukkit.org/threads/how-to-setup-a
 -ubuntu-craftbukkit-server-x64-running-java-x64.598/)
