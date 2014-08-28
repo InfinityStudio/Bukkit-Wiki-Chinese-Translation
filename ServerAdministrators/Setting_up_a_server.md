@@ -142,7 +142,7 @@ double click "LaunchServer.command".
 
 ## 错误诊断
 
-[Troubleshooting Common Problems](ServerAdministrators/Troubleshooting_Common_Problems)
+[Troubleshooting Common Problems](/Troubleshooting_Common_Problems)
 
 ## 相关教程
 
