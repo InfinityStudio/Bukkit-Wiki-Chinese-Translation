@@ -21,7 +21,7 @@
 
 ##  Windows系统
 
-   1. 首先从这个链接下载最新的稳定版本：[CraftBukkit - Recommended Build](http：//dl.bukkit.org/latest-rb/craftbukkit.jar)
+   1. 首先从这个链接下载最新的稳定版本：[CraftBukkit - Recommended Build](http://dl.bukkit.org/latest-rb/craftbukkit.jar)
    2. 选择一个你想作为服务端的文件夹，将下载的jar文件放入这个文件夹。
    3. 使用文本编辑器新建一个文本文件并输入：
 
@@ -34,11 +34,11 @@
    5. 双击run.bat后你会看到一个黑色的控制台!
    6. 在所有文件生成完成后你可以在控制台中看到Done的字样，这时请键入stop来停止服务器。
 
-   如果你看到 "'Java' is not recognized as an internal or external command, operable program or batch file." 这说明你需要安装Java。如果正常安装之后依然不奏效的话，请参阅 [添加Java环境变量] (http：//www.java.com/en/download/help/path.xml) 来添加Java的环境变量。
+   如果你看到 "'Java' is not recognized as an internal or external command, operable program or batch file." 这说明你需要安装Java。如果正常安装之后依然不奏效的话，请参阅 [添加Java环境变量] (http://www.java.com/en/download/help/path.xml) 来添加Java的环境变量。
 
 ##  Linux系统
 
-   1. 首先从这个链接下载最新的稳定版本： [CraftBukkit - Recommended Build](http：//dl.bukkit.org/latest-rb/craftbukkit.jar)
+   1. 首先从这个链接下载最新的稳定版本： [CraftBukkit - Recommended Build](http://dl.bukkit.org/latest-rb/craftbukkit.jar)
    2. 将下载的jar文件放在一个文件夹中，在这个例子中我们以_~/craftbukkit_路径作为示例。
    3. 在终端中使用使用_cd ~/craftbukkit_将当前目录改至保存jar和服务器文件的文件夹。
    4. 在当前目录中创建一个名为_craftbukkit.sh_的文件。在大部分Linux系统中你可以使用_touch craftbukkit.sh_来创建。
@@ -56,9 +56,9 @@
 
    8. 在所有文件生成完成后你可以在终端中看到Done的字样，这时请键入stop来停止服务器。
 
-   如果你想通过启动脚本来持续性的运行服务器即便关闭终端，请参阅 [minecraft-init](https：//github.com/Ahtenus/minecraft-init)
+   如果你想通过启动脚本来持续性的运行服务器即便关闭终端，请参阅 [minecraft-init](https://github.com/Ahtenus/minecraft-init)
 
-   如果你想使用screen指令来运行服务器，请参阅 [ABM](http：//dev.bukkit.org/server-mods/ascii-bukkit-menu/)
+   如果你想使用screen指令来运行服务器，请参阅 [ABM](http://dev.bukkit.org/server-mods/ascii-bukkit-menu/)
 
 ##  Mac OS X系统
 
