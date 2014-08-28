@@ -2,15 +2,15 @@
 
 ## Contents
 
-  * 1 What is the BukkitWiki?
-  * 2 What is the difference between Bukkit and CraftBukkit?
-  * 3 Where can I get it?
-  * 4 What is the difference between the Recommended, Beta, and Development builds?
-  * 5 Where do I find plugins? or How do I add features to my server?
-  * 6 I made a plugin. Where do I submit it?
-  * 7 How do I get Bukkit source code?
-  * 8 How do I rename a command?
-  * 9 How do I customize my server's help pages?
+  * 1 Bukkit维基是什么？
+  * 2 Bukkit和CraftBukkit的区别是什么？
+  * 3 我可以从哪里得到这些东西？
+  * 4 稳定版，测试版，和开发版之间的区别是什么？
+  * 5 我可以从哪里找到插件？如何将插件的功能添加到我的服务器上？
+  * 6 我做了一个插件，怎么才能上传？
+  * 7 我如何才能得到Bukkit的源码？
+  * 8 我如何将一个指令重命名？
+  * 9 如何将编辑我的服务器帮助页面？
 
 #### What is the BukkitWiki?
 
