@@ -204,72 +204,25 @@ a lot of hassle later on.
 ## 让你的玩家社群真正参与进服务器中
 
 为了让你的服务器的社群持续成长，你应该让你的玩家一直活跃。
-Drop parties are known to attr
-act players and can be good for the community.
-With those you can attract players and give out free items. In a drop party do
-not give out too many good items, try to balance the diamonds, or other rare
-items, with more common items, such as flint, plant seeds, or other craftable
-items. Make sure you don't have too many drop parties either, as they can
-attract players to stay, they can also ruin the server's economy by having
-certain players get good free items without having to do any of the hard work
-in order to normally get those items. Make sure players know about the drop
-parties as well, if they don't know, no one will show up. Once you find a
-schedule, stick to it, players will soon get used to it and learn to expect
-it, making the community grow.
+由管理员随机发放物品的派对可以吸引你的玩家，并且对于玩家社群的发展是良好的。你只需要吸引玩家前来并给出免费的物品。这种派对中，不要给出太多的好东西，你应该试图平衡钻石和其他稀有的物品，你可以丢多一些平常的东西，比如说打火石，植物种子，或者其他可以合成出来的简单物品。你也需要保证自己不会办太多这样的派对，尽管这些派对能够让玩家继续呆在你这个服务器，但他们同样可能让你的服务器的经济系统崩溃，因为有一些玩家可以获得太多的免费的稀有物品。当然，如果你要办这样的派对，记得一定要让玩家知道，如果他们不知道的话，没有人会来的。我们推荐你建立一个日程表，并且坚决地执行它，玩家会很快习惯它并且期待那些活动，这样就能够达到让玩家社群成长的目标了。
 
-Another good way at keeping the community involved is by opening public forums
-on the server's official webpage. Players can then discus ideas, strategies,
-and even review and suggest new things to make your server better. It is
-always good to make announcements and upcoming things on those forums. As
-people have free speech, make sure you don't over react to bad posts, if they
-are too offensive take them down. Also set guidelines and sections for the
-forums so it is easily navigable, the players won't stick around if they
-cannot find what they are looking for.
+另外一个让玩家社群参与进服务器中的方式是在服务器的官方网站上建立一个开放的论坛。玩家们可以讨论他们的想法，策略，甚至是对服务器的评论和一些能让你的服务器变得更好的建议。在这些论坛上发布服务器的信息是一个好的主意，但你必须注意的是，每个人都有表达他们自己意愿的权力，请不要对不好的评价过度反应。你还需要编写论坛的规则、板块等，这样子玩家就能够快速地、和谐地表达他们所需要表达的话题。
 
-One good idea is to run a YouTube channel dedicated to the server, players can
-submit videos to you and you may post them on the page. This will give the
-players a sense of participation within the community and can help boost
-player activity. Allow players to record server spotlights or reviews on their
-channels, never be afraid of getting out there. Try and encourage players to
-make those videos and maybe give them a small reward, such as a diamond or in
-game money.
+另外一个好主意是运行一个服务器的视频频道，玩家们可以发表自己录的视频，提交给你，你可以决定是否将它们发表到视频首页上去。这样子就会给玩家们一种真正参与进服务器建设的感觉。允许玩家们录一些关于服务器特色的视频，和他们自己的对服务器的评论，不要害怕反响。试着鼓励玩家们制作这些视频，你甚至可以给他们一些小小的奖励，比如说钻石，或者是服务器的金钱。
 
-As these all can help your server, it can also destroy it. Make sure you don't
-over do something and ruin the way players look at the server. Don't give out
-too many things or it will make some players TOO powerful and can make players
-no longer want to play because of the players who have too much power. MAke
-sure that the videos and posts are good about the server, anything bad can put
-the wrong image into a new players mind.
+以上的所有都能够帮助你的服务器，但它们也能毁灭你的服务器。请确保你做的每一件事的程度都是适中的，不要让玩家觉得你这个服务器是坏的。不要给出太多的东西，因为有些玩家会变得**过于**强大，而由此，其他的玩家就不愿意玩了。请务必确保服务器的视频能够展示服务器好的一面，任何不好的东西都能够让玩家对你的服务器的第一印象降低。
 
 ## 选择你真正所需的插件
 
-This is very important for a successful server. Choosing the right plugins
-keeps the gameplay fresh, fun, and original - three things your server needs
-to be fun. Don't choose plugins that no one will ever have permissions for
-except you (for example, a plugin where you can attack others with fire and
-lightning and explosions). These only bog your server down and add nothing for
-your players except a cool new "permission denied" message. Yeah, it isn't
-fun.
+对于成功的服务器来说，这一步十分重要。选择正确的插件能够给玩家以新鲜感，快乐和一种独一无二的感觉。而这三种感觉正是一个好的服务器所需要的。不要选择那些除了你之外没有人会有权限的插件（比如说这个插件能烧、劈和炸别人）。这些插件只能够将你的服务器拖慢，但不会为你的玩家增添任何的欢乐，只会给他们增添一条：“你没有权限执行这个命令”的提示信息。这就不欢乐了。
 
-  
+请确保你在添加一个插件之前在测试服务器上进行了广泛深入的测试。这样能够确保在插件实际运行之后可以获得你预期的效果，而不会去毁坏你的地图。
 
-Be sure to do extensive testing on a test server. This makes sure that the
-plugin works properly and isn't going to corrupt your map data or make
-everyone an op or something dangerous.
-
-**Tip**: Remember, download plugins from bukkit.org and ONLY bukkit.org. This is the only site where plugins are checked for maximum security. 
-
-  
+**小贴士**： 记住，只从 plugins.bukkit.org（Bukkit的官方插件站）上下载插件。这个网站上面的插件都经过网站人员的检查以确保插件的安全性。
 
 #### 开发插件
 
-Can't find that plugin you want really badly? You can either ask someone to
-develop it for you or develop it yourself. It takes a lot of practice to
-become a good developer, but once you get the hang of it, you will be able to
-develop anything you want for your server! This also contributes to your
-server while adding some knowledge to your own brain.
-
-  
+找不到你很想要的插件吗？你可以叫别人帮忙开发，或者你也可以自己开发。成为一名好的开发者需要大量的练习，但是只要你掌握了其中的要领，你就可以为你的服务器添加任何的功能了！这样既能够为你的服务器添砖加瓦，又能够为你自己增添一些知识和技能。
 
 ## 日程编排
 
@@ -299,47 +252,31 @@ _(永远不要忘记这一点)_
 
   
 
-Well, this should be enough to get you started. Good luck!
+这上面的内容应该足够让你起步了，祝你好运！
 
-# Section 3: Keeping it Rolling
+# 第 3 部分： 服务器运维
 
-A community is like a garden, it grows from a small community into a big one.
-But that doesn’t happen overnight! You need to keep it rolling so everyone is
-happy!
+一个社群就像一个花园一样，它会从小的社群慢慢地成长成大的社群。但是你不可能一夜之间就变成一个超大的服务器！你必须要将你的服务器持续运营并且要尽量让每个玩家都开心！
 
-This section will show you:
+这个部分将会告诉你：
 
-  * Useful sites to bookmark and keep your eye on 
-  * How to update your plugins 
-  * Updating your server/Recommended Builds 
+  * 一些你应该注意的有用的网站
+  * 如何升级你的插件
+  * 升级你的服务端软件 / 推荐的构建 
 
 ## 救命！Minecraft升级了！
 
-It’s that time again! Craftbukkit is updating and so are your plugins!
-Unfortunately this means that most of the time updating your server will not
-be enough and most if not all of your plugins will break. Keeping this in
-mind, here are some useful places to keep bookmarked as you expand your
-Craftbukkit Server.  
+总会有那个时候，CraftBukkit和你的插件都会更新。十分不幸的是，这代表着升级服务器之后，你的部分插件会失效。以下是一些有用的网站。
 
-Firstly: <http://www.bukkit.org/> should be kept a close eye on. The homepage
-of the Bukkit Project always tells you the recommended build of Craftbukkit
-and when it’s time to update.
+首先 <http://www.bukkit.org/> 应该被时刻关注，Bukkit项目的首页会告诉你目前Craftbukkit的推荐构建是什么，还有你什么时候应该更新。
 
-Secondly: <http://plugins.bukkit.org/> is THE website to bookmark to look up
-documentation of your plugins or help expand on the plugins you currently
-have. With that being said...
+其次： <http://plugins.bukkit.org/> 是用来查看你的插件的文档和寻找插件的地方。
 
-Third: EVERY TOPIC FOR ANY PLUGIN ON YOUR SERVER. These should be bookmarked
-indefinitely so you can return to check for updates and how to work out the
-documentation and commands.
+第三： **关于服务器中的插件的所有话题**。这些话题应该绝对被收藏并且认真查看。以便到时候查看。 
 
-Fourth: <http://dev.bukkit.org/> BukkitDev Is swiftly replacing the old forum
-system(linked above) for interaction between plugin developers and the
-community(you) and your users. Bukkit dev has many strengths including the
-ability to subscribe to alerts by email when your plugins are updated
+第四： <http://dev.bukkit.org/> BukkitDev是一个能够替换老的论坛系统的网站。它能够让开发者和使用者之间的交流更加顺畅。BukkitDev有很多好处，比如说当你关注的插件更新时，它会发邮件提醒你。
 
-Fifth: <http://wiki.bukkit.org/> always has a counter for the current
-Craftbukkit build and tons of tutorials on how to run servers.
+第五： <http://wiki.bukkit.org/> 总会有一些很有用的教程！
 
 ## 我的插件升级了吗？我怎么判断呢？
 
