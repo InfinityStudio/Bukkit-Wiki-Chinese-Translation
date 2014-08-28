@@ -273,16 +273,7 @@ server while adding some knowledge to your own brain.
 
 ## 日程编排
 
-日程编排是运营一个成功服务器的关键因素。
-Scheduling is an important part of running a successful Minecraft server. You
-should always keep your players notified of upcoming updates. Of course, you
-can't really schedule a Minecraft update, but you should definitely schedule
-when you perform plugin updates, add cool new features, etc. No one likes to
-join and then be told that the server will be whitelisted for a week to fix a
-critical error (this is where a test server comes in handy). You should always
-schedule changes so players can know when they'll need to do something else.
-
-  
+日程编排是运营一个成功服务器的关键因素。首先玩家们应该被告知下一次Minecraft升级的内容。当然你也可以不更新Minecraft，不过你应当计划好下一次插件升级的时间和内容。没有玩家喜欢被告知因为服务器升级出现了问题所有必须停运一周来解决问题。你必须将你的计划告知玩家，这样玩家会明白他们应当做什么，不应当做什么。
 
 ## 做好最坏的准备
 
