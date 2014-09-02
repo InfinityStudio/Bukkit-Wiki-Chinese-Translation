@@ -2,7 +2,6 @@
 
 在这一篇章中我们罗列了很多在服务器运行过程中出现的错误及其解决方案。这些错误基本上包含了所有你在运营服务器中可能遇到的错误，而且解决方案已经被测试过可行。如果你已经阅读完整篇文章但是你的问题并不在这些问题之内，那么你可能是遇到了插件的问题。无论如何，先读完这篇文章之后再向论坛发起提问。
 
-It is **UP TO YOU** to do your due diligence when searching for help.
 
 ## 目录
 
@@ -60,18 +59,20 @@ It is **UP TO YOU** to do your due diligence when searching for help.
 
 #### 救命！没有人能建造！
 
-There are multiple possible causes of this:
+有很多的原因可能导致这个问题。
 
-  1. You are within spawn. 
-    * By default, non-ops cannot build inside the 16 blocks of spawn. To test this, have your players move at least 16 away from the spawn region and try to break/build. 
-    * If this is the case, open your _server.properties_ file and set this line to be zero: 
-        
-                spawn-protection=0
+  1. 你距离出生点太近了 
+    * 在默认情况下，不是OP的话是不能够在距离出生点半径16格以内建造的。走出出生点16格以外再试试看。 
+    * 如果你发现走出16格就可以建造了，而且你还想把这个出生点保护的功能关掉的话，用文本编辑器打开_server.properties_找到下面这一行：
+	
+	spawn-protection=16
+	
+    将值设置为0即可。
 
-  2. You have a plugin blocking building or breaking blocks 
-    * To check if it is a plugin issue, read the section on Diagnosing Plugin Issues
-    * Read the documentation of the plugin that is causing the issue, and make sure any permissions requiring building are set. 
-    * Plugins that contain anti-build measures include (but are not limited to): Anti-Cheat plugins, Permission plugins, General plugins (ex. Essentials), or World-based plugins (ex. WorldBorder, Multiverse) 
+  2. 你建造/破坏的行为被插件阻止了 
+    * 首先你得确定是不是插件导致的这个问题，请阅读第一节_判断插件问题_。
+    * 在判断是插件导致的问题之后，请详细阅读这个插件的文档，确保所有的权限已经被正确的设置。
+    * 通常可能会阻止建造的插件包括（但不限于）：反作弊插件，权限插件，通用插件（比如：Essentials），或者其他地图相关插件（比如：WorldBorder和Multiverse）
 
 #### Only OP's can place and break blocks near the spawn
 
