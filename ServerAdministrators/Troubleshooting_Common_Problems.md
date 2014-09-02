@@ -8,7 +8,7 @@
   * 1 判断插件问题
   * 2 救命！相同名字的玩家已经登陆！
   * 3 救命！没有人能建造！
-  * 4 只有OP才能破坏出生点周围的方块.
+  * 4 只有OP才能放置/破坏出生点周围的方块.
   * 5 朋友无法连接？
   * 6 朋友以前可以连接但是现在不行了！
   * 7 我怎么才能找到自己服务器的IP?
@@ -74,55 +74,33 @@
     * 在判断是插件导致的问题之后，请详细阅读这个插件的文档，确保所有的权限已经被正确的设置。
     * 通常可能会阻止建造的插件包括（但不限于）：反作弊插件，权限插件，通用插件（比如：Essentials），或者其他地图相关插件（比如：WorldBorder和Multiverse）
 
-#### Only OP's can place and break blocks near the spawn
+#### 只有OP才能放置/破坏出生点周围的方块.
 
-* * *
-
-This indicates that spawn protection is active. Open your _server.properties_
-file and set this line to be zero:
-
+这说明出生点保护功能启动了。用文本编辑器打开_server.properties_找到下面这一行：
+	
+	spawn-protection=16
+	
+    将值设置为0即可。
     
-    
-    spawn-protection=0
+#### 朋友无法连接？
 
-#### Friends are unable to connect?
+请通过<http://canyouseeme.org/>来检测端口是不是正常的开放。如果没有开放的话，你需要检测你的端口是不是被防火墙阻挡了（也许是路由器的防火墙也许是服务器的防火墙）。除此之外请确保在_server.properties_中下面这一项的值是否是空：
 
-* * *
+	server-ip=
+	
+不是的话请将其留空。
 
-Check if your port is open with <http://canyouseeme.org/> If it isn't, you
-need to check your firewall (either router, or on the server itself, or both).
-Make sure you have your server-ip= (Yes, no IP listed at all in the
-server.properties. Leave the part after the = blank).
+如果玩家通过域名进行连接的话，你需要测试你的DNS情况。请使用ping指令测试域名（假设你的域名是yourserver.com）：
+	
+	ping yourserver.com
+	
+如果无法联通说明你的域名DNS出现了问题，请联系你的域名提供商。
 
-Test your DNS if you are trying to connect with a name, not IP (ex:
-test.server.org, not 123.123.123.123). A simple test is to ping your DNS name
-(ex: ping test.server.org). If you do not see a IP address being resolved
-(even if it doesn't respond to a ping) you have a DNS problem.
+#### 朋友以前可以连接但是现在不行了！
 
-#### Friends are now unable to connect... but could X time ago!
+也许你的服务器IP地址被改动了。如果你是Unix/Linux系统请在终端输入‘ifconfig’，同理如果是windows系统请在命令提示符中输入‘ipconfig’来确认服务器的IP地址。如果你发现你的服务器ip地址是以192.168.*开头或者10.*开头，那么你可能需要登陆路由器来查找你的IP地址，通常情况下你可以找到你的端口对应的IP地址映射，请确保路由器的某个端口映射至服务器的IP地址（译注：简单方法直接百度IP即可得知自己的IP地址，上面都是废话）。还有请务必确保你_server.properties_文件中_server-ip_一项的值为空。
 
-* * *
-
-Your local IP address may have changed. Check that by running `ipconfig` for
-Windows or `ifconfig` for Unix based systems in a command line. You can also
-find your network settings and located your IPv4 address. On most networks it
-will start with 192.168.* or 10.* You can also (on any platform) log in to
-your router's interface and find the DHCP section or clients table. You should
-be able to find your computer in that table, and also your IP. If it's
-different from the one your port is already forwarded to, change it. Make sure
-you have your server-ip= blank (in server.properties).
-
-Alternatively, your external IP may have changed. Simply go to
-[www.whatsmyip.org](http://www.whatsmyip.org/) or again to your router's
-interface and give your friends the new one. To avoid this from ever
-happening, [www.dyndns.com](http://dyn.com/dns/) offers free hostnames and a
-client you can install on your computer which will always keep the name
-pointing to you.
-
-Test your DNS if you are trying to connect with a name, not IP (ex:
-test.server.org, not 123.123.123.123). A simple test is to ping your DNS name
-(ex: ping test.server.org). If you do not see a IP address being resolved
-(even if it doesn't respond to a ping) you have a DNS problem.
+使用ping来测试你的域名连通性，如果如果无法连通请联系你的域名提供商。
 
 #### How do I find my server IP?
 
