@@ -1,42 +1,34 @@
-#  Troubleshooting Common Problems
+# 常见问题与解决方案
 
-From BukkitWiki
-
-Jump to: navigation, search
-
-This page covers many of the common problems you may have when running a
-server, and the solutions included here are tried and true. If you have read
-this article and think your problem lies outside of what is outlined below,
-you probably have a plugin issue. However, read through this and ask a
-question on the forums if you feel your question is still unanswered.
+在这一篇章中我们罗列了很多在服务器运行过程中出现的错误及其解决方案。这些错误基本上包含了所有你在运营服务器中可能遇到的错误，而且解决方案已经被测试过可行。如果你已经阅读完整篇文章但是你的问题并不在这些问题之内，那么你可能是遇到了插件的问题。无论如何，先读完这篇文章之后再向论坛发起提问。
 
 It is **UP TO YOU** to do your due diligence when searching for help.
 
-## Contents
+## 目录
 
-  * 1 Diagnosing Plugin Issues
-  * 2 Help, Someone has logged in as me!
-  * 3 Help, No one can build!
-  * 4 Only OP's can place and break blocks near the spawn
-  * 5 Friends are unable to connect?
-  * 6 Friends are now unable to connect... but could X time ago!
-  * 7 How do I find my server IP?
-    * 7.1 How to find your local IP (windows only)
-  * 8 How do I change the map seed?
-  * 9 I keep getting kicked for flying.
-  * 10 Permissions doesn't work and/or returns errors
-  * 11 I get an error on the console! What's the problem?
-  * 12 Client crashes when something happens on a server.
-  * 13 People cannot join hamachi-based server
-  * 14 I am getting Lag! What can I do?
-  * 15 Common Errors
+  * 1 判断插件问题
+  * 2 救命！相同名字的玩家已经登陆！
+  * 3 救命！没有人能建造！
+  * 4 只有OP才能破坏出生点周围的方块.
+  * 5 朋友无法连接？
+  * 6 朋友以前可以连接但是现在不行了！
+  * 7 我怎么才能找到自己服务器的IP?
+    * 7.1 如何找到自己的IP地址？（Windows适用）
+  * 8 如何更换地图种子？
+  * 9 我经常因为飞行被踢出游戏．
+  * 10 权限控制不工作或者工作不正常．
+  * 11 控制台显示了错误信息，这是什么问题？
+  * 12 在服务器游戏时玩家客户端出现了崩溃．
+  * 13 当使用hamachi的时候玩家无法连接游戏．
+  * 14 服务器延迟严重，我该怎么办？
+  * 15 其他常见问题
     * 15.1 java.lang.NoClassDefFoundError: Could not initialize class org.fusesource.jansi.internal.kernel32
     * 15.2 [SEVERE] java.io.IOException: Not in GZIP format
     * 15.3 [SEVERE] Chunk (x, y) stored at (x, y) in world '<world name>'
     * 15.4 [WARNING] **** FAILED TO BIND TO PORT!
-      * 15.4.1 Finding programs using the same port (Windows)
+      * 15.4.1 在使用某些端口的时候报错（Windows适用）
     * 15.5 Error: Unable to access jarfile craftbukkit.jar
-      * 15.5.1 After downloading the new CB, my server closes immediately after opening and says file or directory not found
+      * 15.5.1 当我下载完水桶服务端尝试开服的时候，我的服务端在报了一些file or directory not found错误之后马上关闭了．
       * 15.5.2 The system cannot find path specified
     * 15.6 NoSuchMethodError or ClassNotFoundException in error message
     * 15.7 Outdated Server
