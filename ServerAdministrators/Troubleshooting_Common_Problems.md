@@ -41,8 +41,6 @@ It is **UP TO YOU** to do your due diligence when searching for help.
 
 #### 判断插件问题
 
-* * *
-
 最小系统法（译注：原文为隔离插件法）在应对大部分插件问题的时候都非常的有效。
 
   1. 移除所有的插件 - 你可以直接将插件文件夹重命名为其他的名字比如将＂plugin＂命名为＂plugins_test＂。
@@ -54,17 +52,13 @@ It is **UP TO YOU** to do your due diligence when searching for help.
 
 #### 救命！相同名字的玩家已经登陆！
 
-* * *
-
 用文本编辑器打开_server.properties_找到下面这一行：
 
 	online-mode=false
 	
 将_false_值设置为_true_。如果值是false的话说明你的服务器运行于离线模式下。虽然玩家不需要正版就可以游戏，但是同样会使你的服务器暴露在攻击的风险下。最好的办法就是将_false_设置为_true_，这样的话玩家必须是正版才能进入游戏，同样你的服务器被攻击的风险被大为降低。
 
-#### Help, No one can build!
-
-* * *
+#### 救命！没有人能建造！
 
 There are multiple possible causes of this:
 
