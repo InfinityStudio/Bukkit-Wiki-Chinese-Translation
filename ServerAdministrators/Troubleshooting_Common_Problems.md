@@ -39,21 +39,18 @@ It is **UP TO YOU** to do your due diligence when searching for help.
     * 15.12 endOfStream while joining a server
     * 15.13 java.lang.NullPointerException at java.io.Reader.<init>
 
-#### Diagnosing Plugin Issues
+#### 判断插件问题
 
 * * *
 
-This is the accepted method for isolating general plugin issues.
+最小系统法（译注：原文为隔离插件法）在应对大部分插件问题的时候都非常的有效．
 
-  1. Remove all plugins - you can do this by renaming the plugin folder to something else, like `plugins_test`
-  2. Test to verify that the problem is solved. If the problem persists, with no plugins, try starting a new world. 
+  1. 移除所有的插件 - 你可以直接将插件文件夹重命名为其他的名字比如将＂plugin＂命名为＂plugins_test＂
+  2. 启动服务器检查问题是否已经解决．如果问题依然存在，请重新生成你的地图．如果生成地图都无法解决的话，请继续往下阅读其他的解决方案，最终你可能需要将你的问题在线提交至Bukkit帮助版块．
 
-     If the problem still persists, it likely is an issue with Bukkit. Read the rest of this article, and post a thread in the Bukkit Help section if your problem lies outside what is outlined below. 
-  3. Add one plugin back to your plugins folder (this should be regenerated from when you started the server with no plugins), starting with the most essential plugins, such as your permissions plugin. 
-  4. Repeat step 2 and three until your problem occurs again 
-  5. Once your problem appears, the plugin you just added is likely the culprit. 
-
-     Read the documentation associated with that particular plugin before contacting the author of that plugin to report the issue. 
+  3. 假如重命名插件文件夹后没有再出现问题，将一个最为重要的插件放入plugin（比如权限控制插件）然后重启服务器．
+  4. 重复上一步知道原先的问题重新出现．
+  5. 当问题出现的时候，你刚刚放入文件夹的插件就是罪魁祸首．仔细阅读这个插件的说明文档，如果无法解决的话再联系插件作者汇报你的问题．
 
 #### Help, Someone has logged in as me!
 
