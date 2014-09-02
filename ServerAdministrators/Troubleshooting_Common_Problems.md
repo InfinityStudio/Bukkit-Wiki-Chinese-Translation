@@ -43,29 +43,24 @@ It is **UP TO YOU** to do your due diligence when searching for help.
 
 * * *
 
-最小系统法（译注：原文为隔离插件法）在应对大部分插件问题的时候都非常的有效．
+最小系统法（译注：原文为隔离插件法）在应对大部分插件问题的时候都非常的有效。
 
-  1. 移除所有的插件 - 你可以直接将插件文件夹重命名为其他的名字比如将＂plugin＂命名为＂plugins_test＂
-  2. 启动服务器检查问题是否已经解决．如果问题依然存在，请重新生成你的地图．如果生成地图都无法解决的话，请继续往下阅读其他的解决方案，最终你可能需要将你的问题在线提交至Bukkit帮助版块．
+  1. 移除所有的插件 - 你可以直接将插件文件夹重命名为其他的名字比如将＂plugin＂命名为＂plugins_test＂。
+  2. 启动服务器检查问题是否已经解决．如果问题依然存在，请重新生成你的地图．如果生成地图都无法解决的话，请继续往下阅读其他的解决方案，最终你可能需要将你的问题在线提交至Bukkit帮助版块。
 
-  3. 假如重命名插件文件夹后没有再出现问题，将一个最为重要的插件放入plugin（比如权限控制插件）然后重启服务器．
+  3. 假如重命名插件文件夹后没有再出现问题，将一个最为重要的插件放入plugin（比如权限控制插件）然后重启服务器。
   4. 重复上一步知道原先的问题重新出现．
-  5. 当问题出现的时候，你刚刚放入文件夹的插件就是罪魁祸首．仔细阅读这个插件的说明文档，如果无法解决的话再联系插件作者汇报你的问题．
+  5. 当问题出现的时候，你刚刚放入文件夹的插件就是罪魁祸首。仔细阅读这个插件的说明文档，如果无法解决的话再联系插件作者汇报你的问题。
 
-#### Help, Someone has logged in as me!
+#### 救命！相同名字的玩家已经登陆！
 
 * * *
 
-Open your _server.properties_ file and make sure that this line appears:
+用文本编辑器打开_server.properties_找到下面这一行：
 
-    
-    
-    online-mode=true
-    
-
-If this option is set to `false`, your server is running in offline mode, and
-will receive no support. There is only one good way to protect your server,
-and that is by running online-mode=true.
+	online-mode=false
+	
+将_false_值设置为_true_。如果值是false的话说明你的服务器运行于离线模式下。虽然玩家不需要正版就可以游戏，但是同样会使你的服务器暴露在攻击的风险下。最好的办法就是将_false_设置为_true_，这样的话玩家必须是正版才能进入游戏，同样你的服务器被攻击的风险被大为降低。
 
 #### Help, No one can build!
 
