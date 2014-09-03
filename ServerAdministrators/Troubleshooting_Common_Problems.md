@@ -12,7 +12,7 @@
   * 5 朋友无法连接？
   * 6 朋友以前可以连接但是现在不行了！
   * 7 我怎么才能找到自己服务器的IP?
-    * 7.1 如何找到自己的IP地址？（Windows适用）
+    * 7.1 如何找到服务器的本地IP地址？（Windows适用）
   * 8 如何更换地图种子？
   * 9 我经常因为飞行被踢出游戏．
   * 10 权限控制不工作或者工作不正常．
@@ -102,15 +102,9 @@
 
 使用ping来测试你的域名连通性，如果如果无法连通请联系你的域名提供商。
 
-#### How do I find my server IP?
+#### 我怎么才能找到自己服务器的IP?
 
-* * *
-
-You can find the internet facing IP address of your computer by visiting this
-site: [www.whatsmyip.org](http://www.whatsmyip.org/) You can find the local IP
-address of your computer by running the command: ipconfig (Windows) or
-ifconfig (Unix based systems) You still want to keep the server-ip setting in
-your server.properties blank, however.
+通过[www.whatsmyip.org](http://www.whatsmyip.org/)可以查看你的计算机的外网IP地址，内网IP地址可以通过‘ifconfig’（UNIX/LINUX）或者‘ipconfig’（Windows）来查看。同样_server.properties_中的_server-ip_一项必须为空。
 
 ##### How to find your local IP (windows only)
 
