@@ -106,94 +106,59 @@
 
 通过[www.whatsmyip.org](http://www.whatsmyip.org/)可以查看你的计算机的外网IP地址，内网IP地址可以通过‘ifconfig’（UNIX/LINUX）或者‘ipconfig’（Windows）来查看。同样_server.properties_中的_server-ip_一项必须为空。
 
-##### How to find your local IP (windows only)
+##### 如何找到自己的IP？（适用于Windows用户）
 
-To find your local IP, check this informative
-article:<http://www.groovypost.com/howto/microsoft/windows-7/find-your-local-
-ip-address-windows-7-cmd/> (steps 1&2 only) (Also works on vista) For XP,
-press the windows flag key and "r" at the same time, then type "cmd.exe" in
-the window. Then do step 2.
+关于如何找到自己的IP地址。请参考下面的文章：
+<http://www.groovypost.com/howto/microsoft/windows-7/find-your-local-
+ip-address-windows-7-cmd/> （只需参阅1章和2章）（Vista同样有效），按下Win键的同时按下R键，然后输入“cmd.exe”。接下来参考第二步。
 
-#### How do I change the map seed?
+#### 如何找到用于生成地图的种子？
 
-* * *
+你可以在server.properties文件中看到这一项：
 
-There is an option in your server.properties file:
+	level-seed=
 
+如果你希望更换地图种子，只需更改这个值后移动/重命名/删除以前的地图文件并重新生成地图即可。
+
+#### 我总是因为飞行而被踢出游戏
+
+打开你的server.properties文件并确保allow-flight的值如下面所示。
+
+	allow-flight=true
+
+#### 权限控制不工作或者报错
+
+这极有可能是因为权限插件使用的YAML文件中不正确的语法导致的。你可以在这里找到一个很好用的纠错工具。将你的config粘贴至左边的窗口，右边的窗口会告诉你错误的位置。请记住，YAML必须使用冒号而且请不要使用TAB回格。
+
+如果这么做无法解决问题，说明问题应该在插件或者其他原因。
+
+#### 控制台报出了一个错误，这到底是怎么回事？
+
+当你发现控制台报出了一个错误，你可以轻易的通过错误的内容判断是插件的错误还是Bukkit的错误。如果是插件的错误，你应当联系插件的开发者。
+
+一个Bukkit错误的例子：
     
+	10:02:47 \[SEVERE\] java.lang.NullPointerException
+	at net.minecraft.server.PlayerManager.flush(PlayerManager.java:34)
     
-    level-seed=
+你可以看到第二行明显的写出了 \[SEVERE\] java.lang.NullPointerException at net.minecraft.server....这意味着这个问题是由于服务器软件引起的（也就是Bukkit）。
 
-Just change that as you would when creating a single player world, and
-move/rename/delete the current world to generate a new one.
-
-#### I keep getting kicked for flying.
-
-* * *
-
-Open up your server.properties and make sure allow-flight is set to true.
-allow-flight=true
-
-#### Permissions doesn't work and/or returns errors
-
-* * *
-
-This is most likely caused by incorrect syntax in the YAML data files
-permissions plugins use. A good diagnostic parser can be found here. Paste
-your config file into the left box, and the right box will tell you where the
-errors can be found. Remember, YAML entries must have a colon ":" and lines
-must never have tabs.
-
-If this doesn't fix your problem, it may be a bug with the plugin or some
-other problem preventing your permissions plugin from working correctly.
-
-#### I get an error on the console! What's the problem?
-
-* * *
-
-When you get an error in the console you can easily check if it's an Bukkit
-error or a plugin is giving errors. If an plugin gives an error you should
-contact the plugin developer.
-
-Example Bukkit error
-
+一个插件错误的例子
     
-    
-    10:02:47 [SEVERE] java.lang.NullPointerException
-    at net.minecraft.server.PlayerManager.flush(PlayerManager.java:34)
+	2011-11-24 16:28:42 [SEVERE] Could not pass event PLAYER_JOIN to Spout
+	java.lang.NoSuchFieldError: k
+	at org.getspout.spout.SpoutNetServerHandler.sendPacket(SpoutNetServerHandler.java:470)
     
 
-You can see this because the second line says [SEVERE] at
-net.minecraft.server... This means there is an error in net.minecraft.server
-and that's the server software (aka Bukkit.)
+你可以看到这里写着org.getspout.spout。你可以告诉开发者这个错误的细节来修复这个错误。（PS：你看到的只是一个例子，事实上它个可能是各种各样的比如me.dadaemon.MyOwnProPlugin）
 
-Example Plugin Error
+#### 在服务器游戏时玩家客户端出现了崩溃
 
-    
-    
-    2011-11-24 16:28:42 [SEVERE] Could not pass event PLAYER_JOIN to Spout
-    java.lang.NoSuchFieldError: k
-    at org.getspout.spout.SpoutNetServerHandler.sendPacket(SpoutNetServerHandler.java:470)
-    
+这可能是你客户端的问题，也有可能是你尝试登陆的服务器有问题。通过登陆其他的正常服务器来判断到底是哪个问题。
 
-Here you can see that the error is in org.getspout.spout. You should get help
-from the Spout developer for a fix. (PS: This is an example. It could also say
-me.dadaemon.MyOwnProPlugin.)
+其他可能导致这个问题的原因是客户端安装了一些有问题的mod或者minecraft的文件损坏了。
 
-#### Client crashes when something happens on a server.
-
-* * *
-
-This could either be a problem with your client, or the server you are trying
-to connect to is broken in some way. Try and verify that this problem does
-indeed occur on other servers.
-
-Another cause of this problem is that you may have installed some client mod
-that is messing with the game, or minecraft has become corrupted somehow.
-
-To un-corrupt/redownload, open minecraft, and before logging in, click
-"options" then click "force redownload". When you log in, it will redownload
-minecraft.
+在客户端登陆之前打开“options”点击“force redownload”。当你登陆的时候，所有的文件都将会重新下载。
 
 #### People cannot join hamachi-based server
 
