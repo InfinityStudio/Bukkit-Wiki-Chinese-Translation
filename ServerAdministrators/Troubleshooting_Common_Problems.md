@@ -160,22 +160,16 @@ ip-address-windows-7-cmd/> （只需参阅1章和2章）（Vista同样有效）�
 
 在客户端登陆之前打开“options”点击“force redownload”。当你登陆的时候，所有的文件都将会重新下载。
 
-#### People cannot join hamachi-based server
+#### 当使用hamachi的时候玩家无法连接游戏．
 
-* * *
+首先请确玩家使用了hamachi软件！如果无法链接到指定的IP地址的话，请先尝试不使用hamachi的情况下链接本地的IP地址。（如何找到自己的IP地址请参见 如何找到自己的IP？）
+如果使用本地连接正常的话，请参考这里<http://portforward.com/>来解决问题。
 
-Verify that the users have the hamachi software. They will need hamachi to
-connect. If you are unable to join using the address given, try running the
-server without hamachi, and connect with your local ip. (See how to find your
-local IP below) If it works with your local ip, try to port forward. Visit
-<http://portforward.com/> if you don't know how.
+#### 服务器延迟严重，我该怎么办？
 
-#### I am getting Lag! What can I do?
+当服务器出现： 
 
-* * *
-
-Common Symptom: [Warning] Can't keep up! Did the system time change or is the
-server overloaded?
+	[Warning] Can't keep up! Did the system time change or is the server overloaded?
 
 There are multiple ways to tackle this problem. You WILL have to spend time
 searching and troubleshooting, so do not look for an easy fix.
