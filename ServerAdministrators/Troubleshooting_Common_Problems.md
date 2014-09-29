@@ -226,97 +226,64 @@ Visual C++ 2008 Redistribut的版本必须和你使用的Java版本保持匹配�
 
 ![](/skins/common/images/magnify-clip.png)
 
-netstat -o -n -a output
+	netstat -o -n -a output
 
-Stop your minecraft server and make sure you have no instances running. Make
-sure you have your server-ip= blank (in server.properties). If that fails,
-reboot.
+关停你的minecraft服务端并且确保没有其他的服务端正在运行。确保_server-ip=_一项置空。不奏效？重启系统！
 
-##### Finding programs using the same port (Windows)
+##### 寻找使用相同端口的程序（Windows适用）
 
-To check what program could be using it, go to CMD and type
+寻找使用某个特定端口的程序，请打开CMD并键入：
 
-    
-    
-    netstat -o -n -a | findstr 0.0:<Port Number>
-    
-    
-    
-     
-    WINDOW SUCKS!
-    Eg: netstat -o -n -a | findstr 0.0:25565
-    
+	netstat -o -n -a | findstr 0.0:<Port Number>
 
-If something shows up (Eg: TCP 0.0.0.0:25565 0.0.0.0:0 LISTENING 2984), go to
-Task Manager > Services and look for the number(2984) under the PID column,
-that will tell you the program.
+	WINDOW SUCKS!
+	Eg: netstat -o -n -a | findstr 0.0:25565
 
-From there you can remove that program or change the port for that program.
+如果显示出(例如: TCP 0.0.0.0:25565 0.0.0.0:0 LISTENING 2984)，去任务管理器中寻找PID为2984的程序。
+
+你可以尝试关闭那个程序或者更改它的端口使用。
 
 #### Error: Unable to access jarfile craftbukkit.jar
 
-##### After downloading the new CB, my server closes immediately after
-opening and says file or directory not found
+##### 在下载使用新的CraftBukkit之后，服务端在开启后很快关闭并且提示文件或者文件夹无法找到
 
-Not all versions of CraftBukkit are named exactly CraftBukkit.jar. You
-probably entered that name when making the startup script and may not even
-remember.
+并不是每个版本的CraftBukkit服务端文件都被命名为CraftBukkit.jar。也许你并不记得你创建脚本时写入的文件名。
 
-Either edit your startup script to match the new name of the CB Jarfile, or
-just rename the CB Jarfile to craftbukkit.jar.
+你可以尝试修改启动脚本中的文件名或者干脆将下载的文件统一命名为craftbukkit.jar。
 
-Beware if you are using Windows. Windows will hide the file extension by
-default, so try renaming the file to just: craftbukkit
+请注意！如果你使用的是Windows的话，大多数情况下文件的扩展名都会被隐藏。这样你只需要使用craftbukkit作为文件名即可。当然你也可以取消扩展名隐藏。
 
-Alternatively, unhide file extensions.
+##### 系统无法找到提供的路径
 
-##### The system cannot find path specified
+通常情况下将启动脚本位置放置在craftbukkit.jar相同的目录下即可。
 
-This is normally fixed by changing the location of where the CraftBukkit jar
-is in the bat file
+大部分craftbukkit服务端文件使用<大版本>-R<小版本>.jar的格式命名。这个文件名*必须*和启动脚本中的文件名一致。
 
-Most craftbukkit files come as craftbukkit-<version>-R<revesion>.jar. This
-file name HAS to be the same as the one in the startup file unless you changed
-otherwise. Examples of startup files (With Bukkit jar named as
-'craftbukkit.jar')  
-Note: If the term "java" is already predefined, you could use it instead of
-the whole directory
+下面是一个启动脚本的例子：
 
-  
+	@Echo off
+	"C:\Program Files (x86)\Java\jre6\bin\java.exe" -Xms1024M -Xmx1024M -jar craftbukkit.jar
+	pause
 
+提示：如果Java已经配置在环境变量或者在安装Jre的过程中被设置，完整的Java路径可以被简写为“Java”。   
+
+Java的完整路径会根据Java到底是32位还是64位来决定，在默认的Jre位置情况下的启动脚本如下所示：
+
+x86(32位)
     
-    
-    @Echo off
-    "C:\Program Files (x86)\Java\jre6\bin\java.exe" -Xms1024M -Xmx1024M -jar craftbukkit.jar
-    pause
-    
+	@Echo off
+	"C:\Program Files (x86)\Java\jre6\bin\java.exe" -Xms1024M -Xmx1024M -jar craftbukkit-1.2.5-R4.jar
+	pause
 
-So, if you are running Java6 (32 bit) on a 64bit machine it would look like
-this (with default jar location)
+x64(64位)
 
-x86(32 Bit)
-
-    
-    
-    @Echo off
-    "C:\Program Files (x86)\Java\jre6\bin\java.exe" -Xms1024M -Xmx1024M -jar craftbukkit-1.2.5-R4.jar
-    pause
-    
-
-x64(64 Bit)
-
-    
-    
     @Echo off
     "C:\Program Files\Java\jre6\bin\java.exe" -Xms1024M -Xmx1024M -jar craftbukkit-1.2.5-R4.jar
     pause
-    
 
-#### NoSuchMethodError or ClassNotFoundException in error message
+#### 错误信息：NoSuchMethodError 或者 ClassNotFoundException 
 
-If you are seeing any of these phrases in your error, something new is most
-likely conflicting with something old. Search the error for a plugin name, if
-found, update the plugin in the error. If not found, update Java.
+如果你看到了这种错误信息，说明你服务端中一些新的东西和老的东西产生了冲突。通过错误信息找到产生错误的插件并升级这个插件。如果这么作无法解决，请尝试升级Java。
 
 #### Outdated Server
 
