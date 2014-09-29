@@ -19,7 +19,7 @@
   * 11 控制台显示了错误信息，这是什么问题？
   * 12 在服务器游戏时玩家客户端出现了崩溃．
   * 13 当使用hamachi的时候玩家无法连接游戏．
-  * 14 服务器延迟严重，我该怎么办？
+  * 14 服务器卡顿严重，我该怎么办？
   * 15 其他常见问题
     * 15.1 java.lang.NoClassDefFoundError: Could not initialize class org.fusesource.jansi.internal.kernel32
     * 15.2 [SEVERE] java.io.IOException: Not in GZIP format
@@ -165,33 +165,27 @@ ip-address-windows-7-cmd/> （只需参阅1章和2章）（Vista同样有效）�
 首先请确玩家使用了hamachi软件！如果无法链接到指定的IP地址的话，请先尝试不使用hamachi的情况下链接本地的IP地址。（如何找到自己的IP地址请参见 如何找到自己的IP？）
 如果使用本地连接正常的话，请参考这里<http://portforward.com/>来解决问题。
 
-#### 服务器延迟严重，我该怎么办？
+#### 服务器卡顿严重，我该怎么办？
 
 当服务器出现： 
 
 	[Warning] Can't keep up! Did the system time change or is the server overloaded?
 
-There are multiple ways to tackle this problem. You WILL have to spend time
-searching and troubleshooting, so do not look for an easy fix.
+虽然说有不止一种方法能解决这个问题，但是无论如何你都得花点时间来判断问题然后解决它，所以这个问题比较棘手。
 
-Most lag issues are caused by plugins. Try removing them one by one until you
-find the culprit.
+大部分的卡顿问题是由插件导致的，尝试移除一个直到找到出现问题的那个插件。
 
-You can also use a program to check your worlds for problems. Chunkster and
-Minecraft Region Fixer are both good tools to use.
+你同样也可以通过Chunkster和Minecraft Region Fixer这两个工具帮你寻找问题。
 
-Alternatively, use a Java profiler. Here is a good tutorial on a free Java
-profiler called VisualVM: <http://forums.bukkit.org/threads/wip-analysis-of-
-your-server-jvm-using-visualvm.66536/>
+此外你也可以使用Java分析工具来断定问题所在，这里有一个教程指导你如何使用一个叫做VisualVM的分析工具。
+<http://forums.bukkit.org/threads/wip-analysis-of-your-server-jvm-using-visualvm.66536/>
 
-### Common Errors
-
-* * *
+### 其他常见问题
 
 #### java.lang.NoClassDefFoundError: Could not initialize class
 org.fusesource.jansi.internal.kernel32
 
-Full error:
+完整的错误信息:
 
     
     
@@ -208,31 +202,22 @@ Full error:
     at org.bukkit.craftbukkit.Main.main<Main:136>
     Press any key to continue . . .
     
+出现这个问题的原因是你没有安装Visual C++ 2008 Redistribut，也有可能是你使用的Java版本不匹配。
 
-This error is caused by you not having Visual C++ 2008 Redistributable
-installed, or having the wrong version installed that matches your Java
-version.
+Visual C++ 2008 Redistribut的版本必须和你使用的Java版本保持匹配，如果你使用的是64位的Visual C++ 2008 Redistribut却在运行32位的Java，这个问题就会出现。安装匹配的Visual C++ 2008 Redistribut或者Java来解决这个问题。
 
-The version of Visual C++ 2008 Redistributable (x64 or x86) must match the
-version of Java you are using. If you are using Java x86 and have Visual C++
-2008 Redistributable x64 installed, it will not work. You must either use Java
-x64, or install Visual C++ 2008 Redistributable x86.
-
-Alternatively, add in the -nojline option which turns off jline.
+你也可以尝试在启动参数后面添加-nojline来尝试解决这个问题。
 
 #### [SEVERE] java.io.IOException: Not in GZIP format
 
-[spoiler=solution] Your world may be corrupt. Try removing all plugins first.
-If you still get this error, try running your worlds through MCEdit. If that
-fails, restore from backups. [Here](http://forums.bukkit.org/threads/how-to-
-fix-your-world-errors-corrupt-chunks.54254/) is a tutorial for fixing worlds,
-give it a try.
+你的地图文件很可能已经损坏了。首先请尝试移除所有的插件，如果问题没有解决，那么请通过MCEdit打开地图文件来修复。如果无法打开的话你就只有通过备份来恢复了。
+
+下面是一个可供参考的修复chunk错误的小教程。
+(http://forums.bukkit.org/threads/how-to-fix-your-world-errors-corrupt-chunks.54254/) 
 
 #### [SEVERE] Chunk (x, y) stored at (x, y) in world '<world name>'
 
-[spoiler=solution] You have another form of world corruption. Try using
-chunkster or MCEdit. If that fails, restore from backups. Try this tutorial
-for fixing worlds.
+这是另外一种地图文件损坏导致的错误，尝试使用chunkster或者MCEdit修复。不行的话参考(http://forums.bukkit.org/threads/how-to-fix-your-world-errors-corrupt-chunks.54254/) 或者通过备份恢复地图。
 
 #### [WARNING] **** FAILED TO BIND TO PORT!
 
