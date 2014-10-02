@@ -30,7 +30,7 @@
       * 15.5.1 当我下载完水桶服务端尝试开服的时候，我的服务端在报了一些file or directory not found错误之后马上关闭了．
       * 15.5.2 The system cannot find path specified
     * 15.6 NoSuchMethodError or ClassNotFoundException in error message
-    * 15.7 Outdated Server
+    * 15.7 过时的服务端
     * 15.8 ConcurrentModificationException
     * 15.9 [SEVERE] java.net.SocketException: Socket Closed
     * 15.10 [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 51.0
@@ -285,100 +285,81 @@ x64(64位)
 
 如果你看到了这种错误信息，说明你服务端中一些新的东西和老的东西产生了冲突。通过错误信息找到产生错误的插件并升级这个插件。如果这么作无法解决，请尝试升级Java。
 
-#### Outdated Server
+#### 过期的服务端
 
-The client version of Minecraft you are using is newer than the server version
-of Minecraft you are connecting to. Downgrade your client, or try connecting
-to the server once they have updated.
+客户端的MC版本比服务端的MC版本要高。尝试降级你的客户端，或者等待服务端升级再连接。
 
 #### ConcurrentModificationException
 
-This fatal exception is caused in CraftBukkit by a poorly written plugin. Try
-removing any of your recently added plugins first. If you still get this
-error, try removing all of your plugins and adding them back in one by one
-until the problem comes back. Updating the plugin to a newer version may help.
+导致这个错误的原因通常是服务端中某个非常简陋的插件。尝试移除那个你正在添加的插件！如果依然无法解决问题，移除所有的插件后再一个接一个的添加回来直到找到那个引发问题的插件。也许将这个插件升级可以解决这个问题。
 
 #### [SEVERE] java.net.SocketException: Socket Closed
 
-Example Error:
+完整的错误信息:
 
+	2011-11-30 00:39:34 [SEVERE] java.net.SocketException: Socket closed
+	2011-11-30 00:39:34 [INFO] Connection reset
+	2011-11-30 00:39:34 [SEVERE]    at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	2011-11-30 00:39:34 [SEVERE]    at java.net.SocketOutputStream.write(Unknown Source)
+	2011-11-30 00:39:34 [SEVERE]    at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	2011-11-30 00:39:34 [SEVERE]    at java.io.BufferedOutputStream.flush(Unknown Source)
+	2011-11-30 00:39:34 [SEVERE]    at java.io.DataOutputStream.flush(Unknown Source)
+	2011-11-30 00:39:34 [SEVERE]    at net.minecraft.server.NetworkWriterThread.run(SourceFile:104)[/CODE]
     
-    
-    2011-11-30 00:39:34 [SEVERE] java.net.SocketException: Socket closed
-    2011-11-30 00:39:34 [INFO] Connection reset
-    2011-11-30 00:39:34 [SEVERE]    at java.net.SocketOutputStream.socketWrite(Unknown Source)
-    2011-11-30 00:39:34 [SEVERE]    at java.net.SocketOutputStream.write(Unknown Source)
-    2011-11-30 00:39:34 [SEVERE]    at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
-    2011-11-30 00:39:34 [SEVERE]    at java.io.BufferedOutputStream.flush(Unknown Source)
-    2011-11-30 00:39:34 [SEVERE]    at java.io.DataOutputStream.flush(Unknown Source)
-    2011-11-30 00:39:34 [SEVERE]    at net.minecraft.server.NetworkWriterThread.run(SourceFile:104)[/CODE]
-    
+这个错误并无大碍，当玩家退出游戏的时候不使用正常的退出过程而是直接点击小红叉就会出现这个错误信息。
 
-This error is harmless, it occurs when someone disconnects using the 'x'
-button instead of disconnecting and then quitting minecraft.
+#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 51.0
 
-#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
-major.minor version 51.0
+这意味着你正在使用的JAVA（JAVA6）版本已经过时了，至少一个插件要求使用新的JAVA（JAVA7或者8）版本。请升级你的JAVA版本到JAVA7或者JAVA8。
 
-This means your java version (java6) is out of date, and a plugin you are
-using uses a newer java version (java7) than you have installed. Please
-install either java7 or java8. (Preferably sun/oracle version)
+推荐使用sun/oracle的JAVA
 
-#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported
-major.minor version 52.0
+#### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 52.0
 
-This means your java version (java6 or java7) is out of date, and a plugin you
-are using uses a newer java version (java8) than you have installed. Please
-install java8. (Preferably sun/oracle version)
+这意味着你正在使用的JAVA（JAVA6）版本已经过时了，至少一个插件要求使用新的JAVA（JAVA7或者8）版本。请升级你的JAVA版本到JAVA7或者JAVA8。
+
+推荐使用sun/oracle的JAVA
 
 #### endOfStream while joining a server
 
-endOfStream is a network error in java that occurs when either the client or
-server hang up on each other. It is typically a problem with the server. A
-common solution is to simply restart the server.
+endOfStream是Java运行过程中客户端或者服务端相互挂起了对方的链接。通常情况下这是服务端的问题，而最好的解决方案就是重启服务端。
 
-Restarting periodically may also be a good idea, and there are plugins that do
-just that. Note: restarting is NOT the same as reloading. Reloading often
-glitches, especially with the new beta builds.
+如果不想频繁的面对这个问题，自动服务端重启是个好主意，而且不只有一款插件可以实现这个功能。
+提示：重启服务端和服务端重载不是一个意思。重载通常会在最新的版本引发一些问题。
 
 #### java.lang.NullPointerException at java.io.Reader.<init>
 
-Full Error:
-
+完整的错误信息:
     
+	java.lang.NullPointerException
+	at java.io.Reader.<init>(Unknown Source)
+	at java.io.InputStreamReader.<init>(Unknown Source)
+	at net.minecraft.server.v1_6_R1.AchievementMap.<init>(SourceFile:15)
+	at net.minecraft.server.v1_6_R1.AchievementMap.<clinit>(SourceFile:9)
+	at net.minecraft.server.v1_6_R1.Statistic.g(SourceFile:37)
+	at net.minecraft.server.v1_6_R1.CounterStatistic.g(SourceFile:15)
+	at net.minecraft.server.v1_6_R1.StatisticList.<clinit>(SourceFile:27)
+	at net.minecraft.server.v1_6_R1.MinecraftServer.main(MinecraftServer.jav
+	a:611)
+	at org.bukkit.craftbukkit.Main.main(Main.java:152)
+	java.lang.ExceptionInInitializerError
+	at net.minecraft.server.v1_6_R1.LocaleI18n.<clinit>(SourceFile:7)
+	at net.minecraft.server.v1_6_R1.Item.v(SourceFile:495)
+	at net.minecraft.server.v1_6_R1.StatisticList.a(SourceFile:139)
+	at net.minecraft.server.v1_6_R1.StatisticList.c(SourceFile:85)
+	at net.minecraft.server.v1_6_R1.Item.<clinit>(SourceFile:310)
+	at net.minecraft.server.v1_6_R1.Block.<clinit>(Block.java:713)
+	at net.minecraft.server.v1_6_R1.StatisticList.a(SourceFile:122)
+	at net.minecraft.server.v1_6_R1.StatisticList.<clinit>(SourceFile:55)
+	at net.minecraft.server.v1_6_R1.MinecraftServer.main(MinecraftServer.jav
+	a:611)
+	at org.bukkit.craftbukkit.Main.main(Main.java:152)
+	Caused by: java.lang.NullPointerException
+	at java.io.Reader.<init>(Unknown Source)
+	at java.io.InputStreamReader.<init>(Unknown Source)
+	at org.apache.commons.io.IOUtils.readLines(IOUtils.java:986)
+	at net.minecraft.server.v1_6_R1.LocaleLanguage.<init>(SourceFile:26)
+	at net.minecraft.server.v1_6_R1.LocaleLanguage.<clinit>(SourceFile:19)
+	... 10 more
     
-    java.lang.NullPointerException
-    at java.io.Reader.<init>(Unknown Source)
-    at java.io.InputStreamReader.<init>(Unknown Source)
-    at net.minecraft.server.v1_6_R1.AchievementMap.<init>(SourceFile:15)
-    at net.minecraft.server.v1_6_R1.AchievementMap.<clinit>(SourceFile:9)
-    at net.minecraft.server.v1_6_R1.Statistic.g(SourceFile:37)
-    at net.minecraft.server.v1_6_R1.CounterStatistic.g(SourceFile:15)
-    at net.minecraft.server.v1_6_R1.StatisticList.<clinit>(SourceFile:27)
-    at net.minecraft.server.v1_6_R1.MinecraftServer.main(MinecraftServer.jav
-    a:611)
-    at org.bukkit.craftbukkit.Main.main(Main.java:152)
-    java.lang.ExceptionInInitializerError
-    at net.minecraft.server.v1_6_R1.LocaleI18n.<clinit>(SourceFile:7)
-    at net.minecraft.server.v1_6_R1.Item.v(SourceFile:495)
-    at net.minecraft.server.v1_6_R1.StatisticList.a(SourceFile:139)
-    at net.minecraft.server.v1_6_R1.StatisticList.c(SourceFile:85)
-    at net.minecraft.server.v1_6_R1.Item.<clinit>(SourceFile:310)
-    at net.minecraft.server.v1_6_R1.Block.<clinit>(Block.java:713)
-    at net.minecraft.server.v1_6_R1.StatisticList.a(SourceFile:122)
-    at net.minecraft.server.v1_6_R1.StatisticList.<clinit>(SourceFile:55)
-    at net.minecraft.server.v1_6_R1.MinecraftServer.main(MinecraftServer.jav
-    a:611)
-    at org.bukkit.craftbukkit.Main.main(Main.java:152)
-    Caused by: java.lang.NullPointerException
-    at java.io.Reader.<init>(Unknown Source)
-    at java.io.InputStreamReader.<init>(Unknown Source)
-    at org.apache.commons.io.IOUtils.readLines(IOUtils.java:986)
-    at net.minecraft.server.v1_6_R1.LocaleLanguage.<init>(SourceFile:26)
-    at net.minecraft.server.v1_6_R1.LocaleLanguage.<clinit>(SourceFile:19)
-    ... 10 more
-    
-
-Most likely you have unallowed characters in your server folder path, such as
-a '!'. Make sure to use only a-z A-Z 0-9 . - and _ in the full path of your
-server folder.
+出现这种问题通常是因为你在服务端的路径中使用了不合法的字符，比如"!"。确认一下你的路径中只包含a-z A-Z 0-9还有-和_。
