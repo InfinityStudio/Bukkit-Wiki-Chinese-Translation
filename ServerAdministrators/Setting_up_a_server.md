@@ -70,83 +70,65 @@
 
 ##  Mac OS X系统
 
-  1. Install Java
+   1. 安装JAVA
 
-     Since OS X 10.7 Java does not come packaged with OS X. You will need to install java from the Apple's website <http：//support.apple.com/kb/DL1421>
-  2. Obtaining the Server Files
+    自从OS X 10.7开始，Java不再随着系统自动安装。所以你需要手动从Apple的官网下载安装Java<http：//support.apple.com/kb/DL1421>
+   2. 获取服务端文件
 
-     To run a server you will need the server jars, i.e. the server files. We will need a place to put the files.
-    1. Create a New Folder
+    你至少需要有服务端文件来运行服务端。此外我们也需要一个地方防止服务端文件。
+     1. 创建新的文件夹
 
-     Open up finder, and create a new folder in your Home folder named _CraftBukkit_
-    2. Download the File
+     打开finder,创立一个新的文件夹并将其命名为_CraftBukkit_
+     2. 下载文件
 
-     Download the server files. You can download the latest builds from the front page of the wiki.
-     _**Note：**_ Download the stable build if you are not chasing the cutting edge in the development build
-    3. Move the File
+     下载服务端文件。你可以通过Wiki中的最新版本页面下载
+     _**注意：**_ 如果你并不想追求最新的新功能的话请下载稳定版本。
+     3. 移动文件
 
-     Move the file from the Downloads folder to the CraftBukkit folder you created.
-  3. Obtaining startup script
+     将你下载的文件移动到刚才建立的_CraftBukkit_文件夹。
+  3. 编写你的启动脚本
 
-     To easily start the server you will need a startup script. The following is a basic server script to start your server.
-    1. Open up TextEdit set it to plain text mode under format and paste the following in
+     为了启动服务端，你需要一个启动脚本。下面的内容将教你如何建立启动脚本。
+     1. 打开TextEdit，将模式设置成普通文本模式。将下面的内容黏贴至文本中。
 
-                #!/bin/bash
-        cd "$( dirname "$0" )"
-        java -Xmx1024M -jar craftbukkit.jar -o true
+		#!/bin/bash
+		cd "$( dirname "$0" )"
+		java -Xmx1024M -jar craftbukkit.jar -o true
 
-    2. Save the file
+    2. 保存文件
 
-     Save it in your CraftBukkit folder as _start_server.command_
-    3. Allow the script to run
-      1. Open up Terminal.app
-      2. Type into Terminal.app
+     将文件保存至你的CraftBukkit文件夹，并将其命名为_start\_server.command
+    3. 赋予文件运行权限
+      1. 打开Terminal.app
+      2. 在控制台中输入
 
-     chmod a+x
-
-
-![Warning](http：//hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
-**Warning**：
-
-Do not hit return
-
-      3. drag the start_server.command into Terminal.app
-      4. hit return
+	chmod a+x
+	
+	  **警告**：不要敲击_返回_
+      3. 将 start_server.command拖入控制台
+      4. 敲击_返回_
   4. Starting the server
 
-     From this point on you can start the server by double-clicking start_server.command.
-     You will need to run the server once for it to generate some configuration files.
+     现在你可以通过双击start_server.command来启动服务器。
+	 你至少需要启动一次服务器来生成文件。
 
 
-![Warning](http：//hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
-**Warning**：
+**警告**：当关闭服务器的时候请不要直接关闭终端，在终端中输入stop来停止服务器，当服务器完全停止后再关闭终端，否则你的地图文件极有可能损坏！
 
-To stop the server, do not close the terminal/command prompt window. Instead,
-type 'stop' into the console. Closing the terminal window without stopping the
-server could lead to corruption of the save files.
+**其他方法** [只针对有经验的高级用户]：
 
+打开终端(你可以在程序/工具中找到)然后黏贴以下文本：
 
-**ALTERNATE METHOD** [Only for Advanced Users]：
-
-Open Terminal (Found in Application/Utilities) and paste：
-
-
-
-    cd ~/Desktop/
-    mkdir BukkitServer
-    cd BukkitServer/
-    curl -LO http：//cbukk.it/craftbukkit.jar
-    echo "cd ~/Desktop/BukkitServer/" >> start.command
-    echo " java -Xmx1024M -jar craftbukkit.jar -o true" >> start.command
-    chmod +x start.command
+	cd ~/Desktop/
+	mkdir BukkitServer
+	cd BukkitServer/
+	curl -LO http：//cbukk.it/craftbukkit.jar
+	echo "cd ~/Desktop/BukkitServer/" >> start.command
+	echo " java -Xmx1024M -jar craftbukkit.jar -o true" >> start.command
+	chmod +x start.command
 
 
-The server is installed on your Desktop, in "Bukkit Server". To start it
-double click "LaunchServer.command".
+服务端已经安装在了你的桌面上的_Bukkit Server_文件夹中。启动服务器只需双击"LaunchServer.command"。
 
 ## 错误诊断
 
