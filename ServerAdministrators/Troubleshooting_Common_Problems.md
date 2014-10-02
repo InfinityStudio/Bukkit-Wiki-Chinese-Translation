@@ -35,7 +35,7 @@
     * 15.9 [SEVERE] java.net.SocketException: Socket Closed
     * 15.10 [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 51.0
     * 15.11 [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 52.0
-    * 15.12 endOfStream while joining a server
+    * 15.12 加入游戏的时候出现endOfStream
     * 15.13 java.lang.NullPointerException at java.io.Reader.<init>
 
 #### 判断插件问题
@@ -320,7 +320,7 @@ x64(64位)
 
 推荐使用sun/oracle的JAVA
 
-#### endOfStream while joining a server
+#### 加入游戏的时候出现endOfStream
 
 endOfStream是Java运行过程中客户端或者服务端相互挂起了对方的链接。通常情况下这是服务端的问题，而最好的解决方案就是重启服务端。
 
