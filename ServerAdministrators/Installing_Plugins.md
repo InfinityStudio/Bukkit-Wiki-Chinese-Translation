@@ -1,50 +1,44 @@
-#  Installing Plugins
+# 安装插件
 
-This guide explains how to install most basic plugins on your server. You must
-already have a running CraftBukkit server set up and have knowledge of how to
-use the Minecraft server console. If you do not have a server set up please go
-to [Setting up a server](/Setting_up_a_server) and follow the instructions
-there. This guide does not cover setting up an SQL database or editing
-properties files, please consult the forums to see if you need this. Always
-read the plugin instructions if there are any.
+这个教程将向你介绍如何安装运行服务器的基础插件。你必须已经拥有部署并运行一个CraftBukkit和使用其控制台的基础技能。如果你并不知道如何部署服务器，请先参阅[如何建立一个CraftBukkit服务器](/Setting_up_a_server)。这个教程并不包含设置SQL数据库或者编辑properties文件的相关内容，如果你需要，我们建议你想论坛发起提问。不过在提问前请先通读这篇教程。
 
-## Contents
+## 目录
 
-  * 1 Installing Most Plugins
-    * 1.1 Notes
-  * 2 Updating Plugins
-    * 2.1 Notes
+  * 1 通用插件安装过程
+    * 1.1 提示
+  * 2 升级插件
+    * 2.1 提示
 
-## Installing Most Plugins
+## 通用插件安装过程
 
-  1. Download a plugin of your choice. 
-  2. Place the .jar and any other files in your plugins directory. 
-  3. Run the server and wait for it to fully load. 
-  4. Type **stop** in your Minecraft server console to bring the server to a clean stop. 
-  5. Run the server. 
-  6. All done! Your plugin should be installed and ready to be used. 
+  1. 下载你希望添加的插件
+  2. 将下载完毕的jar文件和其他文件放置在服务端的plugins文件夹中。
+  3. 启动服务器并等待启动完毕。
+  4. 在控制台中输入**stop**并等待服务器完全停止。 
+  5. 再次启动服务器。
+  6. 完成！现在你的插件已经运行在服务器上了。
 
-#### Notes
+#### 提示
 
-    **Note**: You can find plugins at the [Bukkit Plugin List](http://plugins.bukkit.org/) or at [BukkitDev](http://dev.bukkit.org/categories/)
-    **Note**: Make sure to download the right version for the plugin 
-    **Note**: The file you downloaded may be an archive (.zip, .rar, .7z) and will need to be extracted using an archive manager such as [7zip](http://www.7-zip.org). 
-    **Note**: Your plugins directory will be a folder called "plugins" in the folder where you created your CraftBukkit server. 
-    **Note**: After you have started your server it may have generated a configuration file, check with the plugin's forum or wiki page for any properties you can configure. 
-    **Note**: Make sure to check your log and console for errors created from your newly installed plugin, this may indicate it requires additional setting up (MySQL, permissions) check with the forum post or the BukkitDev page to see if this is the case. 
+    **提示**：你可以从[Bukkit Plugin List](http://plugins.bukkit.org/)或者[BukkitDev](http://dev.bukkit.org/categories/)找到你中意的插件。
+    **提示**：确保你下载的插件版本正确！
+    **提示**：你下载的插件文件也许可能是其他的格式（比如zip，rar，7z）。这样的话你需要使用类似于[7zip](http://www.7-zip.org)的工具将文件解压。
+    **提示**：当你部署你的服务器的时候，叫做“plugins”的插件文件夹会被自动创建。
+    **提示**：在你启动一次服务器后，也许你会发现插件自动创建了一些配置文件。请参阅插件的Wiki来配置插件。 
+    **提示**：在安装完插件后请留意控制台和日志文件中的错误信息，也许这意味着你的插件需要进一步的配置（比如SQL或者权限）才能正常工作。你可以从论坛或者BukkitDev找到更具体的内容。
 
-## Updating Plugins
+## 升级插件
 
-  1. Create a directory called "update" in your plugins directory. 
-  2. Download the plugin that you wish to update 
-  3. Place ONLY the .JAR file into the update directory. 
-  4. Restart your CraftBukkit server. 
-  5. All done! Your plugin should have been updated. 
+  1. 在你的“plugins”文件夹内创建一个“update”文件夹。 
+  2. 从BukkitDev下载你希望升级的插件。
+  3. **仅**将新的插件的JAR文件放置在“update‘文件夹内。
+  4. 重启你的服务端。
+  5. 完成！你的插件已经升级了。
 
 #### Notes
 
-    **Note**: Ensure the name of the .jar in the update directory is the same as the name of the .jar in the plugins directory for the same plugin. 
-    **Note**: The **reload** command will also unload all the plugins, copy the files from the update directory into the plugins directory (replacing any files with the same name) then load all the plugins again. 
-    **Note**: This method is safer than replacing the file yourself while the server is running and will not disconnect all your players if it was to be done manually. 
+    **提示**: 在你将JAR文件放在“update”内之前，确保你要升级的JAR文件名和原先在“plugins”中老版本JAR的文件名相同。
+    **提示**: 通过**reload**指令可以更加快捷的升级插件。将你希望升级的插件直接覆盖老版本插件文件，然后在控制台中输入**reload**。
+    **提示**: 相比于手动替换文件并下线所有的玩家后再升级，这种方法要更加安全一些。
 
   
