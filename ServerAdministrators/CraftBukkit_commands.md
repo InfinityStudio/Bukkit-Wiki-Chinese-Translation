@@ -34,7 +34,7 @@ group together several of the single permissions.
 		version
 	</td>
 	<td>
-		Gives the version number of CraftBukkit this is installed on the server.
+		显示安装在服务器中的CraftBukkit的版本号
 	</td>
 	<td>
 		version
@@ -43,7 +43,7 @@ group together several of the single permissions.
 		bukkit.command.version
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
@@ -51,7 +51,7 @@ group together several of the single permissions.
 		plugins
 	</td>
 	<td>
-		Lists all installed plugins on the server.
+		显示出所有已经安装在服务端的插件
 	</td>
 	<td>
 		plugins
@@ -60,7 +60,7 @@ group together several of the single permissions.
 		bukkit.command.plugins
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ group together several of the single permissions.
 		reload
 	</td>
 	<td>
-		Stops and restarts all plugins on the server.
+		关闭并重启所有安装在服务端的插件
 	</td>
 	<td>
 		reload
@@ -77,7 +77,7 @@ group together several of the single permissions.
 		bukkit.command.reload
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ group together several of the single permissions.
 		bukkit.command.timings
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 </table>
@@ -124,13 +124,13 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		tell &lt;<i>player</i>&gt; &lt;<i>message</i>&gt;
+		tell &lt;<i>玩家ID</i>&gt; &lt;<i>信息</i>&gt;
 	</td>
 	<td>
-		Allows the user to privately message another player.
+		允许玩家发送一条私密信息到另一个玩家
 	</td>
 	<td>
-		tell Notch Hey, how's it going?
+		tell Notch 嘿！最近怎么样？
 	</td>
 	<td>
 		bukkit.command.tell
@@ -139,7 +139,7 @@ group together several of the single permissions.
 		minecraft.command.tell
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@ group together several of the single permissions.
 		kill
 	</td>
 	<td>
-		Allows the player to kill themselves, returning to spawn (and losing items).
+		允许玩家自杀并重生(当然会损失背包里面的物品).
 	</td>
 	<td>
 		kill
@@ -159,7 +159,7 @@ group together several of the single permissions.
 		minecraft.command.kill
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
@@ -167,10 +167,10 @@ group together several of the single permissions.
 		me
 	</td>
 	<td>
-		Says a message from the player's point of view: *player1 is building a castle!
+		发送一条玩家高亮信息: *player1 is building a castle!
 	</td>
 	<td>
-		me is building a castle!
+		me 正在搭建一座城堡!
 	</td>
 	<td>
 		bukkit.command.me
@@ -179,7 +179,7 @@ group together several of the single permissions.
 		minecraft.command.me
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ group together several of the single permissions.
 		help or&#160;?
 	</td>
 	<td>
-		Shows a list of server commands in the console or in-game.
+		在游戏或者控制台中显示命令列表
 	</td>
 	<td>
 		help
@@ -199,15 +199,15 @@ group together several of the single permissions.
 		minecraft.command.help
 	</td>
 	<td>
-		Everybody
+		所有人
 	</td>
 </tr>
 <tr>
 	<td>
-		kick &lt;<i>player</i>&gt;
+		kick &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Removes a player from the server.
+		将一个玩家从服务器中移出
 	</td>
 	<td>
 		kick player1
@@ -219,15 +219,15 @@ group together several of the single permissions.
 		minecraft.command.kick
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		ban &lt;<i>player</i>&gt;
+		ban &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Bans a player from the server.
+		封禁一个玩家
 	</td>
 	<td>
 		ban player1
@@ -239,7 +239,7 @@ group together several of the single permissions.
 		minecraft.command.ban
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -247,7 +247,7 @@ group together several of the single permissions.
 		banlist
 	</td>
 	<td>
-		Shows the banned players.
+		列出所有被封禁的玩家
 	</td>
 	<td>
 		banlist
@@ -259,15 +259,15 @@ group together several of the single permissions.
 		minecraft.command.banlist
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		pardon &lt;<i>player</i>&gt;
+		pardon &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Pardons a banned player so that they can connect again.
+		解除一个玩家的封禁来让他们重新连接服务器
 	</td>
 	<td>
 		pardon player1
@@ -279,15 +279,15 @@ group together several of the single permissions.
 		minecraft.command.pardon
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		ban-ip &lt;<i>ip</i>&gt;
+		ban-ip &lt;<i>IP地址</i>&gt;
 	</td>
 	<td>
-		Bans an IP address from the server.
+		封禁一个IP地址
 	</td>
 	<td>
 		ban-ip 192.168.1.5
@@ -299,15 +299,15 @@ group together several of the single permissions.
 		minecraft.command.ban-ip
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		pardon-ip &lt;<i>ip</i>&gt;
+		pardon-ip &lt;<i>IP地址</i>&gt;
 	</td>
 	<td>
-		Pardons a banned IP address so that they can connect again.
+		解除一个IP地址的封禁来让他们重新连接服务器
 	</td>
 	<td>
 		pardon-ip 192.168.1.5
@@ -319,15 +319,15 @@ group together several of the single permissions.
 		minecraft.command.pardon-ip
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		op &lt;<i>player</i>&gt;
+		op &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Turns a player into a server operator.
+		将一个玩家变为管理员
 	</td>
 	<td>
 		op player1
@@ -339,15 +339,15 @@ group together several of the single permissions.
 		minecraft.command.op
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		deop &lt;<i>player</i>&gt;
+		deop &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Removes server operator status from a player.
+		将一个管理员变为玩家
 	</td>
 	<td>
 		deop player1
@@ -364,15 +364,15 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		tp &lt;<i>player1</i>&gt; &lt;<i>player2</i>&gt;<br/>
+		tp &lt;<i>玩家1</i>&gt; &lt;<i>玩家2</i>&gt;<br/>
 		<p>
-			tp &lt;<i>player1</i>&gt; &lt;<i>x</i>&gt; &lt;<i>y</i>&gt; &lt;<i>z</i>&gt;
+			tp &lt;<i>玩家1</i>&gt; &lt;<i>X坐标</i>&gt; &lt;<i>Y坐标</i>&gt; &lt;<i>Z坐标</i>&gt;
 		</p>
 	</td>
 	<td>
-		Moves player1 to the same location as player2.
+		将玩家1移到玩家2的地点
 		<p>
-			Moves player1 to the exact coordinates.
+			或者将玩家1移动到指定的坐标
 		</p>
 	</td>
 	<td>
@@ -388,12 +388,12 @@ group together several of the single permissions.
 		minecraft.command.tp
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		give &lt;<i>player</i>&gt; &lt;<i>data-value</i>&gt; [<i>amount</i> [<i>damage</i>]]
+		give &lt;<i>游戏ID</i>&gt; &lt;<i>实体附加值</i>&gt; [<i>数量</i> [<i>损坏程度</i>]]
 	</td>
 	<td>
 		Gives player blocks/items blockID <i>data-value</i>. <i>amount</i> is is how many of the block/item to give (Default: 1). <i>damage</i> is the damage value of the block/item (Default: 0). <a rel="nofollow" class="external text" href="http://www.minecraftwiki.net/wiki/Data_values">Data Values</a>.
@@ -553,7 +553,7 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		whitelist &lt;<i>add</i>/<i>remove</i>&gt; &lt;<i>player</i>&gt;
+		whitelist &lt;<i>add</i>/<i>remove</i>&gt; &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
 		Add or remove a player from the whitelist.
@@ -633,7 +633,7 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		gamemode &lt;0/1/2&gt; &lt;<i>player</i>&gt;
+		gamemode &lt;0/1/2&gt; &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
 		Change the game mode of a player. 0 = Survival mode, 1 = Creative mode, 2 = Adventure mode.
@@ -653,7 +653,7 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		xp &lt;<i>player</i>&gt; &lt;<i>amount</i>&gt;
+		xp &lt;<i>游戏ID</i>&gt; &lt;<i>amount</i>&gt;
 	</td>
 	<td>
 		Gives the specified player a certain amount of experience.
@@ -853,7 +853,7 @@ group together several of the single permissions.
 </tr>
 <tr>
 	<td>
-		effect &lt;<i>player</i>&gt; &lt;<i>effect id</i>&gt; [<i>seconds</i>] [<i>amplifier</i>]
+		effect &lt;<i>游戏ID</i>&gt; &lt;<i>effect id</i>&gt; [<i>seconds</i>] [<i>amplifier</i>]
 	</td>
 	<td>
 		Adds the specified effect to a player for the duration of 30 seconds or as specified by the user.
