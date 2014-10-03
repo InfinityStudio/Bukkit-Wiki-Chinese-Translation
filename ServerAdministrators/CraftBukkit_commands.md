@@ -1,32 +1,25 @@
 # CraftBukkit指令
 
-The following are all the server commands either a server administrator or
-admin in-game can enter with CraftBukkit out-of-the-box. In addition to the
-[original vanilla SMP
-commands](http://www.minecraftwiki.net/wiki/SMP_Server_commands) there are 4
-additional commands which are specific to CraftBukkit. CraftBukkit provides
-built-in permissions which can be used in a permissions manager. Defaults are
-also observed for the permissions. There are also additional permissions which
-group together several of the single permissions.
+这个文档罗列了所有服务器指令。这些指令无论是服务器管理员还是游戏管理员都可以使用。此外，不同于[原版服务器指令](http://www.minecraftwiki.net/wiki/SMP_Server_commands)，这里有4条扩展指令特别为CraftBukkit而设计。CraftBukkit还提供了内建的权限系统可以用于权限控制。还有一些扩展权限是由几个权限组成的权限组。
 
-##Bukkit Commands and Permissions
+##Bukkit指令和对应的权限
 
 <table class="wikitable" border="1">
 <tr>
 	<th>
-		Command
+		指令
 	</th>
 	<th>
-		Description
+		介绍
 	</th>
 	<th>
-		Usage
+		使用方法
 	</th>
 	<th>
-		Permission
+		权限
 	</th>
 	<th>
-		Permission Default
+		权限默认
 	</th>
 </tr>
 <tr>
