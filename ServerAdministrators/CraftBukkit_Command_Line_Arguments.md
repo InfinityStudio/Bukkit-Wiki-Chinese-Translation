@@ -1,23 +1,20 @@
 # CraftBukkit 启动脚本附加参数及说明
 
-Craftbukkit gives you the ability from the command line to specify a wide
-variety of start-up options. Below is a list of the current command line
-arguments you can pass when first starting cb.jar from the command line.
-
+Craftbukkit通过启动参数的形式使启动更加的多样化。下面的这个表格列出了当前你第一次启动的时候可以向启动脚本增加的新参数。
 
 <table width="100%" border="1" align="center" cellpadding="5" cellspacing="1">
 <tr>
 	<th scope="col">
-		 Command Line Option
+		 附加参数
 	</th>
 	<th scope="col">
-		 Shortcut
+		 简写
 	</th>
 	<th scope="col">
-		 Description
+		 介绍
 	</th>
 	<th scope="col">
-		 Example
+		 例子
 	</th>
 </tr>
 <tr>
@@ -28,7 +25,7 @@ arguments you can pass when first starting cb.jar from the command line.
 		 -?
 	</td>
 	<td>
-		 Shows the help menu. Following the printout, the JVM Terminates.
+		 在控制台中输出帮助菜单。
 	</td>
 	<td>
 		 java -jar cb.jar -?
@@ -43,13 +40,13 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the bukkit.yml settings file used during startup.
+			允许自定义CraftBukkit使用替代bukkit.yml的文件名
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default bukkit config file is bukkit.yml
+			默认的bukkit配置文件名是bukkit.yml
 		</p>
 	</td>
 	<td>
@@ -65,13 +62,13 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the config file used in starting the server.
+			允许自定义CraftBukkit使用替代server.peoperties的文件名
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default config file is "server.properties"
+			默认的服务器配置文件名是"server.properties"
 		</p>
 	</td>
 	<td>
@@ -87,7 +84,7 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the date format used in your log files.<br/>
+			允许你自定义日志文件的日期格式<br/>
 		</p>
 	</td>
 	<td>
@@ -103,16 +100,16 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the hostname or IP address to listen on.
+			允许你自定义服务器名称和监听的IP地址
 		</p>
 		<p>
-			This argument is only for the IP Address, not the port.
+			这个参数只能定义IP地址而无法定义端口
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in your server.properties
+			默认的地址取决于server.properties中的设置
 		</p>
 	</td>
 	<td>
@@ -128,16 +125,16 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define wether or not the logfile should be appended to with each startup or if it should be overidden.
+			允许你定义日志文件行为。日志文件在每次启动后新添新的日志文件或者覆盖上次的日志文件
 		</p>
 		<p>
-			This argument only accepts boolean values true or false.
+			参数只接受true或者false
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default value is true
+			默认的值是true。也就是说日志将会以添加的方式记录。
 		</p>
 	</td>
 	<td>
@@ -153,16 +150,16 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define how many logs to cycle through.
+			允许你定义一次日志记录周期将有多少条日志
 		</p>
 		<p>
-			Log cycling begins when the maximum log size has been reached.
+			新的日志周期开始于原周期达到了最大日志数量
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default number of logs is 1
+			默认的日志记录周期是1，也就是说每一条日志都会实时的写入文件
 		</p>
 	</td>
 	<td>
@@ -178,16 +175,16 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the maximum size your log file can become in number of lines.
+			允许你定义日志文件的最大行数
 		</p>
 		<p>
-			0 = unlimited
+			0 = 无限
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default maximum log size is 0 (unlimited)
+			默认的最大行数是 0 (无限)
 		</p>
 	</td>
 	<td>
@@ -203,13 +200,13 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows you to define the names used for your log files
+			允许你定义日志文件的文件名
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default log name is "server.log"
+			默认的日志文件名是"server.log"
 		</p>
 	</td>
 	<td>
@@ -225,7 +222,7 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Strips log colors when saving to the log.
+			允许在日志文件中记录控制台颜色
 		</p>
 	</td>
 	<td>
@@ -241,7 +238,7 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Disables console output entirely. Log files are still written, though.
+			完全关闭控制台输出，但是日志文件会继续写入。
 		</p>
 	</td>
 	<td>
@@ -257,13 +254,13 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Disables the JLine console, removes the '&gt;', sets the timestamp to vanilla's and sets the language to English.
+			关闭JLine控制台，移除'&gt;'，设置时间戳为原版服务器的时间戳并定义语言为英文
 		</p>
 		<p>
-			This is useful for users who do not have the Visual C++ 2008 redistributable on Windows.
+			这对于那些没有安装C++ 2008 redistributable的Windows用户非常有用
 		</p>
 		<p>
-			Linux and UNIX users can safely ignore this option
+			Linux和UNIX用户可以忽略这一条
 		</p>
 	</td>
 	<td>
@@ -279,13 +276,13 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Disables the JLine console and removes the '&gt;'.
+			关闭JLine控制台，移除'&gt;'，设置时间戳为原版服务器的时间戳并定义语言为英文
 		</p>
 		<p>
-			This is useful for users who do not have the Visual C++ 2008 redistributable on Windows.
+			这对于那些没有安装C++ 2008 redistributable的Windows用户非常有用
 		</p>
 		<p>
-			Linux and UNIX users can safely ignore this option
+			Linux和UNIX用户可以忽略这一条
 		</p>
 	</td>
 	<td>
@@ -301,7 +298,7 @@ arguments you can pass when first starting cb.jar from the command line.
 	</td>
 	<td>
 		<p>
-			Allows a customized log4j2.xml file without modifying the CraftBukkit.jar.  log4j2.xml allows a server admin to modify the logging (latest.log) file found in MC 1.7.2 (and above).
+			 Allows a customized log4j2.xml file without modifying the CraftBukkit.jar.  log4j2.xml allows a server admin to modify the logging (latest.log) file found in MC 1.7.2 (and above).
 This is useful for server admins who want to modify server log rotation, or change the location/name of the new server log.
 		</p>
 		<p>
