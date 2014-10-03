@@ -11,7 +11,7 @@ group together several of the single permissions.
 
 ##Bukkit Commands and Permissions
 
-able class="wikitable" border="1">
+<table class="wikitable" border="1">
 
 <tr>
 <th>Command
