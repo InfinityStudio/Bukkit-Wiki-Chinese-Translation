@@ -78,7 +78,7 @@
 		timings
 	</td>
 	<td>
-		Records timings for all plugin events.
+		为服务端运行时的插件处理事件计时
 	</td>
 	<td>
 		timings &lt;reset|merged|separate&gt;
@@ -97,22 +97,22 @@
 <table class="wikitable" border="1">
 <tr>
 	<th>
-		Command
+		指令
 	</th>
 	<th>
-		Description
+		介绍
 	</th>
 	<th>
-		Usage
+		使用方式
 	</th>
 	<th>
-		Bukkit Permission
+		Bukkit权限
 	</th>
 	<th>
-		Mojang Permission
+		Mojang权限
 	</th>
 	<th>
-		Permission Default
+		权限默认
 	</th>
 </tr>
 <tr>
@@ -352,7 +352,7 @@
 		minecraft.command.deop
 	</td>
 	<td>
-		 Operators
+		 管理员
 	</td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@
 		minecraft.command.give
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@
 		stop
 	</td>
 	<td>
-		Gracefully stops the server (i.e. allows the server to save the worlds and lets all the plugins shut down properly).
+		安全的关闭服务器。（使用这个方法会让服务端正确的保存地图并使插件正确的关闭）
 	</td>
 	<td>
 		stop
@@ -421,7 +421,7 @@
 		minecraft.command.stop
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@
 		save-all
 	</td>
 	<td>
-		Forces a server-wide level save of the terrain.
+		强制将地图保存至文件。
 	</td>
 	<td>
 		save-all
@@ -441,7 +441,7 @@
 		minecraft.command.save-all
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@
 		save-off
 	</td>
 	<td>
-		Disables automatic terrain saving (useful for backup scripts).
+		暂停自动地图保存（在备份地图时很有用）
 	</td>
 	<td>
 		save-off
@@ -461,7 +461,7 @@
 		minecraft.command.save-off
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -469,7 +469,7 @@
 		save-on
 	</td>
 	<td>
-		Re-enables automatic terrain saving.
+		重启自动地图保存
 	</td>
 	<td>
 		save-on
@@ -481,7 +481,7 @@
 		minecraft.command.save-on
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -489,7 +489,7 @@
 		list
 	</td>
 	<td>
-		Lists all currently connected players.
+		列出当前连接服务器的所有玩家
 	</td>
 	<td>
 		list
@@ -501,7 +501,7 @@
 		minecraft.command.list
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -509,7 +509,7 @@
 		say &lt;<i>message</i>&gt;
 	</td>
 	<td>
-		Broadcasts a message to all players as the server.
+		以服务器的身份向所有玩家广播信息。
 	</td>
 	<td>
 		say Hello minecraft world!
@@ -521,7 +521,7 @@
 		minecraft.command.say
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -529,7 +529,7 @@
 		whitelist &lt;<i>on</i>/<i>off</i>&gt;
 	</td>
 	<td>
-		Enable or disable whitelisting (i.e. only listed players may join).
+		启动或者关闭白名单（只有白名单标注的玩家可以加入游戏） 
 	</td>
 	<td>
 		whitelist on<br/>whitelist off
@@ -541,7 +541,7 @@
 		minecraft.command.whitelist
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -549,7 +549,7 @@
 		whitelist &lt;<i>add</i>/<i>remove</i>&gt; &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Add or remove a player from the whitelist.
+		添加或者移除白名单
 	</td>
 	<td>
 		whitelist add Notch<br/>whitelist remove Notch
@@ -561,7 +561,7 @@
 		minecraft.command.whitelist
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -569,7 +569,7 @@
 		whitelist list
 	</td>
 	<td>
-		Lists all currently whitelisted players.
+		列出所有白名单玩家。
 	</td>
 	<td>
 		whitelist list
@@ -581,7 +581,7 @@
 		minecraft.command.whitelist
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@
 		whitelist reload
 	</td>
 	<td>
-		Reload the whitelist from file. Useful if you edited the file manually.
+		重现载入白名单文件。当你希望手动修改白名单时很有用。
 	</td>
 	<td>
 		whitelist reload
@@ -601,7 +601,7 @@
 		minecraft.command.whitelist
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -609,7 +609,7 @@
 		time &lt;<i>add</i>/<i>set</i>&gt; &lt;<i>amount</i>&gt;
 	</td>
 	<td>
-		<i>Add</i> to or <i>set</i> the world time. <i>Amount</i> may be a number between 0 and 24000, inclusive, where 0 is dawn (i.e. clock is bisected; left side is day) and 12000 is noon.
+		<i>增加</i>或者<i>设置</i>世界时间. <i>总共的时间</i>区间在0到24000。0是日出12000是晚上。
 	</td>
 	<td>
 		time add 6000<br/>time set 0
@@ -621,7 +621,7 @@
 		minecraft.command.time
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -629,7 +629,7 @@
 		gamemode &lt;0/1/2&gt; &lt;<i>游戏ID</i>&gt;
 	</td>
 	<td>
-		Change the game mode of a player. 0 = Survival mode, 1 = Creative mode, 2 = Adventure mode.
+		更换游戏模式 0 = 生存模式, 1 = 创造模式, 2 = 冒险模式。
 	</td>
 	<td>
 		gamemode 1 Notch
@@ -641,15 +641,15 @@
 		minecraft.command.gamemode
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		xp &lt;<i>游戏ID</i>&gt; &lt;<i>amount</i>&gt;
+		xp &lt;<i>游戏ID</i>&gt; &lt;<i>经验值</i>&gt;
 	</td>
 	<td>
-		Gives the specified player a certain amount of experience.
+		给一个玩家一定量的经验。
 	</td>
 	<td>
 		xp Notch 100
@@ -661,7 +661,7 @@
 		minecraft.command.xp
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -669,7 +669,7 @@
 		toggledownfall
 	</td>
 	<td>
-		Turn on or off rain/snow in the current world.
+		打开或者关闭当前世界的雨/雪。
 	</td>
 	<td>
 		toggledownfall
@@ -681,7 +681,7 @@
 		minecraft.command.toggledownfall
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -689,7 +689,7 @@
 		defaultgamemode &lt;0/1/2/3&gt;
 	</td>
 	<td>
-		Change the gamemode of new players joining the server.
+		改变新玩家加入后的默认游戏模式。
 	</td>
 	<td>
 		defaultgamemode 1
@@ -701,7 +701,7 @@
 		minecraft.command.defaultgamemode
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -709,7 +709,7 @@
 		seed
 	</td>
 	<td>
-		Outputs the world seed.
+		输出用于生成世界的种子。
 	</td>
 	<td>
 		seed
@@ -721,7 +721,7 @@
 		minecraft.command.seed
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -729,7 +729,7 @@
 		enchant &lt;<i>user</i>&gt; &lt;<i>enchant number or ID</i>&gt; &lt;<i>level</i>&gt; &lt;<i>force</i>&gt;
 	</td>
 	<td>
-		Enchants the item in the user's hand.
+		将某个玩家手中的装备附魔。
 	</td>
 	<td>
 		enchant Notch 1 1 1
@@ -741,7 +741,7 @@
 		minecraft.command.enchant
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -749,7 +749,7 @@
 		weather &lt;<i>weather</i>&gt;
 	</td>
 	<td>
-		Changes the weather in-game.
+		改变游戏内的天气。
 	</td>
 	<td>
 		weather clear
@@ -761,7 +761,7 @@
 		minecraft.command.weather
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -769,7 +769,7 @@
 		clear &lt;<i>user</i>&gt;
 	</td>
 	<td>
-		Clears a user's inventory.
+		清空玩家的背包。
 	</td>
 	<td>
 		clear Notch
@@ -781,7 +781,7 @@
 		minecraft.command.clear
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -789,7 +789,7 @@
 		difficulty &lt;<i>diff level</i>&gt;
 	</td>
 	<td>
-		Changes the difficulty of the server.
+		改变服务器的游戏难度。
 	</td>
 	<td>
 		difficulty 0
@@ -801,7 +801,7 @@
 		minecraft.command.difficulty
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -809,7 +809,7 @@
 		spawnpoint &lt;<i>User</i>&gt; &lt;<i>x</i>&gt; &lt;<i>y</i>&gt; &lt;<i>z</i>&gt;
 	</td>
 	<td>
-		Sets the spawnpoint of the user specified.
+		为某一个玩家设置出生点。
 	</td>
 	<td>
 		spawnpoint Notch
@@ -821,7 +821,7 @@
 		minecraft.command.spawnpoint
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -829,7 +829,7 @@
 		gamerule
 	</td>
 	<td>
-		Prints out the current game rules being applied to the server.
+		输出当前服务器的游戏规定。
 	</td>
 	<td>
 		gamerule
@@ -841,15 +841,15 @@
 		minecraft.command.gamerule
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
 	<td>
-		effect &lt;<i>游戏ID</i>&gt; &lt;<i>effect id</i>&gt; [<i>seconds</i>] [<i>amplifier</i>]
+		effect &lt;<i>游戏ID</i>&gt; &lt;<i>effect id</i>&gt; [<i>时间</i>] [<i>增幅</i>]
 	</td>
 	<td>
-		Adds the specified effect to a player for the duration of 30 seconds or as specified by the user.
+		为某个玩家增加一种药水状态，如果不指定时间的话默认时间是30S
 	</td>
 	<td>
 		effect Notch 9
@@ -861,7 +861,7 @@
 		minecraft.command.effect
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -869,7 +869,7 @@
 		setidletimeout &lt;Minutes until kick&gt;
 	</td>
 	<td>
-		Sets the server's idle timeout
+		设置服务器中玩家离开状态开始于多少秒无操作之后。
 	</td>
 	<td>
 		setidletimeout 10
@@ -881,7 +881,7 @@
 		minecraft.command.setidletimeout
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -889,7 +889,7 @@
 		setworldspawn OR setworldspawn &lt;x&gt; &lt;y&gt; &lt;z&gt;
 	</td>
 	<td>
-		Sets a worlds's spawn point. If no coordinates are specified, the player's coordinates will be used.
+		设置世界的出生点，如果不设置坐标的话玩家自己的出生点坐标将会被使用。
 	</td>
 	<td>
 		setworldspawn 0 0 0
@@ -901,7 +901,7 @@
 		minecraft.command.setworldspawn
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -909,7 +909,7 @@
 		achievement give &lt;stat_name&gt; [player]
 	</td>
 	<td>
-		Gives the specified player an achievement or changes a statistic value. Use '*' to give all achievements.
+		给予某个玩家某项成就，或设置其统计数据。使用”*“给予玩家全部成就。
 	</td>
 	<td>
 		achievement give * Notch
@@ -921,7 +921,7 @@
 		minecraft.command.achievement
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 </table>
@@ -931,13 +931,13 @@
 <table class="wikitable" border="1">
 <tr>
 	<th>
-		Permission
+		权限
 	</th>
 	<th>
-		Description
+		介绍
 	</th>
 	<th>
-		Default
+		默认权限
 	</th>
 </tr>
 <tr>
@@ -945,7 +945,7 @@
 		bukkit.broadcast.user
 	</td>
 	<td>
-		Allows the user to receive user broadcasts
+		允许玩家接受来自玩家的广播信息。
 	</td>
 	<td>
 		Everybody
@@ -956,7 +956,7 @@
 		bukkit.command.plugins
 	</td>
 	<td>
-		Allows user to look at plugins. Disables: /pl and /plugins
+		允许玩家查看当前服务器安装的插件。
 	</td>
 	<td>
 		Everybody
@@ -967,10 +967,10 @@
 		bukkit.command.ban
 	</td>
 	<td>
-		Combines the Player ban and the IP ban permissions
+		包含BAN和BANIP两条指令的组合。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -978,10 +978,10 @@
 		bukkit.command.unban
 	</td>
 	<td>
-		Combines the Player Unban and IP Unban permissions.
+		包含UNBAN和UNBANIP两条指令的组合。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -989,10 +989,10 @@
 		bukkit.command.op
 	</td>
 	<td>
-		Combines the Op Give and Op Take permissions.
+		包含OP GIVE和OP TAKE两条指令的组合。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -1000,10 +1000,10 @@
 		bukkit.command.time
 	</td>
 	<td>
-		Combines the Time Add and Time Set permissions.
+		包含 Time Add和Time Set两条指令的组合。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -1011,10 +1011,10 @@
 		bukkit.command.save
 	</td>
 	<td>
-		Combines the Save Enable, Save Disable and Save Perform permissions.
+		包含Save Enabld和Save Disable两条指令的组合。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -1022,10 +1022,10 @@
 		bukkit.broadcast
 	</td>
 	<td>
-		Allows the user to receive all broadcast messages.
+		允许玩家收到所有广播信息。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 <tr>
@@ -1033,10 +1033,10 @@
 		bukkit.broadcast.admin
 	</td>
 	<td>
-		Allows the user to receive administrative broadcasts.
+		允许玩家收到来自管理员的广播信息。
 	</td>
 	<td>
-		Operators
+		管理员
 	</td>
 </tr>
 </table>
