@@ -298,17 +298,17 @@ Craftbukkit通过启动参数的形式使启动更加的多样化。下面的这
 	</td>
 	<td>
 		<p>
-			 Allows a customized log4j2.xml file without modifying the CraftBukkit.jar.  log4j2.xml allows a server admin to modify the logging (latest.log) file found in MC 1.7.2 (and above).
-This is useful for server admins who want to modify server log rotation, or change the location/name of the new server log.
+			 允许在不修改CraftBukkit.jar的情况下使用自定义的log4j2.xml。log4j2.xml允许服务器管理员修改日志文件的格式等相关信息。
 		</p>
 		<p>
+			如果不指定log4j2.xml文件的位置，服务器在启动的时候将会使用当前文件夹内的的log4j2.xml而不是服务端文件夹。
 			If you do not specify a path for the log4j2.xml file, it will grab the log4j2.xml file from the current working directory, NOT the server directory.
 		</p>
 		<p>
-			Since this is technically not a CraftBukkit command line option, but rather a JVM option, the option must be added before the -jar option.
+			自从这种技术不再是CraftBukkit控制台的选项而是JVM的选项，所以这个参数必须添加到-jar参数前。
 		</p>
 		<p>
-			Additional log4j2.xml documentation: <br/>
+			额外的log4j2.xml文档: <br/>
 			<a rel="nofollow" class="external free" href="http://logging.apache.org/log4j/2.x/manual/appenders.html#RandomAccessFileAppender">http://logging.apache.org/log4j/2.x/manual/appenders.html#RandomAccessFileAppender</a><br/>
 			<a rel="nofollow" class="external free" href="http://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout">http://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout</a>
 		</p>
@@ -330,13 +330,13 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define wether or not the server should run in online mode.<br/>This argument only accepts a boolean answer, true or false.
+			允许你设置服务器运行在”在线模式“还是”离线模式“。<br/>这个变量只接受布尔值，true或者false
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in your server.properties
+			默认值取决于server.properties中的对应值
 		</p>
 	</td>
 	<td>
@@ -352,16 +352,16 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define the plugins directory to use when starting the server.
+			允许你设置服务端启动时的默认插件文件夹
 		</p>
 		<p>
-			The path should be relative to the location of your current location in your system.
+			目标路径必须是当前文件夹的子文件夹
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default plugins directory is "plugins/"
+			默认的位置是"plugins/"
 		</p>
 	</td>
 	<td>
@@ -377,16 +377,16 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define the port number your server will listen on.
+			允许你定义服务器监听的端口号
 		</p>
 		<p>
-			This argument is only for the Port Number, not the IP Address.
+			这个参数只能定义端口号，无法定义IP地址。
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in your server.properties
+			默认值取决于server.properties中的对应值。
 		</p>
 	</td>
 	<td>
@@ -405,16 +405,16 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define the number of players that are allowed to connect to your server at one time.
+			允许你设置可以链接服务器的最大玩家数量。
 		</p>
 		<p>
-			This argument only accepts integer, or whole number, answers.
+			参数只接受整型值
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in your server.properties
+			默认值取决于server.properties中的对应值。
 		</p>
 	</td>
 	<td>
@@ -430,7 +430,7 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Prints the current CraftBukkit Server and Bukkit API Versions. Similar to typing /version in-game
+			在屏幕输出当前的CraftBukkit和Bukkit API版本。类似于在游戏中输入/version。
 		</p>
 		<p>
 			Following the printout, the JVM terminates.
@@ -449,13 +449,13 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define the folder/directory containing your worlds. <br/> All worlds will be loaded and stored here.
+			允许你设置地图文件的文件夹名字。<br/> 所有世界的地图都将从那个文件夹读取。
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in bukkit.yml
+			默认值取决于bukkit.yml中的对应值
 		</p>
 	</td>
 	<td>
@@ -471,13 +471,13 @@ This is useful for server admins who want to modify server log rotation, or chan
 	</td>
 	<td>
 		<p>
-			Allows you to define the startup world your server will use.
+			允许你设置服务端用于启动的地图文件夹名字。
 		</p>
 		<p>
 			<br/>
 		</p>
 		<p>
-			The default is located in your server.properties
+			默认值取决于server.properties中的对应值
 		</p>
 	</td>
 	<td>
