@@ -91,9 +91,9 @@
      为了启动服务端，你需要一个启动脚本。下面的内容将教你如何建立启动脚本。
      1. 打开TextEdit，将模式设置成普通文本模式。将下面的内容黏贴至文本中。
 
-		#!/bin/bash
-		cd "$( dirname "$0" )"
-		java -Xmx1024M -jar craftbukkit.jar -o true
+	#!/bin/bash
+	cd "$( dirname "$0" )"
+	java -Xmx1024M -jar craftbukkit.jar -o true
 
     2. 保存文件
 
