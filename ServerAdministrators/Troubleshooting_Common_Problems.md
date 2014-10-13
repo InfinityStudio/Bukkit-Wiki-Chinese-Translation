@@ -84,7 +84,7 @@
     
 #### 朋友无法连接？
 
-请通过<http://canyouseeme.org/>来检测端口是不是正常的开放。如果没有开放的话，你需要检测你的端口是不是被防火墙阻挡了（也许是路由器的防火墙也许是服务器的防火墙）。除此之外请确保在_server.properties_中下面这一项的值是否是空：
+请通过[这个工具](http://canyouseeme.org/)来检测端口是不是正常的开放。如果没有开放的话，你需要检测你的端口是不是被防火墙阻挡了（也许是路由器的防火墙也许是服务器的防火墙）。除此之外请确保在_server.properties_中下面这一项的值是否是空：
 
 	server-ip=
 	
@@ -104,7 +104,7 @@
 
 #### 我怎么才能找到自己服务器的IP?
 
-通过[www.whatsmyip.org](http://www.whatsmyip.org/)可以查看你的计算机的外网IP地址，内网IP地址可以通过‘ifconfig’（UNIX/LINUX）或者‘ipconfig’（Windows）来查看。同样_server.properties_中的_server-ip_一项必须为空。
+通过[这个网站](http://www.whatsmyip.org/)可以查看你的计算机的外网IP地址，内网IP地址可以通过‘ifconfig’（UNIX/LINUX）或者‘ipconfig’（Windows）来查看。同样_server.properties_中的_server-ip_一项必须为空。
 
 ##### 如何找到自己的IP？（适用于Windows用户）
 
@@ -163,7 +163,7 @@ ip-address-windows-7-cmd/> （只需参阅1章和2章）（Vista同样有效）�
 #### 当使用hamachi的时候玩家无法连接游戏．
 
 首先请确玩家使用了hamachi软件！如果无法链接到指定的IP地址的话，请先尝试不使用hamachi的情况下链接本地的IP地址。（如何找到自己的IP地址请参见 如何找到自己的IP？）
-如果使用本地连接正常的话，请参考这里<http://portforward.com/>来解决问题。
+如果使用本地连接正常的话，请参考[这里](http://portforward.com/)来解决问题。
 
 #### 服务器卡顿严重，我该怎么办？
 
@@ -177,8 +177,7 @@ ip-address-windows-7-cmd/> （只需参阅1章和2章）（Vista同样有效）�
 
 你同样也可以通过Chunkster和Minecraft Region Fixer这两个工具帮你寻找问题。
 
-此外你也可以使用Java分析工具来断定问题所在，这里有一个教程指导你如何使用一个叫做VisualVM的分析工具。
-<http://forums.bukkit.org/threads/wip-analysis-of-your-server-jvm-using-visualvm.66536/>
+此外你也可以使用Java分析工具来断定问题所在，这里有一个教程指导你如何使用一个叫做VisualVM的分析[工具](http://forums.bukkit.org/threads/wip-analysis-of-your-server-jvm-using-visualvm.66536/)。
 
 ### 其他常见问题
 
@@ -192,7 +191,7 @@ org.fusesource.jansi.internal.kernel32
     java.lang.NoClassDefFoundError: Could not initialize class org.fusesource.jansi.internal.kernel32
     at org.fusesource.jansi.internal.WindowsSupport.getConsoleMode<WindowsSupport.java:50
     at jline.WindowsTerminal.getConsoleMode<WindowsTerminal.java:176>
-    at jline.WindowsTerminal.init<WindowsTerminal.java"80>
+    at jline.WindowsTerminal.init<WindowsTerminal.java:80>
     at jline.TerminalFactory.create<Terminalfactory.java:93>
     at jline.TerminalFactory.get<TerminalFactory.java:151>
     at jline.console.ConsoleReader.<init><ConsoleReader.java:140>
