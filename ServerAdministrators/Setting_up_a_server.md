@@ -3,9 +3,9 @@
 ## 目录
 
   * 1 [预备工作](#预备工作)
-  * 2 [Windows系统](#Windows系统)
-  * 3 [Linux系统](#Linux系统)
-  * 4 [Mac OS X系统](#Mac-OS-X系统)
+  * 2 [Windows系统](#windows系统)
+  * 3 [Linux系统](#linux系统)
+  * 4 [Mac OS X系统](#mac-os-x系统)
   * 5 [错误诊断](#错误诊断)
   * 6 [相关教程](#相关教程)
 
