@@ -1,5 +1,4 @@
-#  Plugin Tutorial
-
+# 插件开发入门指南
 
 ## Contents
 
@@ -66,58 +65,39 @@
   * 20 Request Section
   * 21 Example Files and Templates
 
-This rather large tutorial aims at getting you started with plugin development
-in Bukkit. It is in no way a complete tutorial of all possibilities in Bukkit,
-but rather a general overview of the basics. It starts with making sure you
-understand Java, sets up your workspace in an IDE, and introduces the
-essentials of most Bukkit plugins.
+这个看起来有点长的指南旨在让你开始入门开发Bukkit的插件。诚然，无论如何一个指南无法涵盖Bukkit的所有细节，但这个指南依然可以让你对Bukkit插件开发有一个了解和起步。通过这篇指南，你将学会如何使用Java进行开发、在IDE中设置工作目录和Bukkit插件最为基础的开发。
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=2)] Learning
-Java
+## 学习JAVA
 
-**These tutorials require basic knowledge of the Java programming language.** If you are just getting started with Java or need a refresher, the below is a non-exhaustive list. 
+**这篇指南需要你对JAVA编程语言有最为基础的知识** 如果你刚刚开始学习JAVA或者想更进一步，底下的这些链接应该非常有帮助。
 
-[Oracle's Java Tutorials](http://docs.oracle.com/javase/tutorial/) \- Official
-tutorials
+[甲骨文Java入门](http://docs.oracle.com/javase/tutorial/) \- 官方入门指导
 
-  * [Java2s.com](http://www.java2s.com/Tutorial/Java/CatalogJava.htm) \- Tutorials 
-  * [Java 101](http://www.javacoffeebreak.com/java101/java101.html) \- Tutorials 
-  * [JavaNotes](http://math.hws.edu/javanotes/) \- Free online textbook 
-  * [TheNewBoston](http://thenewboston.org/list.php?cat=31) \- Video tutorials. 
+  * [Java2s.com](http://www.java2s.com/Tutorial/Java/CatalogJava.htm) \- 入门 
+  * [Java 101](http://www.javacoffeebreak.com/java101/java101.html) \- 入门 
+  * [JavaNotes](http://math.hws.edu/javanotes/) \- 免费在线教材
+  * [TheNewBoston](http://thenewboston.org/list.php?cat=31) \- 视频入门指导 
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=3)] The
-Development Environment
+## The Development Environment
 
-Before developing a plugin (or learning Java) you will need to set up a
-development environment. This includes but is not limited to installing an IDE
-(Integrated Development Environment). The following tutorial contains
-instructions for the Eclipse IDE.
-
-    
+在开发插件（或者学习Java）之前，首先你需要部署开发环境。这包含但不限于安装IDE（集成开发环境）。下面的内容将指导你如何安装部署以Eclipse作为IDE的Java开发环境。    
 
      _For further information, see [Setting Up Your Workspace](/Setting_Up_Your_Workspace)_
 
-You **MUST** download the Eclipse build for **Java** developers, **NOT** the
-one for **Java EE** developers. The version for Java EE developers does not
-ship Maven support, which is required for this tutorial.
+你**必须**下载Eclipse来进行**Java**开发，请**不要**使用**JavaEE**开发环境。JavaEE对Maven支持非常不好，而Maven是这篇指南中必须用到的。
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=4)] Starting a
-Plugin Project
+## 开始你的插件项目
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=5)] Create a
-Project
+### 建立你的项目
 
-Before starting, you'll need to set up your workspace and files in Eclipse.
-Start Eclipse, then create a new Project by selecting _File -> New ->
-Project:_
+在开始之前，你首先需要部署你的Eclipse工作区和文件。
+启动Eclipse，然后点击_File -> New -> Project:_菜单的来创建一个新项目。
 
 ![Newproject.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/1/13/Newproj
 ect.png?version=72c02ac1c1c013513549f355e16bc924)
 
-Now, open up the _Maven_ folder, and select _Maven Project_. Click next, and
-then tick the _Create a simple project_ box on the next page, and then click
-_Next_: If you can't see _Maven_ folder, then you need to go download the
-m2eclipse plugin from [here](http://eclipse.org/m2e/download/)
+现在，打开_Maven_文件夹后选择_Maven Project_。点击next，然后勾选_Create a simple project_后点击下一步。
+如果你无法看到_Maven_文件夹，你需要点击[这里](http://eclipse.org/m2e/download/)下载Eclipse的Maven插件。
 
 ![Newproject2.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/5/56/Newpro
 ject2.png?version=95b9104780740c46c966b585e36ee13e)
