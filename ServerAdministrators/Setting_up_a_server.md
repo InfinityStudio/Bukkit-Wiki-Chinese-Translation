@@ -19,7 +19,7 @@
 
 **注意**：Bukkit服务端旨在_完全替代_你从Minecraft.com下载的官方服务器的全部功能。基本上Bukkit服务端和官方服务端无法同时运行在一台电脑上。不过你可以将以前使用官方服务端时生成的所有数据包括world或者其他的配置文件全部拷贝到Bukkit的文件夹中从而继续使用以前的游戏。它们是完全兼容的。
 
-##  Windows系统
+##Windows系统
 
    1. 首先从这个链接下载最新的稳定版本：[CraftBukkit - Recommended Build](http://dl.bukkit.org/latest-rb/craftbukkit.jar)
    
@@ -40,7 +40,7 @@
 
    如果你看到 "'Java' is not recognized as an internal or external command, operable program or batch file." 这说明你需要安装Java。如果正常安装之后依然不奏效的话，请参阅 [添加Java环境变量] (http://www.java.com/en/download/help/path.xml) 来添加Java的环境变量。
 
-##  Linux系统
+##Linux系统
 
    1. 首先从这个链接下载最新的稳定版本： [CraftBukkit - Recommended Build](http://dl.bukkit.org/latest-rb/craftbukkit.jar)
    
@@ -68,7 +68,7 @@
 
    如果你想使用screen指令来运行服务器，请参阅 [ABM](http://dev.bukkit.org/server-mods/ascii-bukkit-menu/)
 
-##  Mac OS X系统
+##Mac OS X系统
 
    1. 安装JAVA
 
@@ -130,11 +130,11 @@
 
 服务端已经安装在了你的桌面上的_Bukkit Server_文件夹中。启动服务器只需双击"LaunchServer.command"。
 
-## 错误诊断
+##错误诊断
 
 [Troubleshooting Common Problems](/Troubleshooting_Common_Problems)
 
-## 相关教程
+##相关教程
 
 [Ubuntu Server x64 教程](http：//forums.bukkit.org/threads/how-to-setup-a
 -ubuntu-craftbukkit-server-x64-running-java-x64.598/)
