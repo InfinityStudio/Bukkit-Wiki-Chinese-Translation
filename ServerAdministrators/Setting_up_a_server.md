@@ -92,7 +92,7 @@
      1. 打开TextEdit，将模式设置成普通文本模式。将下面的内容黏贴至文本中。
 
 
-                \#!/bin/bash
+                #!/bin/bash
                 cd "$( dirname "$0" )"
                 java -Xmx1024M -jar craftbukkit.jar -o true
 
