@@ -64,7 +64,7 @@
 
    8. 在所有文件生成完成后你可以在终端中看到Done的字样，这时请键入stop来停止服务器。
 
-   如果你想通过启动脚本来持续性的运行服务器即便关闭终端，请参阅 [minecraft-init](https://github.com/Ahtenus/minecraft-init)
+   如果你通过启动脚本启动服务器，但是希望在关闭终端的情况下服务端依然可以运行，请参阅 [minecraft-init](https://github.com/Ahtenus/minecraft-init)
 
    如果你想使用screen指令来运行服务器，请参阅 [ABM](http://dev.bukkit.org/server-mods/ascii-bukkit-menu/)
 
