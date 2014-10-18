@@ -1,115 +1,4 @@
-  * Curse Sites __
-    * Top Sites
-    * __[Gamepedia](http://www.gamepedia.com/)
-    * __[MMO-Champion](http://www.mmo-champion.com/)
-    * __[Arena Junkies](http://www.arenajunkies.com/)
-    * __[Reign of Gaming](http://www.reignofgaming.net)
-    * __[LoL Pro](http://lolpro.com)
-    * __[Minecraft Forums](http://www.minecraftforum.net/)
-    * __[Guild Wars 2 Guru](http://guildwars2guru.com)
-    * __[FPS General](http://fpsgeneral.com)
-    * [Curse.com](http://www.curse.com/)
-  * [Help](http://support.curse.com/)
-  * [Get an Epic Experience with Premium](http://www.curse.com/premium)
-  * [Support This Wiki](http://store.curse.com/products/gamepedia?pagesize=12)
-
-  * **[Login**](http://wiki.bukkit.org/Special:UserLogin?returnto=Configuration_API_Reference)
-  * [Don't have an account? **Register**](http://wiki.bukkit.org/Special:UserLogin/signup)
-
-##### Namespaces
-
-  * [Page](/Configuration_API_Reference)
-  * [Discussion](/Talk:Configuration_API_Reference)
-
-####
-
-##### Variants
-
-#### Share
-
-##### Share
-
-  * ![](/extensions/Social/images/square_icons/twitter.png)![](/extensions/Social/images/square_icons/facebook.png)![](/extensions/Social/images/square_icons/googleplus.png)![](/extensions/Social/images/square_icons/reddit.png)![](/extensions/Social/images/square_icons/tumblr.png)
-
-##### Views
-
-  * [View](/Configuration_API_Reference)
-  * [Edit](/index.php?title=Configuration_API_Reference&action=edit)
-  * [History](/index.php?title=Configuration_API_Reference&action=history)
-
-##### Actions
-
-##### Search
-
-![](http://hydra-media.cursecdn.com/wiki.bukkit.org/b/bc/Wiki.png?version=0a20
-81b450303b747b43d45d178fd129)
-
-##### Wiki
-
-  * [Main page](/Main_Page)
-  * [Recent changes](/Special:RecentChanges)
-  * [Random page](/Special:Random)
-  * [Wiki Issue Tracker](https://bukkit.atlassian.net/browse/WIKI)
-  * [Help](/Help:Contents)
-
-##### Community
-
-  * [Bukkit Website](http://www.bukkit.org)
-  * [Bukkit Forums](http://forums.bukkit.org)
-  * [BukkitDev](http://dev.bukkit.org)
-  * [Get Bukkit](http://dl.bukkit.org)
-  * [Minecraft Website](http://minecraft.net)
-  * [Minecraft Wiki](http://www.minecraftwiki.net)
-
-##### Tools
-
-  * [What links here](/Special:WhatLinksHere/Configuration_API_Reference)
-  * [Related changes](/Special:RecentChangesLinked/Configuration_API_Reference)
-  * [Special pages](/Special:SpecialPages)
-  * [Printable version](/index.php?title=Configuration_API_Reference&printable=yes)
-  * [Permanent link](/index.php?title=Configuration_API_Reference&oldid=10636)
-  * [Page information](/index.php?title=Configuration_API_Reference&action=info)
-
-#####
-
-![](http://media-mercury.cursecdn.com/attachments/1/806/mccapepromo.png)
-![](http://media-
-mercury.cursecdn.com/attachments/1/809/pacmanfriends_sidebadge_tall.png)
-![](http://media-
-mercury.cursecdn.com/attachments/1/810/outcast_sidebadge_tall.png) ![](http
-://media-mercury.cursecdn.com/attachments/0/180/warface.png) ![](http://media-
-mercury.cursecdn.com/attachments/0/95/destiny.png) ![](http://media-
-mercury.cursecdn.com/attachments/0/365/gardenwarfare_sidebadge_tall.png)
-
-#####
-
-![](/extensions/Social/images/square_icons/twitter.png)
-
-![](/extensions/Social/images/square_icons/facebook.png)
-
-![](/extensions/Social/images/square_icons/youtube.png)
-
-![](/extensions/Social/images/square_icons/googleplus.png)
-
-_Welcome to the BukkitWiki!_
-
-This Wiki is home to Bukkit's documentation and regulations surrounding the
-Bukkit Project and it's services. Want to help out? We would love to have you!
-Signup to get started!
-
-[Home](/Main_Page)
-
 #  Configuration API Reference
-
-From BukkitWiki
-
-Jump to: navigation, search
-
-**This page has been suggested for inclusion in the Official Documentation**
-
-This page has been **marked for inclusion in the Bukkit Offical Documentation
-section, Docs**. You can deliberate about its inclusion on its [Talk
-page](/Talk:Configuration_API_Reference).
 
 The Configuration API is a set of tools to help developers quickly parse and
 emit configuration files that are human readable and editable. Despite the
@@ -160,13 +49,9 @@ it.org/apidocs/index.html?org/bukkit/configuration/file/FileConfiguration.html
       * 2.3.1 Aliases
   * 3 Example Use
 
-##
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=1)]
-Basic Topics
+## Basic Topics
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=2)]
-The Configuration Object
+### The Configuration Object
 
 Your plugin extends [JavaPlugin](http://jd.bukkit.org/doxygen/d7/deb/classorg_
 1_1bukkit_1_1plugin_1_1java_1_1JavaPlugin.html), and in doing so, you
@@ -186,22 +71,13 @@ been loaded will not be reflected in the object. If _config.yml_ does not
 exist in your data folder, it is equivalent to an empty _config.yml_, and will
 load an empty _FileConfiguration_.
 
-![Warning](http://hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
 **Warning**: if you assign the returned object from _getConfig()_ DO NOT
 assign it to a static field  
-![Warning](http://hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
 **Warning**: if you do the above, assign _getConfig()_ to the variable AGAIN
 after a reloadConfig
+**Note**: it is better to just use _getConfig()_ instead of assigning it to an instance variable 
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: it is better to just use _getConfig()_ instead of assigning it to an instance variable 
-
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=3)]
-Keys
+### Keys
 
 A configuration file is organized into key value pairs where all keys are
 Strings. The value for the other keys may be a ConfigurationSection or a
@@ -215,9 +91,7 @@ have to invoke _getConfigurationSection(String)_.
 
     ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: The getKeys method returns a [Set](http://download.oracle.com/javase/1,5.0/docs/api/java/util/Set.html) of Strings 
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=4)]
-Paths
+### Paths
 
 The Configuration API uses Paths to form a unique key to value pairs. A path
 is the set of keys used to associate a value. Each level is separated by the
@@ -260,9 +134,7 @@ following YAML file has the following set of paths.
   * one.*.six 
   * one.*.seven 
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=5)]
-Default Values
+### Default Values
 
 A default _config.yml_ should be provided in your jar for users. In the event
 that a config.yml is missing or incomplete, values will be loaded from
@@ -288,17 +160,13 @@ object.
 
 >     this.getConfig().options().copyDefaults(true)
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=6)]
-Creating a copy of config.yml
+#### Creating a copy of config.yml
 
 You can create a copy of config.yml from the jar into the plugin's data folder
 by invoking JavaPlugin's saveDefaultConfig() method. saveDefaultConfig() will
 not overwrite an existing file.
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=7)]
-Getting Values
+### Getting Values
 
 Reading values from the configuration involves invoking one of the many getter
 methods. A complete list of getters can be found [here](http://jd.bukkit.org/d
@@ -312,9 +180,7 @@ the commonly used getter methods are as follows
   * getList(String) 
   * getStringList(String) 
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=8)]
-HashMaps
+#### HashMaps
 
 In the case of HashMaps as a value, they are treated differently than other
 forms of data. There is a restriction for Map types. It must use a String as a
@@ -335,9 +201,7 @@ perform will be safe.
 
 >     this.getConfig().getConfigurationSection("path.to.map").getValues(false)
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=9)]
-Setting Values
+### Setting Values
 
 Writing values involves invoking the _set(String, Object)_ method on an
 instance of Configuration. Unlike the different get methods that
@@ -400,9 +264,7 @@ Bukkit", "Have a Good Day!");
 
   
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=10)]
-HashMaps
+#### HashMaps
 
 When HashMaps are used as a value, they are treated slightly differently. The
 Map must parameterized with a String type for the key, and the value must be
@@ -421,9 +283,7 @@ that is ConfigurationSerializable. The createSectionMethod
 
 >     this.getConfig().createSection(String path, Map< String, Object > map)
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=11)]
-Saving the File
+### Saving the File
 
 If make any changes to the_FileConfiguration_ with set methods, or mutate any
 _Lists_, you will need to save the changes to disk if you wish to keep these
@@ -434,9 +294,7 @@ saveConfig method for your plugin, it will overwrite the file already there.
 
 >     this.saveConfig();
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=12)]
-Reloading from Disk
+### Reloading from Disk
 
 If you suspect that users have made changes to the _config.yml_ in the data
 folder, those changes are not reflected in memory. Invoke the _reloadConfig()_
@@ -447,17 +305,13 @@ in memory.
 
 >     this.reloadConfig();
 
-##
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=13)]
-Advanced Topics
+## Advanced Topics
 
 The following are some more advanced topics, meant for more advanced plugins.
 If you only require the default _config.yml_, creating custom methods for
 reading, and saving, you will not need to go this far.
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=14)]
-Options
+### Options
 
 Every _FileConfiguration_ instance is associated with a [FileConfigurationOpti
 ons](http://jd.bukkit.org/apidocs/index.html?org/bukkit/configuration/file/Fil
@@ -470,9 +324,7 @@ overloaded, for example _copyDefaults()_ which returns a boolean and
 _copyDefaults(boolean)_ which returns it self, but has a side effect which
 changes the state.
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=15)]
-CopyDefaults
+#### CopyDefaults
 
 The _copyDefaults_ option changes the behavior of Configuration's save method.
 By default, the defaults of the configuration will not be written to the
@@ -480,32 +332,24 @@ target save file. If set to true, it will write out the default values, to the
 target file. However, once written, you will not be able to tell the
 difference between a default and a value from the configuration.
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=16)]
-PathSeperator
+#### PathSeperator
 
 PathSeperator changes the character that is used to separate the different
 levels of the configuration. By default it is the "." (period) but it can be
 changed to any char.
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=17)]
-Header
+#### Header
 
 Header is the comment block at the top of a YAML file, it is applied to the
 save output. The header is the only comment that Configuration API knows how
 to copy.
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=18)]
-copyHeader
+#### copyHeader
 
 If _copyHeader()_ returns true then the header will be copied on save, from
 the default source.
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=19)]
-Arbitrary Configurations
+### Arbitrary Configurations
 
 If you require additional YAML files, for storing configuration information or
 persisting additional game information you will need to write your own methods
@@ -519,9 +363,7 @@ The advantage here, is that you can use each set in the same manner as the
 provided methods for the default config.yml. Alternately, adding additional
 methods can keep the method count lower and allow access to multiple files.
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=20)]
-Mirroring the JavaPlugin implementation
+#### Mirroring the JavaPlugin implementation
 
 JavaPlugin implements methods for config.yml. A plugin needs to implement its
 own methods to access configuration files unique to the plugin. After
@@ -542,9 +384,7 @@ disk, and the FileConfiguration represents the contents of the configuration.
 
 >     private File customConfigFile = null;
 
-#####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=21)]
-Implementation for Reloading
+##### Implementation for Reloading
 
 Then, write the method that is responsible for loading the config from disk.
 It will load the file, and search the jar for a default customConfig.yml.
@@ -580,9 +420,7 @@ YamlConfiguration.loadConfiguration(defConfigStream);
 
 >     }
 
-#####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=22)]
-Implementation for Getting
+##### Implementation for Getting
 
 Next, you need to write the getter method. Check if _customConfig_ is null, if
 it is load from disk.
@@ -601,9 +439,7 @@ it is load from disk.
 
 >     }
 
-#####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=23)]
-Implementation for Saving
+##### Implementation for Saving
 
 Finally, write the save method, which saves changes and overwrites the file on
 disk.
@@ -631,9 +467,7 @@ customConfigFile, ex);
 
 >     }
 
-#####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=24)]
-Implementation for Defaults
+##### Implementation for Defaults
 
 Optionally, you may want to write a method that mimics JavaPlugin's
 saveDefaultConfig() method.
@@ -656,9 +490,7 @@ saveDefaultConfig() method.
 
 >     }
 
-###
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=25)]
-Serializing and Deserializing Objects
+### Serializing and Deserializing Objects
 
 The Configuration API, as mentioned above can store Java objects that
 implement the _ConfigurationSerializable_ Interface. Object serialization
@@ -688,16 +520,11 @@ that gets called every time your plugin is initialized:
 >     ConfigurationSerialization.registerClass(Class<? extends
 ConfigurationSerializable>)
 
-![Warning](http://hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
 **Warning**: Do not use a static block to execute the above; if you do so, it
 will not be called a second time when `/reload` is used and you will encounter
 errors due to it not being registered!
 
-####
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=26)]
-Aliases
+#### Aliases
 
 When classes are serialized they are marked with their fully qualified name.
 
@@ -718,9 +545,7 @@ registration.
 >     ConfigurationSerialization.registerClass(Class<? extends
 ConfigurationSerializable>, String)
 
-##
-[[edit](/index.php?title=Configuration_API_Reference&action=edit&section=27)]
-Example Use
+## Example Use
 
 Below is the an example plugin that uses the new Configuration API to be
 display messages as an MOTD as players join, and for the player to retrieve
@@ -819,154 +644,3 @@ The default config.yml that is in the plugin's jar
       - Play Nice
       - Respect others
       - Have Fun
-
-Language
-
-  [English](/Introduction_to_the_New_Configuration) • [Беларускі](/index.php?t
-itle=Introduction_to_the_New_Configuration/by&action=edit&redlink=1) •
-[Deutsch](/Introduction_to_the_New_Configuration/de) • [español](/index.php?ti
-tle=Introduction_to_the_New_Configuration/es&action=edit&redlink=1) • [suomi](
-/index.php?title=Introduction_to_the_New_Configuration/fi&action=edit&redlink=
-1) • [français](/Introduction_to_the_New_Configuration/fr) • [italiano](/index
-.php?title=Introduction_to_the_New_Configuration/it&action=edit&redlink=1) •
-[한국어](/Introduction_to_the_New_Configuration/ko) • [Nederlands](/index.php?tit
-le=Introduction_to_the_New_Configuration/nl&action=edit&redlink=1) • [norsk bo
-kmål](/index.php?title=Introduction_to_the_New_Configuration/no&action=edit&re
-dlink=1) • [polski](/index.php?title=Introduction_to_the_New_Configuration/pl&
-action=edit&redlink=1) • [português](/index.php?title=Introduction_to_the_New_
-Configuration/pt&action=edit&redlink=1) •
-[русский](/Introduction_to_the_New_Configuration/ru) • [lietuvių](/index.php?t
-itle=Introduction_to_the_New_Configuration/lt&action=edit&redlink=1) • [česky]
-(/index.php?title=Introduction_to_the_New_Configuration/cs&action=edit&redlink
-=1)
-
-Retrieved from "[http://wiki.bukkit.org/index.php?title=Configuration_API_Refe
-rence&oldid=10636](http://wiki.bukkit.org/index.php?title=Configuration_API_Re
-ference&oldid=10636)"
-
-[Category](/Special:Categories):
-
-  * [DocsNominees](/Category:DocsNominees)
-
-  * This page was last modified on 8 August 2014, at 21:05.
-  * Content is available under [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) unless otherwise noted. Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.  
-This site is a part of Curse, Inc. and is not affiliated with the game
-publisher.
-
-  * [Privacy policy](/BukkitWiki:Privacy_policy)
-  * [About BukkitWiki](/BukkitWiki:About)
-  * [Disclaimers](/BukkitWiki:General_disclaimer)
-  * [Mobile view](http://wiki.bukkit.org/index.php?title=Configuration_API_Reference&mobileaction=toggle_view_mobile)
-  * ![CC BY-NC-SA 3.0](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)
-  * ![Powered by MediaWiki](/skins/common/images/poweredby_mediawiki_88x31.png) ![Part of Gamepedia](/extensions/Curse/Icons/gamepedia_poweredby.png)
-
-# Curse
-
-## Curse is the **#1 Resource** for core online gamers.
-
-#### Not a Member?
-
-##### Get your Free Account!
-
-[Sign up for Free!](http://www.curse.com)
-
-  * __
-  * __
-  * __
-  * __
-
-#### Featured Sites
-
-[More](http://www.curse.com)
-
-  * [
-
-#### Guild Wars 2 Guru
-
-__Guild Wars 2 Guru
-
-    The latest and greatest on Tyria.
-](http://www.guildwars2guru.com)
-
-  * [
-
-#### LoL Pro
-
-__LoL Pro
-
-    Dominate with Pro LoL guides.
-](http://www.lolpro.com)
-
-  * [
-
-#### MMO-Champion
-
-__MMO-Champion
-
-    Keep ahead with the champions of WoW coverage.
-](http://www.mmo-champion.com)
-
-  * [
-
-#### GW2DB
-
-__GW2DB
-
-    Explore Tyria with Curse and GW2DB.
-](http://www.gw2db.com)
-
-#### Browse
-
-  * [Core]()
-    * [Curse](http://www.curse.com/)
-    * [MMO-Champion](http://www.mmo-champion.com/)
-    * [WowStead](http://www.wowstead.com/)
-    * [CurseForge](http://www.curseforge.com/)
-    * [WowAce](http://www.wowace.com/)
-    * [SkyrimForge](http://www.skyrimforge.com/)
-    * [SC2Mapster](http://www.sc2mapster.com/)
-    * [LoLPro](http://www.lolpro.com/)
-    * [ExilePro](http://www.exilepro.com)
-  * [Community]()
-    * [Minecraft Forum](http://www.minecraftforum.net/)
-    * [Terraria Online](http://www.terrariaonline.com/)
-    * [Arena Junkies](http://www.arenajunkies.com/)
-    * [Guild Wars 2 Guru](http://guildwars2guru.com/)
-    * [DiabloFans](http://www.diablofans.com/)
-    * [FPS General](http://www.fpsgeneral.com/)
-    * [DarthHater](http://www.darthhater.com/)
-    * [Defiance Forum](http://www.defianceforum.com/)
-    * [Wildstar Forums](http://www.wildstarforums.com/)
-  * [Database]()
-    * [Guild Wars 2 DB](http://www.gw2db.com/)
-    * [Zybez](http://www.zybez.net/)
-    * [DarthHater DB](http://db.darthhater.com/)
-    * [Aion Armory](http://www.aionarmory.com/)
-    * [WoW Database](http://www.wowdb.com/)
-    * [Marriland](http://www.marriland.com)
-  * [Wiki]()
-    * [Minecraft Wiki](http://www.minecraftwiki.net/)
-    * [Terraria Wiki](http://wiki.terrariaonline.com/)
-    * [Wowpedia](http://www.wowpedia.org/)
-    * [Skyrim Wiki](http://www.skyrimwiki.com/)
-    * [Wiki SWTOR](http://www.wikiswtor.com/)
-    * [Dragon Nest Wiki](http://www.dragonnestwiki.com/)
-    * [Vindictus Wiki](http://www.vindictuswiki.com/)
-
-Back to Top
-
-  * [About Us](http://www.curse.com/about)
-  * [Advertising](http://www.curse.com/advertising/overview)
-  * [Privacy Policy](http://www.curse.com/privacy)
-  * [Terms of Service](http://www.curse.com/terms)
-  * [Premium Terms of Service](http://www.curse.com/premiumterms)
-  * [Curse Newsletter](http://www.curse.com/newsletter)
-  * [Jobs at Curse](http://www.curse.com/jobs)
-
-Handcrafted in San Francisco & Huntsville
-
-![](http://b.scorecardresearch.com/p?c1=2&c2=6035118&cv=2.0&cj=1)
-
-![](//secure-us.imrworldwide.com/cgi-bin/m?ci=us-
-603339h&cg=0&cc=1&ts=noscript)
-
