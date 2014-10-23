@@ -102,41 +102,33 @@ ect.png?version=72c02ac1c1c013513549f355e16bc924)
 ![Newproject2.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/5/56/Newpro
 ject2.png?version=95b9104780740c46c966b585e36ee13e)
 
-Now, you need to name your group as follows:
+现在你需要按照下面的说明命名你的组：
 
-  * If you have a domain name, the package would be the domain name in reverse. 
-    * Ex: i-am-a-bukkit-developer.com your package would be com.i_am_a_bukkit_developer [source](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
-    * Avoid using a domain you do not own. 
-  * No domain? Here are some common conventions 
-    1. Create an account on a source control site such as GitHub or sourceforge 
-      * For GitHub, follow the instructions [here](http://pages.github.com/) and you will have a sub-domain, so your package would be io.github.<username>  
+  * 如果你拥有一个域名，你可以使用你自己保有的域名。
+    * 比如: 你拥有i-am-a-bukkit-developer.com域名，那么你的包名可以使用com.i_am_a_bukkit_developer [资源](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
+    * 避免使用那些不是你拥有的域名。 
+  * 没有域名? 这里有几个不错的方案： 
+    1. 在类似于Github或者SourceForge上创建一个帐号
+      * 如果是Github的话，请参见[这个](http://pages.github.com/)链接来创建你自己的子域名。这样你就可以使用io.github.<用户名>来作为你的包名啦。
 
-    2. Use your email. Ex: <username>@gmail.com would be com.gmail.<username>  
+    2. 使用你的邮箱来作为你的域名。比如你拥有username@gmail.com这个邮箱，那么你就可以使用com.gmail.<username>来作为你的包名。
 
-    3. This is the least preferred method. Simply use any unique group naming, again, use this as your last resort. 
+    3. 如果你无论如何都无法使用上面的方法，那就使用一个“独特”的包名吧。记住，这是无奈之举，尽可能不要使用这种方式来命名。
 
-There are several things that your group must **not** begin with and those
-are:
+下面这几个包名称请**万万不要**使用：
 
   * org.bukkit 
   * net.bukkit 
   * com.bukkit 
   * net.minecraft 
 
-Once you have the base group name, you will want to finish it off with the
-plugin name. Lets use the GitHub Pages example for this. If you are creating a
-plugin called _TestPlugin_ your full group name would be
-_io.github.<username>_, and your artifact name would be _TestPlugin_. For the
-version, simply stick with the default for now. It can be changed later.
+当你有了你的组名称之后，你就得考虑一下你的插件名了。让我们拿Github页面作为例子：如果你正在制作一个叫做_TestPlugin_的插件，那么你的组名称（group name）是_io.github.<username>_，你的项目名称（artifact）是_TestPlugin_。至于版本号，目前使用默认的就好，这个可以一会再更改。
 
-Finish the wizard:
+完成这个向导：
 
-![Newproject3.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/b/be/Newpro
-ject3.png?version=2f3062f93e96402066ea0fc6a34e9522)
+![Newproject3.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/b/be/Newproject3.png?version=2f3062f93e96402066ea0fc6a34e9522)
 
-If this is your first time using Eclipse, close the Welcome tab by clicking
-the "X" next to the Welcome tab on the tab bar. Now, you should have a window
-that looks like this:
+如果你第一次使用Eclipse，点击Welcome窗口边上的×来关闭欢迎窗口。然后你可以看到这样一个窗口：
 
 ![Eclipsemain.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/d/de/Eclips
 emain.png?version=ea3d2c48ebba456e2109413cc77b8741)
