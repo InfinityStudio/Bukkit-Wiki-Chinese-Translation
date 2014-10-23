@@ -103,7 +103,7 @@
 现在你需要按照下面的说明命名你的组：
 
   * 如果你拥有一个域名，你可以使用你自己保有的域名。
-    * 比如: 你拥有i-am-a-bukkit-developer.com域名，那么你的包名可以使用com.i_am_a_bukkit_developer [资源](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
+    * 比如: 你拥有i-am-a-bukkit-developer.com域名，那么你的包名可以使用com.i_am_a_bukkit_developer [更多信息](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
     * 避免使用那些不是你拥有的域名。 
   * 没有域名? 这里有几个不错的方案： 
     1. 在类似于Github或者SourceForge上创建一个帐号
