@@ -78,7 +78,7 @@
   * [JavaNotes](http://math.hws.edu/javanotes/) \- 免费在线教材
   * [TheNewBoston](http://thenewboston.org/list.php?cat=31) \- 视频入门指导 
 
-## The Development Environment
+## 部署开发环境
 
 在开发插件（或者学习Java）之前，首先你需要部署开发环境。这包含但不限于安装IDE（集成开发环境）。下面的内容将指导你如何安装部署以Eclipse作为IDE的Java开发环境。    
 
@@ -155,7 +155,7 @@
           </plugins>
        </build>
 
-也许你希望使用其他版本，比如1.8版的Java8.请注意！[这个](http://mcstats.org/global/)权威的统计信息标明，大部分的服务器依然运行在Java7版本之上。所以，使用Java8很可能导致很多服主无法使用你的插件。如果你使用1.7版本的功能，当你鼠标悬停在错误代码前，Eclipse会建议你更改语言版本。
+也许你希望使用其他版本，比如1.8版的Java8。请注意！[这个](http://mcstats.org/global/)权威的统计信息标明，大部分的服务器依然运行在Java7版本之上。所以，使用Java8很可能导致很多服主无法使用你的插件。如果你使用1.7版本的功能，当你鼠标悬停在错误代码前，Eclipse会建议你更改语言版本。
 
 将下面这一块代码拷贝到_</project>_下面（这一块代码告诉Eclipse：BUkkit项目的代码仓库在哪）
 
