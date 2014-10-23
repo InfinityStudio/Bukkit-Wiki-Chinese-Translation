@@ -93,14 +93,12 @@
 在开始之前，你首先需要部署你的Eclipse工作区和文件。
 启动Eclipse，然后点击_File -> New -> Project:_菜单的来创建一个新项目。
 
-![Newproject.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/1/13/Newproj
-ect.png?version=72c02ac1c1c013513549f355e16bc924)
+![Newproject.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/1/13/Newproject.png?version=72c02ac1c1c013513549f355e16bc924)
 
 现在，打开_Maven_文件夹后选择_Maven Project_。点击next，然后勾选_Create a simple project_后点击下一步。
 如果你无法看到_Maven_文件夹，你需要点击[这里](http://eclipse.org/m2e/download/)下载Eclipse的Maven插件。
 
-![Newproject2.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/5/56/Newpro
-ject2.png?version=95b9104780740c46c966b585e36ee13e)
+![Newproject2.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/5/56/Newproject2.png?version=95b9104780740c46c966b585e36ee13e)
 
 现在你需要按照下面的说明命名你的组：
 
