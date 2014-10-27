@@ -78,7 +78,7 @@
   * [JavaNotes](http://math.hws.edu/javanotes/) \- 免费在线教材
   * [TheNewBoston](http://thenewboston.org/list.php?cat=31) \- 视频入门指导 
 
-## The Development Environment
+## 部署开发环境
 
 在开发插件（或者学习Java）之前，首先你需要部署开发环境。这包含但不限于安装IDE（集成开发环境）。下面的内容将指导你如何安装部署以Eclipse作为IDE的Java开发环境。    
 
@@ -128,31 +128,19 @@
 
 如果你第一次使用Eclipse，点击Welcome窗口边上的×来关闭欢迎窗口。然后你可以看到这样一个窗口：
 
-![Eclipsemain.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/d/de/Eclips
-emain.png?version=ea3d2c48ebba456e2109413cc77b8741)
+![Eclipsemain.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/d/de/Eclipsemain.png?version=ea3d2c48ebba456e2109413cc77b8741)
 
-Click the arrow to the left of your artifact name, and let's get started!
+点击项目名称左边的箭头来迈出第一步吧！
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=6)] Reference
-the Bukkit API
+### 引用Bukkit的API
 
-Before you begin developing your plugin you will need to add the Bukkit API
-library to your project as a dependency, you can also add any other API's you
-may want to use.
+在你开始编写你的插件之前，你需要添加依赖的Bukkit API到你的项目中。同样你也可以加入一些其他你想要添加的API。
 
-Double-click _pom.xml_, which is at the bottom of your project's folder. Click
-the _pom.xml_ tab at the bottom, and you should see something like this:
+双击打开你项目文件夹底部的_pom.xml_文件。单击底部的_pom.xml_，你应该能看到类似于这张图的信息：
 
-![Pomeditor.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/f/f0/Pomedito
-r.png?version=eccc160e55c7c1a78bf5cbe2587147be)
+![Pomeditor.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/f/f0/Pomeditor.png?version=eccc160e55c7c1a78bf5cbe2587147be)
 
-If you wish to use Java 6+ language features, you must specify the Java
-version that the project should be built on. Copy and paste this (specifies
-that the project should be built under Java 7) before _</project>_:
-
-`
-
-    
+如果你希望使用Java 6+作为开发语言，你必须明确标注你希望构建于哪个Java版本上。使用下面的格式（标明工程是应该在在Java7上构建）_</project>_。
     
        <build>
           <plugins>
@@ -166,21 +154,10 @@ that the project should be built under Java 7) before _</project>_:
               </plugin>
           </plugins>
        </build>
-    
 
-`
+也许你希望使用其他版本，比如1.8版的Java8。请注意！[这个](http://mcstats.org/global/)权威的统计信息标明，大部分的服务器依然运行在Java7版本之上。所以，使用Java8很可能导致很多服主无法使用你的插件。如果你使用1.7版本的功能，当你鼠标悬停在错误代码前，Eclipse会建议你更改语言版本。
 
-You may use other levels, such as `1.8` for Java 8. Please note that
-[according to MCStats](http://mcstats.org/global/), the vast majority of
-server owners run Java 7, so compiling for Java 8 will result in most server
-owners being unable to run your plugin. If you do use Java 1.7 features,
-Eclipse will suggest changing the language level when you hover over the code
-"error". Do so.
-
-Before the _</project>_ at the bottom, copy and paste this block (it tells
-Eclipse where Bukkit's repository is located):
-
-`
+将下面这一块代码拷贝到_</project>_下面（这一块代码告诉Eclipse：BUkkit项目的代码仓库在哪）
 
     
     
@@ -191,9 +168,6 @@ Eclipse where Bukkit's repository is located):
            </repository>
        </repositories>
     
-
-`
-
 Next, before the _</project>_ at the bottom, copy and paste this block (it
 tells Eclipse that we're building against Bukkit):
 
