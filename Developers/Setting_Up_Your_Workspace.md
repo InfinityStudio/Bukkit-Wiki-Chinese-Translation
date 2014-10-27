@@ -1,11 +1,10 @@
-#  Setting Up Your Workspace
+# 设置你的工作区
 
-This page will go through some of the tools that you will need to use to work
-with Bukkit and building Bukkit plugins.
+这篇指南罗列了一些你需要的工具来使用Bukkit api，通过这些工具你可以制作属于自己插件。
 
-## Contents
+## 目录
 
-  * 1 Tools
+  * 1 工具
     * 1.1 Java Development Kit
       * 1.1.1 Which version of the JDK?
       * 1.1.2 64-bit (x64) or 32-bit (x86)?
@@ -20,12 +19,9 @@ with Bukkit and building Bukkit plugins.
       * 1.4.3 IntelliJ IDEA
   * 2 Where To From Here
 
-# Tools
+# 公爵
 
-There is some developer choice when it comes to what you use to build your
-software, however there are some key tools every developer needs. Even if you
-only want to make plugins, there are some tools that will make your job
-easier, and if you to go open source, easier for everyone who helps you!
+无论如何，一个开发者都需要使用工具来开发软件，但是每个人都自己喜欢的工具和不同的开发需求。如果你只是想制作插件的话，我们将会推荐几个工具来让开发更加的容易。与此同时，如果你将你制作的软件开源的话，这些工具也能让其他人更容易帮你一起开发这个插件。
 
 ## Java Development Kit
 
