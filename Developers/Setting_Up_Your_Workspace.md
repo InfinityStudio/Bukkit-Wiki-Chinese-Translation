@@ -5,19 +5,19 @@
 ## 目录
 
   * 1 工具
-    * 1.1 Java Development Kit
-      * 1.1.1 Which version of the JDK?
-      * 1.1.2 64-bit (x64) or 32-bit (x86)?
-    * 1.2 Git
-      * 1.2.1 Using Git
-        * 1.2.1.1 GitHub
+    * 1.1 Java开发工具包（JDK）
+      * 1.1.1 我应该使用哪个版本的JDK？
+      * 1.1.2 使用64位（x64）还是32位（x86）？
+    * 1.2 什么是Git
+      * 1.2.1 使用Git
+        * 1.2.1.1 什么是GitHub
     * 1.3 Apache Maven
-      * 1.3.1 Using Maven
-    * 1.4 Integrated Development Environments
+      * 1.3.1 使用Maven
+    * 1.4 集成开发环境（IDE）
       * 1.4.1 Eclipse
       * 1.4.2 NetBeans
       * 1.4.3 IntelliJ IDEA
-  * 2 Where To From Here
+  * 2 接下来？
 
 # 工具
 
@@ -71,21 +71,21 @@ IDE（集成开发环境）是用来编辑、编译和调试的工具。你可�
 
 [Eclipse](http://www.eclipse.org/)是在插件开发者中非常流行的IDE。最新的版本可以在[这里](http://www.eclipse.org/downloads/packages/)找到。请注意，你需要下载的是**Eclipse IDE for Java Developers**！Eclipse通过m2Eclipse插件和eGit插件分别提供对Maven和Git的支持。同时，你可以下载[YEdit](http://code.google.com/p/yedit/)来获得对Yaml的支持，这在以后的开发过程中将会非常有用。
 
-     _关于如何使用Eclipse，请参阅[Eclipse文档](http://www.eclipse.org/documentation/)。_
-     _关于在Eclipse中Maven的使用，请参阅[m2eclipse文档](http://www.sonatype.org/m2eclipse/)。_
-     _关于如何在Eclipse中使用Git，请参阅[eGit documentaiton](http://www.eclipse.org/egit/documentation/)。_
+  _关于如何使用Eclipse，请参阅[Eclipse文档](http://www.eclipse.org/documentation/)。_
+  _关于在Eclipse中Maven的使用，请参阅[m2eclipse文档](http://www.sonatype.org/m2eclipse/)。_
+  _关于如何在Eclipse中使用Git，请参阅[eGit documentaiton](http://www.eclipse.org/egit/documentation/)。_
 
 ### NetBeans
 
 [Netbeans IDE](http://netbeans.org/)是一款由甲骨文开发的IDE。最新的版本可以在[这里](http://netbeans.org/downloads/)找到。如果你希望使用这款IDE开发工具开发插件，请注意下载**Netbeans Java SE bundle**。Netbeans内部已经集成了Maven和Git支持，所以你不用再另外下载这些插件了。
 
-     _更多使用指南请参阅[Netbeans文档](http://netbeans.org/kb/index.html)。_
+  _更多使用指南请参阅[Netbeans文档](http://netbeans.org/kb/index.html)。_
 
 ### IntelliJ IDEA
 
 [IntelliJ IDEA](http://www.jetbrains.com/idea/)是另外一款非常流行的IDE。最新的版本可以在[这里](http://www.jetbrains.com/idea/download/index.html)下载。同样，用它开开发插件的话，请留意下载**Community Edition**版本。IntelliJ同样也内继承了对于Git和Maven的支持。
 
-     _更多使用指南请参阅[IntelliJ文档](http://www.jetbrains.com/idea/documentation/index.jsp)。_
+  _更多使用指南请参阅[IntelliJ文档](http://www.jetbrains.com/idea/documentation/index.jsp)。_
 
 # 接下来？
 
