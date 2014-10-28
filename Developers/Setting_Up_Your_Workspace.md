@@ -19,7 +19,7 @@
       * 1.4.3 IntelliJ IDEA
   * 2 Where To From Here
 
-# 公爵
+# 工具
 
 无论如何，一个开发者都需要使用工具来开发软件，但是每个人都自己喜欢的工具和不同的开发需求。如果你只是想制作插件的话，我们将会推荐几个工具来让开发更加的容易。与此同时，如果你将你制作的软件开源的话，这些工具也能让其他人更容易帮你一起开发这个插件。
 
@@ -37,6 +37,7 @@ JDK（Java开发工具包）是一个Jre（Java运行环境）的尚未编译版
 
 ## 什么是Git
 
+
 ![git](http://hydra-media.cursecdn.com/wiki.bukkit.org/thumb/2/29/Git-Logo-2Color.png/40px-Git-Logo-2Color.png?version=03ffd9ff8306dfaf62725ef54b60f1e5)
 
 Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使用Git进行管理和控制的。Git允许一个开发者开发的同时与其他开发者共同协作开发。不但如此，Git还拥有允追踪任何人所做的任何更改的强大功能。当然，这也导致Git有点难以入门。Git的最新版本可以在[这里](http://git-scm.com/download)下载。
@@ -50,13 +51,7 @@ Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使�
 [GitHub](https://github.com)是一个源代码分享网站，Bukkit项目的源代码也是托管在Github上面的。你可以使用Git的克隆功能从[Bukkit源代码仓库](http://github.com/Bukkit)克隆Bukkit的源代码。
 
 
-
-Sharing of code works both ways - you can download shared code, but you can
-also share yours with the world. This is a great idea in this open community,
-as it allows others to help you with your project, or even develop new
-features for your plugins! If you intend to contribute to the Bukkit Project
-you must be willing to share your code. Additional instructions for using
-GitHub can be found at [GitHub:Help](https://help.github.com/)
+代码分享是一个双向的过程-你可以下载别人分享的代码，同时你也可以向全世界分享你自己的代码。我们非常推荐分享你的代码，这样的话感兴趣的人就可以对你的项目提供帮助，甚至为你的插件开发新的功能。如果你希望向Bukkit项目贡献代码的话，首先你必须自愿接受分享代码。一些其他的Github使用指南可以在[这里](https://help.github.com/)找到。
 
 ## Apache Maven
 
