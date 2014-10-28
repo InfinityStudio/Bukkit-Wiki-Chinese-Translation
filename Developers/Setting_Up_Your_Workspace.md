@@ -38,7 +38,7 @@ JDK（Java开发工具包）是一个Jre（Java运行环境）的尚未编译版
 ## 什么是Git
 
 
-![git](http://hydra-media.cursecdn.com/wiki.bukkit.org/thumb/2/29/Git-Logo-2Color.png/40px-Git-Logo-2Color.png?version=03ffd9ff8306dfaf62725ef54b60f1e5)
+![git](http://git-scm.com/images/logo@2x.png)
 
 Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使用Git进行管理和控制的。Git允许一个开发者开发的同时与其他开发者共同协作开发。不但如此，Git还拥有允追踪任何人所做的任何更改的强大功能。当然，这也导致Git有点难以入门。Git的最新版本可以在[这里](http://git-scm.com/download)下载。
 
@@ -55,67 +55,40 @@ Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使�
 
 ## Apache Maven
 
-[Apache Maven](http://maven.apache.org) is a tool that the Bukkit Project uses
-to manage building our code. The latest version of Maven can be found on the
-[here](http://maven.apache.org/download.html) on the Apache Maven site.
+[Apache Maven](http://maven.apache.org)是一个用于代码管理和构建的工具，Bukkit也是使用这种这个工具进行构建的。最新的Maven版本可以在[这里](http://maven.apache.org/download.html)找到的。
 
-### Using Maven
+### 使用Maven
 
-Additional instructions for installing and using Maven can be found
-[here](http://maven.apache.org/guides/getting-started/maven-in-five-
-minutes.html) on the maven site.
+关于如何安装和使用Maven，首先你可以在[这里]找到一些有用的信息(http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)。
 
-Once installed, Maven should be utilised to compile Bukkit and CraftBukkit.
-Refer to the respective README files in the repositories for instructions.
+当你安装完毕后，Maven就可以用来编译Bukkit或者CraftBukkit啦。你可以在源代码中的README文件里找到编译和构建的方法。
 
-## Integrated Development Environments
+## 集成开发环境（IDE）
 
-The IDE (Intergraded Development Environment) is a program you can use to
-compile and debug your plugins. An IDE is an optional piece of the developer
-tool chain. It is possible to use notepad (or its equivalent) and produce a
-working a plugin. An IDE however, makes the life of a developer much easier by
-integrating powerful tools, providing syntax highlighting, and error checking.
-The choice of which IDE to use is yours to make!
+IDE（集成开发环境）是用来编辑、编译和调试的工具。你可以用它来编写你的代码，同样通过它来运行你的代码从而找到代码中的错误所在。IDE的使用是编码开发中非常重要的一环。是的，你当然可以只使用记事本来编写你的插件，不过使用IDE将会让你更加便捷的编辑你的代码。无论是语法高亮还是自动查错都是非常实用的工具，没有这些便捷的工具，开发将会变得枯燥无味且难以继续。
 
 ### Eclipse
 
-The [Eclipse IDE](http://www.eclipse.org/) is a popular choice among plugin
-developers. The latest version, Eclipse Kepler (4.3.1), can be found
-[here](http://www.eclipse.org/downloads/packages/) on the eclipse site. Plugin
-developers should download the **Eclipse IDE for Java Developers**. Eclipse
-provides Maven integration by means of the m2Eclipse plugin, Git integration
-with by mean of the eGit plugin. Additionally, the
-[YEdit](http://code.google.com/p/yedit/) plugin can be installed to provide a
-YAML editor.
+[Eclipse](http://www.eclipse.org/)是在插件开发者中非常流行的IDE。最新的版本可以在[这里](http://www.eclipse.org/downloads/packages/)找到。请注意，你需要下载的是**Eclipse IDE for Java Developers**！Eclipse通过m2Eclipse插件和eGit插件分别提供对Maven和Git的支持。同时，你可以下载[YEdit](http://code.google.com/p/yedit/)来获得对Yaml的支持，这在以后的开发过程中将会非常有用。
 
-     _For general Eclipse IDE usage please refer to the [Eclipse documentaiton](http://www.eclipse.org/documentation/)._
-     _For Maven integration usage please refer to the [m2eclipse documentation](http://www.sonatype.org/m2eclipse/)._
-     _For Git integration usage please refer to the [eGit documentaiton](http://www.eclipse.org/egit/documentation/)._
+     _关于如何使用Eclipse，请参阅[Eclipse文档](http://www.eclipse.org/documentation/)。_
+     _关于在Eclipse中Maven的使用，请参阅[m2eclipse文档](http://www.sonatype.org/m2eclipse/)。_
+     _关于如何在Eclipse中使用Git，请参阅[eGit documentaiton](http://www.eclipse.org/egit/documentation/)。_
 
 ### NetBeans
 
-The [Netbeans IDE](http://netbeans.org/) is developed by Oracle. The latest
-version, 7.3, can be found [here](http://netbeans.org/downloads/) on the
-Netbeans site. Plugin developers should download the **Netbeans Java SE
-bundle**. Netbeans provides native integration with Maven and Git integration
-by means of a Git plugin.
+[Netbeans IDE](http://netbeans.org/)是一款由甲骨文开发的IDE。最新的版本可以在[这里](http://netbeans.org/downloads/)找到。如果你希望使用这款IDE开发工具开发插件，请注意下载**Netbeans Java SE bundle**。Netbeans内部已经集成了Maven和Git支持，所以你不用再另外下载这些插件了。
 
-     _For usage instructions please refer to the [Netbeans documentation](http://netbeans.org/kb/index.html)._
+     _更多使用指南请参阅[Netbeans文档](http://netbeans.org/kb/index.html)。_
 
 ### IntelliJ IDEA
 
-[IntelliJ IDEA](http://www.jetbrains.com/idea/) is another popular IDE. The
-latest version, 13, can be found
-[here](http://www.jetbrains.com/idea/download/index.html) on the IntelliJ
-site. Plugin developers should download the **Community Edition**. IntelliJ
-provides native integration with Maven and Git.
+[IntelliJ IDEA](http://www.jetbrains.com/idea/)是另外一款非常流行的IDE。最新的版本可以在[这里](http://www.jetbrains.com/idea/download/index.html)下载。同样，用它开开发插件的话，请留意下载**Community Edition**版本。IntelliJ同样也内继承了对于Git和Maven的支持。
 
-     _For usage instructions please refer to the [IntelliJ documentation](http://www.jetbrains.com/idea/documentation/index.jsp)._
+     _更多使用指南请参阅[IntelliJ文档](http://www.jetbrains.com/idea/documentation/index.jsp)。_
 
-# Where To From Here
+# 接下来？
 
-There is lots more involved in actually developing and testing your code,
-however hopefully you now have the tools to get started. If you find any
-particularly useful tutorials make sure to link them here!
+其实，还有很多的关于开发的细节比如如何测试你的代码之类的内容没有在这里详细阐述。不过既然你已经走到了这一步，希望你已经可以开始着手你的第一个插件了！此外，如果你找到其他很棒的教程，请务必告诉我们。
 
-It is suggested that you start with [Plugin Tutorial](/Plugin_Tutorial).
+现在让我们一起开始下一章[插件开发入门](https://github.com/Trigonometry-F/Bukkit-Wiki-Chinese-Translation/blob/master/Developers/Plugin_Tutorial.md)吧！ 
