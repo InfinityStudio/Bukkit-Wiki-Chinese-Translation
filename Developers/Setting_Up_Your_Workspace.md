@@ -23,54 +23,33 @@
 
 无论如何，一个开发者都需要使用工具来开发软件，但是每个人都自己喜欢的工具和不同的开发需求。如果你只是想制作插件的话，我们将会推荐几个工具来让开发更加的容易。与此同时，如果你将你制作的软件开源的话，这些工具也能让其他人更容易帮你一起开发这个插件。
 
-## Java Development Kit
+## Java开发工具包（JDK）
 
-A JDK (Java Development Kit) is required to compile Java for use in the JRE
-(Java Runtime Environment). The latest version of the JDK is available from
-the [Oracle Technology
-Network](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+JDK（Java开发工具包）是一个Jre（Java运行环境）的尚未编译版本，其中包含着Jre的源码和文档来帮助你开发。最新版本的JDK可以在[这里](http://www.oracle.com/technetwork/java/javase/downloads/index.html)下载。
 
-### Which version of the JDK?
+### 我应该使用哪个版本的JDK？
 
-There are multiple versions of Java, and consequently, multiple versions of
-the JDK. Both Bukkit and Minecraft are now compiled for Java 6. Most Bukkit
-servers are running Java 6, but a few run Java 7. Generally, newer versions of
-the JDK can target older Java versions, however, by default they target their
-own version. Programs and plugins compiled with a new version of Java are not
-compatible with older versions of the JRE, attempting to run such a plugin
-results in a [UnsupportedClassVersionError](http://docs.oracle.com/javase/1.5.
-0/docs/api/index.html?java/lang/UnsupportedClassVersionError.html). In
-practice, it is common to use the JDK version that corresponds with your
-runtime environment.
+因为Java有多个版本，所以JDK同样有多个版本。不过，无论是Bukkit还是Minecraft都是在Java6环境下编译的。与此同时，大部分服务器使用的都是Java6版本，还有一小部分使用更新的Java7.通常情况下新的Java版本都能向下兼容老的Java版本，不过他们同样只被自己兼容。这样的话，使用新的Java版本编译的插件通常无法兼容老版本的JRE。如果你这么做的话，通常会导致[UnsupportedClassVersionError](http://docs.oracle.com/javase/1.5.0/docs/api/index.html?java/lang/UnsupportedClassVersionError.html)错误。综上所述，在下面的练习中，请使用版本相同的JDK和DRE。
 
-### 64-bit (x64) or 32-bit (x86)?
+### 使用64位（x64）还是32位（x86）？
 
-Unless your computer is not capable of running 64-bit software, you should use
-a 64-bit (x64) JDK. The rest of the development environment will need to match
-the version of the JDK you have installed. On 64-bit systems it is possible to
-have both 64-bit and 32-bit JDKs installed at the same time.
+除非你的编译器不支持64位，否则你应该使用64的JDK位进行编译。同时，你的开发环境应当与你安装的JDK位数版本相匹配。在64位系统下，你可以同时安装32位和64位的JDK。
 
-##Git
+## 什么是Git
 
-![git](http://hydra-media.cursecdn.com/wiki.bukkit.org/thumb/2/29/Git-Logo-
-2Color.png/40px-Git-Logo-2Color.png?version=03ffd9ff8306dfaf62725ef54b60f1e5)
-is a distributed version control system. The Bukkit Project manages all its
-code through Git. Git allows the lone developer to keep track of their work
-and different developers to collaborate on work, tracking all changes that
-were made and by whom. It is very powerful, and consequently can be a little
-difficult to use sometimes. The latest version of git can be found on
-[here](http://git-scm.com/download) on the git-scm site.
+![git](http://hydra-media.cursecdn.com/wiki.bukkit.org/thumb/2/29/Git-Logo-2Color.png/40px-Git-Logo-2Color.png?version=03ffd9ff8306dfaf62725ef54b60f1e5)
 
-### Using Git
+Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使用Git进行管理和控制的。Git允许一个开发者开发的同时与其他开发者共同协作开发。不但如此，Git还拥有允追踪任何人所做的任何更改的强大功能。当然，这也导致Git有点难以入门。Git的最新版本可以在[这里](http://git-scm.com/download)下载。
 
-Detailed instructions for installing and using git can be found in the [Pro
-Git](http://git-scm.com/book) book on git-scm.
+### 使用Git
 
-#### GitHub
+你可以在[这里](http://git-scm.com/book)找到详细的安装和使用指南。
 
-[GitHub](https://github.com) is a code sharing website, and hosts the source
-code of the Bukkit Project. Bukkit Projects can be cloned from our repository
-found at [github.com/Bukkit](http://github.com/Bukkit).
+#### 什么是GitHub
+
+[GitHub](https://github.com)是一个源代码分享网站，Bukkit项目的源代码也是托管在Github上面的。你可以使用Git的克隆功能从[Bukkit源代码仓库](http://github.com/Bukkit)克隆Bukkit的源代码。
+
+
 
 Sharing of code works both ways - you can download shared code, but you can
 also share yours with the world. This is a great idea in this open community,
