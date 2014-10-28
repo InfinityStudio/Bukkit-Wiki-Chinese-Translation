@@ -29,7 +29,7 @@
     * 15.5 Error: Unable to access jarfile craftbukkit.jar
       * 15.5.1 当我下载完水桶服务端尝试开服的时候，我的服务端在报了一些file or directory not found错误之后马上关闭了．
       * 15.5.2 The system cannot find path specified
-    * 15.6 NoSuchMethodError or ClassNotFoundException in error message
+    * 15.6 错误信息：NoSuchMethodError 或者 ClassNotFoundException
     * 15.7 过时的服务端
     * 15.8 ConcurrentModificationException
     * 15.9 [SEVERE] java.net.SocketException: Socket Closed
@@ -203,7 +203,7 @@ org.fusesource.jansi.internal.kernel32
     
 出现这个问题的原因是你没有安装Visual C++ 2008 Redistribut，也有可能是你使用的Java版本不匹配。
 
-Visual C++ 2008 Redistribut的版本必须和你使用的Java版本保持匹配，如果你使用的是64位的Visual C++ 2008 Redistribut却在运行32位的Java，这个问题就会出现。安装匹配的Visual C++ 2008 Redistribut或者Java来解决这个问题。
+Visual C++ 2008 Redistribution的版本必须和你使用的Java版本保持匹配，如果你使用的是64位的Visual C++ 2008 Redistribution却在运行32位的Java，这个问题就会出现。安装匹配的Visual C++ 2008 Redistribution或者Java来解决这个问题。
 
 你也可以尝试在启动参数后面添加-nojline来尝试解决这个问题。
 
@@ -211,7 +211,7 @@ Visual C++ 2008 Redistribut的版本必须和你使用的Java版本保持匹配�
 
 你的地图文件很可能已经损坏了。首先请尝试移除所有的插件，如果问题没有解决，那么请通过MCEdit打开地图文件来修复。如果无法打开的话你就只有通过备份来恢复了。
 
-下面是一个可供参考的修复chunk错误的小教程。
+下面是一个可供参考的修复区块错误的小教程。
 (http://forums.bukkit.org/threads/how-to-fix-your-world-errors-corrupt-chunks.54254/) 
 
 #### [SEVERE] Chunk (x, y) stored at (x, y) in world '<world name>'
@@ -227,15 +227,15 @@ Visual C++ 2008 Redistribut的版本必须和你使用的Java版本保持匹配�
 
 	netstat -o -n -a output
 
-关停你的minecraft服务端并且确保没有其他的服务端正在运行。确保_server-ip=_一项置空。不奏效？重启系统！
+关停你的minecraft服务端并且确保没有其他的服务端正在运行。确保_server-ip=_一项置空。方法仍不奏效？请重启系统！
 
 ##### 寻找使用相同端口的程序（Windows适用）
 
 寻找使用某个特定端口的程序，请打开CMD并键入：
 
-	netstat -o -n -a | findstr 0.0:<Port Number>
+	netstat -o -n -a | findstr 0.0:<端口号>
 
-	WINDOW SUCKS!
+	WINDOWS逊爆了！
 	Eg: netstat -o -n -a | findstr 0.0:25565
 
 如果显示出(例如: TCP 0.0.0.0:25565 0.0.0.0:0 LISTENING 2984)，去任务管理器中寻找PID为2984的程序。
@@ -311,13 +311,13 @@ x64(64位)
 
 这意味着你正在使用的JAVA（JAVA6）版本已经过时了，至少一个插件要求使用新的JAVA（JAVA7或者8）版本。请升级你的JAVA版本到JAVA7或者JAVA8。
 
-推荐使用sun/oracle的JAVA
+推荐使用Sun/Oracle的JAVA
 
 #### [SEVERE] java.lang.UnsupportedClassVersionError: Unsupported major.minor version 52.0
 
 这意味着你正在使用的JAVA（JAVA6）版本已经过时了，至少一个插件要求使用新的JAVA（JAVA7或者8）版本。请升级你的JAVA版本到JAVA7或者JAVA8。
 
-推荐使用sun/oracle的JAVA
+推荐使用Sun/Oracle的JAVA
 
 #### 加入游戏的时候出现endOfStream
 
