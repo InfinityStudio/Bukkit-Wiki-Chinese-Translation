@@ -103,7 +103,7 @@
 现在你需要按照下面的说明命名你的组：
 
   * 如果你拥有一个域名，你可以使用你自己保有的域名。
-    * 比如: 你拥有i-am-a-bukkit-developer.com域名，那么你的包名可以使用com.i_am_a_bukkit_developer [资源](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
+    * 比如: 你拥有i-am-a-bukkit-developer.com域名，那么你的包名可以使用com.i_am_a_bukkit_developer [更多信息](http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)
     * 避免使用那些不是你拥有的域名。 
   * 没有域名? 这里有几个不错的方案： 
     1. 在类似于Github或者SourceForge上创建一个帐号
@@ -210,8 +210,7 @@ Click "Validate", and then click "OK". Done! Now the Bukkit Javadocs are
 linked to the Bukkit source, and you can access helpful documentation from
 within Eclipse.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=8)] Creating
-a package
+### Creating a package
 
 Now you need to create a 'package' which will store all the Java class files
 we will be using. Right click on the folder labelled _src/main/java_ and
@@ -225,8 +224,7 @@ artifact name in lowercase. For example, if your group name is
 _io.github.name_ and your artifact name is _TestPlugin_, your package name
 would be _io.github.name.testplugin_.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=9)] Creating
-the Plugin's Class
+### Creating the Plugin's Class
 
 Now that we have our project set up we can start to add class files and begin
 making our plugin. The plugin's main class is the class that extends
@@ -259,8 +257,7 @@ Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
 
 Plugins should never invoke their constructor and create new instances
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=10)] Creating
-plugin.yml
+### Creating plugin.yml
 
 Now you have setup the project and the main class. To allow Bukkit to load
 your plugin, you must create the **[plugin.yml](/Plugin_YAML)** file. This
@@ -288,16 +285,15 @@ The most simple **plugin.yml** file would look like this :
 
 >     version: {$VersionNumber}
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: The package name for plugins often includes the plugin name so don't be surprised to see <pluginname>.<pluginname> at the end of the second line! 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: Your main class may or may not be the name of your plugin depending on what you named it earlier, keep in mind this is case-sensitive. 
+    **Note**: The package name for plugins often includes the plugin name so don't be surprised to see <pluginname>.<pluginname> at the end of the second line! 
+    **Note**: Your main class may or may not be the name of your plugin depending on what you named it earlier, keep in mind this is case-sensitive. 
 
 _**For more examples**, see #Example_Files_and_Templates_
 
 At this point your plugin can be loaded by Bukkit, and will be accompanied
 with log entries indicating this. But, it will do nothing!
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=11)]
-onEnable() and onDisable()
+## onEnable() and onDisable()
 
 These methods are called whenever the plugin is enabled and disabled. By
 default your plugin will automatically enable itself when loaded so you can
@@ -308,8 +304,7 @@ and should contain logic to clean up your plugin and associated state.
 Additionally plugins can override the `onLoad()` method to perform additional
 logic when the plugin loads.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=12)]
-Introduction to onEnable() and onDisable()
+### Introduction to onEnable() and onDisable()
 
 Create the methods `onEnable()` and `onDisable()` inside the main class
 created in the previous section. It will look something like the following
@@ -350,8 +345,7 @@ The methods now exist, but they don't do anything yet. Note: There is no
 reason to print a message such as "{$PluginName} has been enabled!" as bukkit
 will do this automatically.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=13)] Logging
-a message
+### Logging a message
 
 A plugin can print a message to the console and the server log. It can
 accomplish this by invoking the correct method from the plugin's logger. First
@@ -402,8 +396,7 @@ Your main class should now look something like this:
 
 >     }
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=14)] Handling
-Reloads
+### Handling Reloads
 
 It is important to remember that this does not only occur on server shutdown
 and startup, your plugin can also be disabled and enabled by other plugins or
@@ -435,7 +428,7 @@ player in the HashMap.
 
 >     }
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=15)] Listeners
+## Listeners
 
 Listeners are classes whose methods are invoked in response to an event. All
 listeners implement org.bukkit.event.Listener. For further details about
@@ -445,10 +438,9 @@ creating listeners,
 
      _ Please See: [Event API Reference](/Event_API_Reference)_
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=16)] Commands
+##Commands
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=17)] The
-onCommand() Method
+### The onCommand() Method
 
 So, you now know how to register events and do something when they happen, but
 what if you only want something to happen when a command is typed? You use
@@ -477,8 +469,7 @@ When using `**onCommand**`, you should always register 4 parameters.
   * `**String commandLabel**` \- the command alias that was used 
   * `**String[] args**` \- an array of additional arguments, e.g. typing _/hello abc def_ would put _abc_ in args[0], and _def_ in args[1] 
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=18)] Setting
-up the command
+#### Setting up the command
 
 >
 
@@ -521,8 +512,7 @@ Add also these two lines at the top of your file:
 
 >     import org.bukkit.command.CommandSender;
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=19)] Adding
-your Command to the Plugin.yml
+### Adding your Command to the Plugin.yml
 
 You will also need to add the command to your **plugin.yml** file. Add the
 following to the end of **plugin.yml**:
@@ -556,8 +546,7 @@ following to the end of **plugin.yml**:
 Note that yml files use 2 spaces for tabs, as the tab character will cause
 problems.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=20)] Console
-Commands vs. Player Commands
+### Console Commands vs. Player Commands
 
 You may have noticed the `**CommandSender sender**` parameter above.
 `**CommandSender**` is a Bukkit interface which has two useful (for plugin
@@ -624,8 +613,7 @@ If you want to get more advanced, you could do some extra checks on your
 command arguments so that e.g. a teleportation command could be used from the
 console _if and only if_ a player's name is also supplied.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=21)] Using a
-separate CommandExecutor class
+### Using a separate CommandExecutor class
 
 The examples above just put the `**onCommand()**` method into the plugin's
 main class. For small plugins, this is fine, but if you're writing something
@@ -694,14 +682,12 @@ cluttering up the plugin's main class.
 Note that if your plugin has multiple commands, you will need set the command
 executor for each command individually.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=22)] Writing
-a safe onCommand
+### Writing a safe onCommand
 
 When writing a onCommand, it's important that you don't assume any
 information, such as the sender being a Player. Things to keep in mind:
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=23)] Make
-sure the sender is a Player before casting
+#### Make sure the sender is a Player before casting
 
 Using simple code like this makes it possible:
 
@@ -732,8 +718,7 @@ label, String[] args) {
 
 >     }
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=24)] Check
-the arguments length
+#### Check the arguments length
 
 Don't always assume the sender typed the correct amount of arguments.
 
@@ -762,8 +747,7 @@ label, String[] args) {
 
 >     }
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=25)] Check
-if a Player is online before getting them
+#### Check if a Player is online before getting them
 
 Sometimes you want to get another player by the name entered by the player.
 Always make sure the player is online!
@@ -792,8 +776,7 @@ label, String[] args) {
 If you need to modify a Player currently not online, the `**OfflinePlayer**`
 class provides basic manipulation methods.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=26)] Plugin
-Configuration/Settings
+## Plugin Configuration/Settings
 
 The Bukkit API provides a convenient way for plugins to manage user
 configurable settings. Additionally it also serves as an easy way to store
@@ -803,8 +786,7 @@ data.
 
      _Please see: [Configuration API Reference](/Configuration_API_Reference)_
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=27)]
-Permissions
+## Permissions
 
 With the new Bukkit API for permissions, they couldn't be easier. To find out
 if a player has a particular permission use the following:
@@ -857,8 +839,7 @@ you must install a permission provider plugin such as permissionsBukkit to
 manage the groups for you. **This API provides the interface, not the
 implementation.**
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=28)]
-Configuring your permissions
+### Configuring your permissions
 
 If you want more control over your permissions, for example default values or
 children then you should consider adding them to your
@@ -916,8 +897,7 @@ Firstly, each permission your plugin uses is defined as a child node of the
 _permissions_ node. Each permission can then optionally have a description, a
 default value, and children.
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=29)]
-Defaults
+#### Defaults
 
 By default when a permission isn't defined for a player _hasPermission_ will
 return false. Inside your plugin.yml you can change this by setting the
@@ -928,8 +908,7 @@ default node to be one of four values:
   * **op** \- If the player is an op then this will be true. 
   * **not op** \- If the player is not an op then this will be true. 
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=30)]
-Children
+#### Children
 
 Before now you will probably be used to the * permission to automatically
 assign all sub permissions. This has changed with the bukkit API and you can
@@ -959,15 +938,13 @@ The way child permissions work is when _doorman.*_ is set to true, the child
 permissions are set to their values defined in the _plugin.yml_. If however
 _doorman.*_ was set to false then all child permissions would be inverted.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=31)] Setting
-your own permissions
+### Setting your own permissions
 
 If you wish to know about developing your own permissions plugins (Ones that
 actually set permissions) then check out the tutorial on [Developing a
 permissions plugin](/Developing_a_permissions_plugin).
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=32)]
-Scheduling Tasks and Background Tasks
+## Scheduling Tasks and Background Tasks
 
 Currently, Minecraft servers operate nearly all of the game logic in one
 thread, so each individual task that happens in the game needs to be kept very
@@ -983,8 +960,7 @@ There is a separate [Scheduler Programming](/Scheduler_Programming) tutorial
 which introduces the Scheduler, and gives more information on using it to
 schedule synchronous tasks, and on kicking off asynchronous tasks in Bukkit.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=33)] Block
-Manipulation  
+## Block Manipulation  
 
 The easiest way to create blocks is to get an existing block and modify it.
 For example, if you want to change the block that is located five blocks above
@@ -1090,8 +1066,7 @@ This method will construct a 3D cube or cuboid with the given length and
 starting point. As for deleting blocks simply follow the same method for
 creating them but set the ID to 0 (air).  
 
-> ## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=34)]
-(Player) Inventory Manipulation
+> ## (Player) Inventory Manipulation
 
 This section mostly covers player inventory manipulation, but the same applies
 to chest inventory manipulation as well if you find out how to get a chest's
@@ -1133,14 +1108,12 @@ wanted we could remove the stack of diamonds by simply replacing
 inventory.addItem(itemstack) with inventory.remove(itemstack) and change the
 message a little bit. Hopefully this helped!
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=35)] Item
-Manipulation
+## Item Manipulation
 
 When dealing with items in the code, you use the ItemStack class for looking
 up and setting all information on that stack.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=36)]
-Enchantments
+### Enchantments
 
 To enchant an item you must first know the [Item
 Code](http://www.minecraftwiki.net/wiki/Data_values) and the [Effect
@@ -1160,7 +1133,7 @@ addUnsafeEnchantment() instead of addEnchantment()
     Enchantment myEnchantment = new EnchantmentWrapper(effectId);  //new enchantment of effect id
     myItem.addEnchantment(myEnchantment, enchantmentLevel);  //enchant the item
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=37)] ItemMeta
+### ItemMeta
 
 You can set the display name of an item by doing this.
 
@@ -1186,8 +1159,7 @@ an item, like "+5 attack damage" on a stone sword.
     im.setLore(lores); //add the lores of course
     myItem.setItemMeta(im); //give the item the new itemmeta
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=38)] Maps, and
-Sets, and Lists, Oh My!
+## Maps, and Sets, and Lists, Oh My!
 
 Besides the Map/HashMap classes, Java offers many other data structures. They
 offer these different classes because there are times when a Map is not the
@@ -1195,8 +1167,7 @@ most appropriate. Here's a separate page for discussing [Java data structure
 classes](/index.php?title=Java_data_structure_classes&action=edit&redlink=1)
 in more detail.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=39)] HashMaps
-and How to Use Them
+### HashMaps and How to Use Them
 
 **Keep in mind to never use a player in a hashmap!** You need to use Strings instead. So use "p.getName()" to add, remove or check if a list contains a player. Saving a player as an object causes huge memory leaks. 
 
@@ -1223,8 +1194,7 @@ wanted to assign the value of "b" to key "adam" I would be able to and would
 get no errors but the value of "a" assigned to key "adam" in the HashMap would
 be overwritten because HashMaps cannot contain duplicate values.
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=40)]
-Defining a HashMap
+#### Defining a HashMap
 
 >
 
@@ -1304,8 +1274,7 @@ opposite, set the value to true and send a message again. But if the HashMap
 does not contain the key player then we can assume that this is their first
 run/use so we change the default value and add the player to the HashMap.
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=41)] More
-Ideas for HashMaps
+#### Ideas for HashMaps
 
 A HashMap (or really any kind of Map in Java) is an association. It allows
 quick and efficient lookup of some sort of **value**, given a unique **key**.
@@ -1315,8 +1284,7 @@ Here are a few other ideas which are ideally suited to using Maps. As you will
 see, it doesn't have to be data that you store per player, but can be any kind
 of data that needs to be "translated" from one form to another.
 
-##### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=42)] Data
-Value Lookups
+##### Data Value Lookups
 
 >
 
@@ -1355,8 +1323,7 @@ copied out row by row):
 
 >     }
 
-#### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=43)]
-Saving/Loading a HashMap
+#### Saving/Loading a HashMap
 
 Once you know how to work with HashMaps, you probably want to know how to save
 and load the HashMap data. Saving and loading HashMap data is appropriate if
@@ -1574,8 +1541,7 @@ Note #2: This API doesn't support changes. Once you change something in the
 class, data files saved with older version of your plugin won't load
 correctly.
 
-##### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=44)] Tips &
-Examples
+##### Tips & Examples
 
 1.) Simplify your save structure
 
@@ -1594,7 +1560,7 @@ of your plugin, bukkit, or minecraft? You don't know!
 If your plugin finds older version of some file, it should update the file
 accordingly and change version number.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=45)] Metadata
+## Metadata
 
 Bukkit is trying to make plugin development as easy as possible, so HashMaps
 with key of type Player, Entity, World or even a Block were replaced by
@@ -1608,20 +1574,17 @@ if you're creating an economy plugin, you would need a HashMap of Player and
 Float or Double. With Metadata, you don't have to! You just attach to player
 new metadata value, and that's it!  
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=46)] Why to
-use Metadata
+### Why to use Metadata
 
   * Metadata is all handled by Bukkit, which makes it a very good alternative to HashMaps. 
   * Metadata can be used to share information between plugins. 
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=47)] Why not
-use Metadata  
+### Why not use Metadata  
 
   * Slightly more difficult to get the value. 
   * It is not saved on shutdown (but then again, neither are any Maps that you create). 
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=48)] Getting
-& Setting Metadata
+### Getting & Setting Metadata
 
     
     
@@ -1644,7 +1607,7 @@ Note: If you're manipulating with numbers, booleans or strings, use convenient
 method to get the result. For example, you can use asInt(), asString() or
 asBoolean() instead of value to find out the value.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=49)] Databases
+## Databases
 
 Sometimes flat files aren't enough for what your looking to do, this is where
 databases come in. The most common database engines available on
@@ -1663,7 +1626,7 @@ database engine, and each has minor differences in how to configure and use
 it. Which one you choose may depend on your particular needs. (Some plugins
 even offer configurable options to connect to multiple database engines!)
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=50)] SQLite
+### SQLite
 
 Alta189 has written a [fantastic SQLite
 tutorial](http://forums.bukkit.org/threads/lib-tut-mysql-sqlite-bukkit-
@@ -1684,7 +1647,7 @@ for a new plugin in development, it's often easiest and fastest to get the SQL
 basics squared away with SQLite, even if you "graduate" to a more server-class
 database engine later.
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=51)] MySQL
+### MySQL
 
 Another popular SQL database engine is called MySQL. It is closer to server-
 grade than SQLite, where many popular companies or websites depend on it for
@@ -1698,8 +1661,7 @@ the administration has room to grow. You may want to set up accounts and
 privileges inside your MySQL setup. You may want to set up SQL scripts that
 organize your backups and rollback to previous states.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=52)] Deploying
-your Plugin
+## Deploying your Plugin
 
 Once you have written your plugin, how do you get it from a collection of
 source files into a working jar file that can be installed on a server? First,
@@ -1746,8 +1708,7 @@ placed within the JAR and copied into the plugin's data folder if the
 configuration file does not exist. There is usually no good reason for
 packaging JAR files into another archive.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=53)] Importing
-other plugins
+## Importing other plugins
 
 You may wish to edit another plugin that has the source available. If that
 plugin has a _pom.xml_ in its folder (most of the popular ones, for example
@@ -1761,11 +1722,9 @@ maven.png?version=c73d4c245a245d3106f8ac52f2026189)
 Then select the folder that the _pom.xml_ is in, and the project should be on
 your sidebar. Edit it and compile it like you usually would.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=54)] Tips and
-Tricks
+## Tips and Tricks
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=55)] Setting
-a Player on Fire
+### Setting a Player on Fire
 
 The Bukkit API is capable of a lot of cool stuff. Here are some code snippets
 for some nice effects!
@@ -1808,8 +1767,7 @@ command like **/ignite Notch** would cause Notch to be set on fire!
         return false;
     }
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=56)] Killing
-the player
+### Killing the player
 
 To keep with the theme, here's a way to kill the player.
 
@@ -1857,8 +1815,7 @@ explosions are 4F by default
 
 >     target.setHealth(0);
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=57)] Creating
-a Fake Explosion
+### Creating a Fake Explosion
 
 This code produces the TNT/Creeper Visual and Audio effects. However, no
 explosion damage is dealt to surrounding entities or blocks. This is useful
@@ -1885,8 +1842,7 @@ then do something
 
 >     }
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=58)] Hiding a
-Player From Another Player
+### Hiding a Player From Another Player
 
 This will hide the player who used this command from a specified player.
 Everyone else will be able to see the player.
@@ -1916,8 +1872,7 @@ Everyone else will be able to see the player.
         return false;
     }
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=59)] Spawn
-Lightning Bolt Where Player is Looking
+### Spawn Lightning Bolt Where Player is Looking
 
 The code below allows any player with a fishing rod to create a lightning
 strike by clicking (and aiming somewhere). It's a simple and funny trick.
@@ -1934,20 +1889,17 @@ strike by clicking (and aiming somewhere). It's a simple and funny trick.
         }
     }
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=60)]
-Automatically formatting your code
+### Automatically formatting your code
 
 Eclipse provides functionality to automatically format your code to Oracle
 conventions, fixing unconventional indentations, spacing, and such. Simply
-select your project in the sidebar, and then select _Source -> Format_.
+select your project in the sidebar, and then select Source -> Format.
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=61)] Request
-Section
+## Request Section
 
 <http://forums.bukkit.org/forums/plugin-requests.13/>
 
-## [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=62)] Example
-Files and Templates
+## Example Files and Templates
 
   * [Bukkit/SamplePlugin on GitHub](https://github.com/Bukkit/SamplePlugin/)
   * [Example.Java](http://pastebin.com/wpeTPx7N)

@@ -10,7 +10,7 @@
     * 1.6 [CraftBukkit指令列表与相关参数](https://github.com/RogerZhangHS/Bukkit-Wiki-Chinese-Translation/blob/master/ServerAdministrators/CraftBukkit_Command_Line_Arguments.md)
     * 1.7 [Q&A](https://github.com/RogerZhangHS/Bukkit-Wiki-Chinese-Translation/blob/master/ServerAdministrators/Frequently_Asked_Questions.md)
   * 2 第 2 部分: Bukkit API 编程入门与指南
-    * 2.1 建立你的工作区
+    * 2.1 [设置你的工作区](https://github.com/Trigonometry-F/Bukkit-Wiki-Chinese-Translation/blob/master/Developers/Setting_Up_Your_Workspace.md)
     * 2.2 插件开发入门
     * 2.3 事件API引用
     * 2.4 配置API引用
