@@ -140,7 +140,7 @@
 
 ![Pomeditor.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/f/f0/Pomeditor.png?version=eccc160e55c7c1a78bf5cbe2587147be)
 
-如果你希望使用Java 6+作为开发语言，你必须明确标注你希望构建于哪个Java版本上。使用下面的格式（标明工程是应该在在Java7上构建）_</project>_。
+如果你希望使用Java 6+作为开发语言，你必须明确标注你希望构建于哪个Java版本上。在_</project>_上面使用下面的格式（标明工程是应该在在Java7上构建）添加你的代码。
     
        <build>
           <plugins>
@@ -157,7 +157,7 @@
 
 也许你希望使用其他版本，比如1.8版的Java8。请注意！[这个](http://mcstats.org/global/)权威的统计信息标明，大部分的服务器依然运行在Java7版本之上。所以，使用Java8很可能导致很多服主无法使用你的插件。如果你使用1.7版本的功能，当你鼠标悬停在错误代码前，Eclipse会建议你更改语言版本。
 
-将下面这一块代码拷贝到_</project>_下面（这一块代码告诉Eclipse：BUkkit项目的代码仓库在哪）
+同样将下面这一块代码拷贝到_</project>_正上方（这一块代码告诉Eclipse：BUkkit项目的代码仓库在哪）
 
     
     
@@ -168,12 +168,7 @@
            </repository>
        </repositories>
     
-Next, before the _</project>_ at the bottom, copy and paste this block (it
-tells Eclipse that we're building against Bukkit):
-
-`
-
-    
+接下来，还是在_</project>_的上面，复制并粘贴下面这块代码（它告诉Eclipse使用Bukkit来构建）：
     
        <dependencies>
            <dependency>
@@ -184,35 +179,22 @@ tells Eclipse that we're building against Bukkit):
                <scope>provided</scope>
            </dependency>
        </dependencies>
-    
 
-`
+如果你希望的话，各种版本的Bukkit都可以用于你的构建。
+所有可用的版本都可以在[这里](http://repo.bukkit.org/content/groups/public/org/bukkit/bukkit/)找到。
 
-If you wish to, you may change the version of Bukkit you're building against.
-You can view the available versions
-[here](http://repo.bukkit.org/content/groups/public/org/bukkit/bukkit/).
+当你完成这一部分后，你的_pom.xml_应该看起来与下面的格式类似：
 
-When you finish, your _pom.xml_ should look similar to this:
+![Finishedpom.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/c/c0/Finishedpom.png?version=6b5a18b506faa0a574ca6f3d5a35aa74)
 
-![Finishedpom.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/c/c0/Finish
-edpom.png?version=6b5a18b506faa0a574ca6f3d5a35aa74)
+别忘了保存你的_pom.xml_：点击_File -> Save_或者直接‘Ctrl+S’都可以。
+然后，请右击项目后点击_Maven -> Update Project_。
 
-Save your _pom.xml_ using _File -> Save_ or pressing `Ctrl + S`. Then, right
-click the projects title and click _Maven -> Update Project_.
+### Bukkit Javadocs
 
-### [[edit](/index.php?title=Plugin_Tutorial&action=edit&section=7)] Bukkit
-Javadocs
-
-If you have some experience with Eclipse and Java you will know that when you
-hover your mouse over any built in class or method a yellow box will pop up,
-containing the documentation for that class or method. This is known as a
-Javadoc and can also be accessed online at the [Oracle
-website](http://download.oracle.com/javase/6/docs/api/). Bukkit also has
-documentation which often contains useful descriptions of each method and
-class provided by the API, which is available
-[here](http://jd.bukkit.org/apidocs/) (Beta Javadocs can be found
-[here](http://jd.bukkit.org/beta/apidocs/), and development build Javadocs
-[here](http://jd.bukkit.org/dev/apidocs/)). In order to have this information
+如果你以前曾经接触过Eclipse的Java编程，你肯定知道当你把鼠标悬在类中的方法或者变量上时，会有一个黄色的窗口弹出，窗口中包含着类或者方法的说明文档。这就是JavaDoc！这些文档同样可以在[甲骨文官网](http://download.oracle.com/javase/6/docs/api/)获得。同样，Bukkit作为Java项目也有自己的JavaDoc。其中包含着很多对编程有用的信息，比如哪个类中包含着哪个方法。你可以在[这里](http://jd.bukkit.org/apidocs/)（Beta版本的JavaDoc可以在[这里](http://jd.bukkit.org/beta/apidocs/)找到。如果需要开发版的JavaDoc请在[这里](http://jd.bukkit.org/dev/apidocs/)）查看。
+为了在获取到JavaDoc后可以使用鼠标悬停的方式方便查看，首先请右击Maven Dependencies下的Bukkit的jar文件。接下来点选“Properties”选择
+. In order to have this information。
 available within Eclipse, so that it will pop up whenever you hover over a
 Bukkit method or class, first right click on the Bukkit jar where it appears
 under "Maven Dependencies" in the project explorer, and select "Properties".
