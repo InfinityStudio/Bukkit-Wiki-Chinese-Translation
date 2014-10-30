@@ -224,40 +224,23 @@ artifact name in lowercase. For example, if your group name is
 _io.github.name_ and your artifact name is _TestPlugin_, your package name
 would be _io.github.name.testplugin_.
 
-### Creating the Plugin's Class
+### 创建你的插件主类
 
-Now that we have our project set up we can start to add class files and begin
-making our plugin. The plugin's main class is the class that extends
-JavaPlugin. There should only ever be one class in your plugin that extends
-JavaPlugin either directly or indirectly. It's always good practice to create
-your main class first and give it the same name as your plugin. Right click on
-the package you created before, and select  _New > Class_. You should have a
-new class similar to the following
+现在，我们的项目已经完全设置完毕，可以开始创建类来实现插件的功能。Plugin的类其实是JavaPlugin类的子类。请确保在你的项目中只有一个类直接或者间接的继承了JavaPlugin类。我们推荐使用与插件名相同的名称来命名你的主类。右键点击上一步建立的包，然后点选_New > Class_来建立新类。你建立完成的类应该看起来像这样：
 
->
 
->     package {$GroupName}.{$ArtifactName};
+	package <你的组名称>.<你的项目名称>;
 
->
+	import org.bukkit.plugin.java.JavaPlugin;
 
->     import org.bukkit.plugin.java.JavaPlugin;
+	public final class <你的项目名称> extends JavaPlugin {
 
->
+	}
 
->     public final class {$ArtifactName} extends JavaPlugin {
 
->
+**警告**:无论如何你都不应该执行Plugins类的构造函数或尝试通过这个方法生成一个新的Plugins对象
 
->     }
-
-![Warning](http://hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
-**Warning**:
-
-Plugins should never invoke their constructor and create new instances
-
-### Creating plugin.yml
+### 建立plugin.yml
 
 Now you have setup the project and the main class. To allow Bukkit to load
 your plugin, you must create the **[plugin.yml](/Plugin_YAML)** file. This
