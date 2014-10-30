@@ -242,41 +242,30 @@ would be _io.github.name.testplugin_.
 
 ### 建立plugin.yml
 
-Now you have setup the project and the main class. To allow Bukkit to load
-your plugin, you must create the **[plugin.yml](/Plugin_YAML)** file. This
-file will contain essential information, and without it your plugin will NOT
-work. This time we want to right click on _src/main/resources_. Select _New >
-File_. Name the file "**plugin.yml**" and click finish. Eclipse will open your
-currently blank **plugin.yml** file in the default text editor. _(Hint: If you
-want to keep your workspace organized, close the text editor and drag the
-**plugin.yml** file onto the main workspace(To the right) and you will be able
-to edit the file inside eclipse.)_
+现在你完成了为你的项目建立主类。不过，如果你希望Bukkit加载你的插件的话，你必须通过建立**[plugin.yml](http://wiki.bukkit.org/Plugin_YAML)**来让服务端正确加载引导你的插件。plugin.yml中包含了插件不可或缺的基础信息，没有这些信息，插件就无法正常的工作。现在，请右键单击_src/main/resources_，然后点选_New >
+File_。将新的文件名命名为**plugin.yml**后单击finish。Eclipse会自动的打开一个系统默认的文本编辑器来编辑plugin.yml。
+_（小技巧：如果你希望通过Eclipse来编辑plugin.yml。请关闭文本编辑器后将**plugin.yml**拖至Eclipse右边的主界面，这样你就可以在Eclipse内编辑plugin.yml了）_
 
-There are three essential attributes that must be declared in the plugin.yml.
+下面是三个必须在plugin.yml中定义的项：
 
-     name: the simple name of your plugin. 
-     main: [fully qualified name](http://docs.oracle.com/javase/specs/jls/se7/html/jls-6.html#jls-6.7) of the plugin's main class. 
-     version: the version string of your plugin. 
+	name: 插件的名称 
+	main: 插件主类的[主函数名](http://docs.oracle.com/javase/specs/jls/se7/html/jls-6.html#jls-6.7) 
+	version: 插件的版本号
 
-The most simple **plugin.yml** file would look like this :
+如果按照示例来做的话，你的**plugin.yml**应该看起来就像是这样：
 
->
+	name: {$PluginName}
+	main: {$PackageName}.{$MainClass}
+	version: {$VersionNumber}
 
->     name: {$PluginName}
+**注意**: 因为包的的名称中经常包含着插件名，所以请不要对<pluginname>.<pluginname>这种格式感到奇怪！ 
+**注意**: 也许你的主类名称和你的插件名称不一样，所以请注意不要搞混大小写！ 
 
->     main: {$PackageName}.{$MainClass}
+_**更多的例子**请看#样例文件和模板_
 
->     version: {$VersionNumber}
+当Bukkit加载你的插件后，这些信息会在控制台中输出，不过仅仅输出而已。
 
-    **Note**: The package name for plugins often includes the plugin name so don't be surprised to see <pluginname>.<pluginname> at the end of the second line! 
-    **Note**: Your main class may or may not be the name of your plugin depending on what you named it earlier, keep in mind this is case-sensitive. 
-
-_**For more examples**, see #Example_Files_and_Templates_
-
-At this point your plugin can be loaded by Bukkit, and will be accompanied
-with log entries indicating this. But, it will do nothing!
-
-## onEnable() and onDisable()
+## onEnable() 与 onDisable()
 
 These methods are called whenever the plugin is enabled and disabled. By
 default your plugin will automatically enable itself when loaded so you can
