@@ -25,22 +25,22 @@
 
 ## Java开发工具包（JDK）
 
-JDK（Java开发工具包）是一个Jre（Java运行环境）的尚未编译版本，其中包含着Jre的源码和文档来帮助你开发。最新版本的JDK可以在[这里](http://www.oracle.com/technetwork/java/javase/downloads/index.html)下载。
+JDK（Java开发工具包）是一个Jre（Java运行环境）的尚未编译版本，其中包含着JRE的源码和文档来帮助你开发。最新版本的JDK可以在[这里](http://www.oracle.com/technetwork/java/javase/downloads/index.html)下载。
 
 ### 我应该使用哪个版本的JDK？
 
-因为Java有多个版本，所以JDK同样有多个版本。不过，无论是Bukkit还是Minecraft都是在Java6环境下编译的。与此同时，大部分服务器使用的都是Java6版本，还有一小部分使用更新的Java7.通常情况下新的Java版本都能向下兼容老的Java版本，不过他们同样只被自己兼容。这样的话，使用新的Java版本编译的插件通常无法兼容老版本的JRE。如果你这么做的话，通常会导致[UnsupportedClassVersionError](http://docs.oracle.com/javase/1.5.0/docs/api/index.html?java/lang/UnsupportedClassVersionError.html)错误。综上所述，在下面的练习中，请使用版本相同的JDK和DRE。
+因为Java有多个版本，所以JDK同样有多个版本。不过，无论是Bukkit还是Minecraft都是在Java6环境下编译的。与此同时，大部分服务器使用的都是Java6版本，还有一小部分使用更新的Java7。通常情况下新的Java版本都能向下兼容老的Java版本，不过他们同样只被自己兼容。这样的话，使用新的Java版本编译的插件通常无法兼容老版本的JRE。如果你这么做的话，通常会导致[UnsupportedClassVersionError](http://docs.oracle.com/javase/1.5.0/docs/api/index.html?java/lang/UnsupportedClassVersionError.html)错误。综上所述，在下面的练习中，请使用版本相同的JDK和JRE。
 
 ### 使用64位（x64）还是32位（x86）？
 
-除非你的编译器不支持64位，否则你应该使用64的JDK位进行编译。同时，你的开发环境应当与你安装的JDK位数版本相匹配。在64位系统下，你可以同时安装32位和64位的JDK。
+除非你的编译器不支持64位，否则你应该使用64的JDK位进行编译。同时，你的开发环境应当与你安装的JDK位数版本相匹配。此外，在64位系统下，你可以同时安装32位和64位的JDK。
 
 ## 什么是Git
 
 
 ![git](http://git-scm.com/images/logo@2x.png)
 
-Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使用Git进行管理和控制的。Git允许一个开发者开发的同时与其他开发者共同协作开发。不但如此，Git还拥有允追踪任何人所做的任何更改的强大功能。当然，这也导致Git有点难以入门。Git的最新版本可以在[这里](http://git-scm.com/download)下载。
+Git是一个分布式的版本控制系统。而且，Bukkit的项目也是使用Git进行管理和控制的。Git允许一个开发者开发的同时与其他开发者共同协作开发。不仅如此，Git还拥有允追踪任何人所做的任何更改的强大功能。当然，这也导致Git有点难以入门。Git的最新版本可以在[这里](http://git-scm.com/download)下载。
 
 ### 使用Git
 
