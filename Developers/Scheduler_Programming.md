@@ -1,27 +1,18 @@
-#  Scheduler Programming
+#调度式编程
 
-This tutorial will guide you in using the scheduler provided by bukkit. It
-will allow you to defer the execution of code to a later time. This is not the
-same as registering a [Listener](http://jd.bukkit.org/apidocs/index.html?org/b
-ukkit/event/Listener.html), a block of code which is executed in response to
-an [event](http://wiki.bukkit.org/Event_API_Reference) in the game. Blocks of
-code may also be scheduled to be executed repeatedly at a fixed interval, with
-or without a delay. They will continue to execute until completed, or
-canceled, or your plugin is disabled.
+这个指南将指导你使用Bukkit提供的调度式编程。通过这种编程方式，你可以在一段时间之后执行某个操作。这和前面所讲的通过绑定一个[监听器](http://jd.bukkit.org/apidocs/index.html?org/bukkit/event/Listener.html)后通过[事件](http://wiki.bukkit.org/Event_API_Reference)触发来执行一段代码不同，调度式编程允许你以一个固定的时间周期重复执行代码。直到这个调度完成、取消或者插件被关闭。
 
-When using BukkitRunnable, with a separate class, scheduling work occurs in
-two steps for the programmer.
+当使用BukkitRunnable来进行调度式编程时，子程序会被分为两个阶段：
 
-  1. Define the work to be done, see the section Defining Work
-  2. Notify Bukkit when the work should be executed, see the section Scheduling Work
+  1.定义工作应当如何完成，参考“定义任务”
+  2.设定工作应当以何种方式进行，参考“调度任务”
 
-Alternatively, work can be scheduled directly with the scheduler, this also
-occurs in two steps for the programmer.
+此外你也可以直接使用调度。这同样分为两个阶段：
 
-  1. Define the work to be done, in a Runnable or Callable 
-  2. Then directly scheduling the work with the Bukkit Scheduler, see the section BukkitScheduler
+  1.定义工作应当如何完成，参考“Runnable”或者“Callable”
+  2.使用Bukkit的调度器直接调度任务，参考“Bukkit调度器”章节
 
-## Contents
+## 目录
 
   * 1 BukkitRunnable
     * 1.1 Defining work
@@ -40,77 +31,43 @@ occurs in two steps for the programmer.
 
 # BukkitRunnable
 
-[BukkitRunnable](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/
-BukkitRunnable.html) is an abstract implementation of [Runnable](http://docs.o
-racle.com/javase/6/docs/api/index.html?java/lang/Runnable.html). It also
-supports additional operations that a Runnable is not capable of, most
-conveniently, BukkitRunnables can schedule and cancel their own execution.
-However, if the BukkitRunnable did not schedule itself for execution, it
-cannot cancel itself from execution. BukkitRunnables are not schedulers, do
-not contain any scheduler logic, and are not expensive to create. Plugins
-should prefer defining a BukkitRunnable and calling the appropriate run method
-over directly scheduling a Runnable with the BukkitScheduler.
+[BukkitRunnable](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)是一个对标准Java [Runnable](http://docs.oracle.com/javase/6/docs/api/index.html?java/lang/Runnable.html)的抽象实现。不过它实现了一些标准Runnable所没有的功能。简而言之，BukkitRunnable可以被调度执行和取消调度。不过，一个BukkitRunnable在被调度之前无法被取消调度。而且BukkitRunnable自身没有任何的调度逻辑，建立一个BukkitRunnable也并不复杂。只需明确的在插件中定义一个BukkitRunnable并通过调度器正确的调度执行Run方法即可。
 
-     _For more information on BukkitRunnable, see the [BukkitRunnable JavaDocs](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)_
+_更多详细信息，请参见[BukkitRunnable JavaDocs](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)_
 
-## Defining work
+##定义任务
 
-Plugins should first
-[extend](http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html) [B
-ukkitRunnable](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/Bu
-kkitRunnable.html) to define work that needs to be done. In other words, the
-definition of the run method is what you want executed in accordance to a
-schedule.
+插件应当首先去[继承](http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html) [BukkitRunnable](http://jd.bukkit.org/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)父类来定义任务的细节。换句话说，当满足调度条件时，run函数应当执行什么内容。
 
-### Basic Example
+###小例子
 
-This is an example definition of a task that can be scheduled.
+这是一个可以被正确调度的任务小例子：
 
->
 
->     import org.bukkit.Bukkit;
+	import org.bukkit.Bukkit;
+	import org.bukkit.plugin.java.JavaPlugin;
+	import org.bukkit.scheduler.BukkitRunnable;
 
->     import org.bukkit.plugin.java.JavaPlugin;
+	public class ExampleTask extends BukkitRunnable {
 
->     import org.bukkit.scheduler.BukkitRunnable;
+		private final JavaPlugin plugin;
 
->
 
->     public class ExampleTask extends BukkitRunnable {
 
->
+	public ExampleTask(JavaPlugin plugin) {
+		this.plugin = plugin;
+	}
+		@Override
+		public void run() {
 
->         private final JavaPlugin plugin;
+			// What you want to schedule goes here
+			plugin.getServer().broadcastMessage("Welcome to Bukkit! Remember to read the documentation!");
+		}
+}
 
->
+### 可以自行取消调度的小例子
 
->         public ExampleTask(JavaPlugin plugin) {
-
->             this.plugin = plugin;
-
->         }
-
->
-
->         @Override
-
->         public void run() {
-
->             // What you want to schedule goes here
-
->             plugin.getServer().broadcastMessage("Welcome to Bukkit! Remember
-to read the documentation!");
-
->         }
-
->
-
->     }
-
-### Self-Canceling Example
-
-This is an example of a definition of a task that will cancel itself when it
-has executed the specified number of times
+在这个例子中，任务在执行一定次数之后会将自己的调度取消：
 
 >
 
@@ -177,7 +134,9 @@ Remember to read the documentation!");
 
 >     }
 
-## Scheduling Work
+##调度任务
+
+在完成对任务的定义后，插件需要提供对任务调度的细节。BukkitRunnables会在调度条件满足之后运行任务的run方法。BukkitRunnables的方法列表可以在[BukkitRunnables的JavaDoc](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)中找到。
 
 After defining the task, the plugin needs to schedule the task.
 BukkitRunnables are scheduled when the desired run method is invoked on an
