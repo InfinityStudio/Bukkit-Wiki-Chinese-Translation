@@ -136,23 +136,11 @@ Remember to read the documentation!");
 
 ##调度任务
 
-在完成对任务的定义后，插件需要提供对任务调度的细节。BukkitRunnables会在调度条件满足之后运行任务的run方法。BukkitRunnables的方法列表可以在[BukkitRunnables的JavaDoc](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)中找到。
+在完成对任务的定义后，插件需要提供对任务调度的细节。BukkitRunnables会在调度条件满足之后运行任务的run方法。BukkitRunnables的方法列表可以在[BukkitRunnables的JavaDoc](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitRunnable.html)中找到。尽管方法不同，但是它们将都返回BukkitTask类型的方法。
 
-After defining the task, the plugin needs to schedule the task.
-BukkitRunnables are scheduled when the desired run method is invoked on an
-instance of the task. The list of methods for BukkitRunnable can be found in
-the [Javadocs for BukkitRunnable](http://jd.bukkit.org/rb/apidocs/index.html?o
-rg/bukkit/scheduler/BukkitRunnable.html). The different run methods all return
-a  BukkitTask object
+**注意**:请不要在异步任务中使用任何的BukkitAPI
 
-![Warning](http://hydra-
-media.cursecdn.com/wiki.bukkit.org/thumb/5/51/Attention_niels_epting.svg/18px-
-Attention_niels_epting.svg.png?version=f594b4cdba86f489bc057c8896dddc91)
-**Warning**:
-
-Asynchronous tasks should never access any API in Bukkit
-
-### Example
+### 例子
 
 This is an example of a plugin which registers a listener and when a player
 joins, schedules a task to be run 20 ticks later.
@@ -294,11 +282,9 @@ plugin);
 
 >     }
 
-### Anonymous BukkitRunnable Example
+###匿名BukkitRunnable例子
 
-An anonymous BukkitRunnable will allow you to schedule a task, without
-creating a new class with a name. This examples combines the above two basic
-examples.
+使用匿名BukkitRunnable允许你在不另外建立新类就可以使用任务调度的功能。下面的例子描述了如何使用这个功能：
 
 >
 
@@ -385,22 +371,15 @@ documentation!");
 
 >     }
 
-# BukkitScheduler
+#Bukkit任务调度器
 
-The [BukkitScheduler](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/sc
-heduler/BukkitScheduler.html) allows plugins to schedule a [Runnable](http://d
-ocs.oracle.com/javase/6/docs/api/index.html?java/lang/Runnable.html) and/or a 
-[Callable](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concu
-rrent/Callable.html) , for execution at a later time. The list of methods for
-BukkitScheduler can be found in the [Javadocs for BukkitScheduler](http://jd.b
-ukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitScheduler.html).
+[任务调度器](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitScheduler.html)是一个允许你在插件运行过程中一句时间调度一个[Runnable](http://docs.oracle.com/javase/6/docs/api/index.html?java/lang/Runnable.html)和/或一个[Callable](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurrent/Callable.html)来让他们在一段时间之后执行的组件。任务调度器的方法列表可以在它的[JavaDocs](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitScheduler.html)中找到。
 
-    ![Lightbulb.png](http://hydra-media.cursecdn.com/wiki.bukkit.org/6/6f/Lightbulb.png?version=0e5a9741aa6598c745ae089a294d0510) **Note**: Plugins should not schedule a BukkitRunnable with the scheduler, instead they should run the BukkitRunnable with the desired schedule. 
+**提示**： 插件不应该使用调度器调度BukkitRunnable，应当使用想要的任务调度直接执行BukkitRunnable。
 
-### Example
+### 例子
 
-Example for directly scheduling an anonymous Runnable with the BukkitScheduler
-to run after 20 ticks.
+一个在20tick后使用调度器调度一个匿名的Runnable的小例子：
 
 >
 
@@ -471,34 +450,20 @@ to run every twenty ticks, forever, starting from when you schedule it.
 
 >     }
 
-**Warning**:
-
-Asynchronous tasks should never access any API in Bukkit
+**注意**：请不要使用异步任务调度中使用BukkitAPI
 
 ## BukkitTask
 
-A [BukkitTask](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler
-/BukkitTask.html) object is returned whenever a Runnable is scheduled. This
-object represents the task the scheduled task being executed by the scheduler.
-For more information see, [Javadocs for BukkitTask](http://jd.bukkit.org/rb/ap
-idocs/index.html?org/bukkit/scheduler/BukkitTask.html).
+[BukkitTask](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitTask.html)是一个无论是否Runnable被调度了都将返回的对象。这个对象指示了Runnable是否已经被调度。更多相关信息请参见[Javadocs for BukkitTask](http://jd.bukkit.org/rb/apidocs/index.html?org/bukkit/scheduler/BukkitTask.html)。
 
-## Callable and Future
+## Callable和Future
 
-A [Callable](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/con
-current/Callable.html) given to the scheduler to call synchronously returns a 
-[Future](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurr
-ent/Future.html). These are standard Java classes, for more information see,
-[Javadocs for Callable](http://docs.oracle.com/javase/6/docs/api/index.html?ja
-va/util/concurrent/Callable.html) and [Javadocs for Future](http://docs.oracle
-.com/javase/6/docs/api/index.html?java/util/concurrent/Future.html)
+[Callable](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurrent/Callable.html)将被调度器异步调用并返回一个[Future](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurrent/Future.html)。他们都是Java的原生类，更多信息请参见[Javadocs for Callable](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurrent/Callable.html)和[Javadocs for Future](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/concurrent/Future.html)。
 
-# Tips for thread safety
+# 线程安全小提示
 
-The Bukkit API, with the exception of the scheduler package, is not thread
-safe nor guaranteed to be thread safe.
+BukkitAPI和任务调度包并不是线程安全的，也不保证线程安全。
 
-  1. Asynchronous tasks should never access any API in Bukkit. 
-  2. Do not access or modify shared collections from your asynchronous tasks. Normal collections are [not](http://stackoverflow.com/questions/1003026/hashmap-concurrency-issue) [thread-safe](http://lightbody.net/blog/?p=307). This also applies to objects which are not thread safe. 
-  3. An asynchronous task can schedule a synchronous task. 
-  4. A synchronous task can schedule an asynchronous task. 
+  1. 异步任务不应该使用BukkitAPI。
+  2. 请不要在异步任务中使用或者修改公共的集合。普通的集合都[不是](http://stackoverflow.com/questions/1003026/hashmap-concurrency-issue)[线程安全](http://lightbody.net/blog/?p=307)的。  
+  3. 异步调度和同步调度可以相互调度。
