@@ -51,13 +51,14 @@
    4. 在当前目录中创建一个名为_craftbukkit.sh_的文件。在大部分Linux系统中你可以使用_touch craftbukkit.sh_来创建。
    
    5. 使用_nano craftbukkit.sh_打开刚刚建立的文件，黏贴下面的内容后保存：
-
-		#!/bin/sh
-		BINDIR=$(dirname "$(readlink -fn "$0")")
-		cd "$BINDIR"
-		java -Xmx1024M -jar craftbukkit.jar -o true
-
-
+   
+   ```bash
+	#!/bin/sh
+	BINDIR=$(dirname "$(readlink -fn "$0")")
+	cd "$BINDIR"
+	java -Xmx1024M -jar craftbukkit.jar -o true
+   ```  
+   
    6. 为了赋予文件执行的权限，请键入这个指令_chmod +x ~/craftbukkit/craftbukkit.sh_。
 
    7. 然后键入_~/craftbukkit/craftbukkit.sh_来启动服务器。
@@ -90,11 +91,12 @@
 
      为了启动服务端，你需要一个启动脚本。下面的内容将教你如何建立启动脚本。
      1. 打开TextEdit，将模式设置成普通文本模式。将下面的内容黏贴至文本中。
+     ```bash
+	#!/bin/bash
+	cd "$( dirname "$0" )"
+	java -Xmx1024M -jar craftbukkit.jar -o true
+	```
 
-
-                #!/bin/bash
-                cd "$( dirname "$0" )"
-                java -Xmx1024M -jar craftbukkit.jar -o true
 
     2. 保存文件
 
@@ -103,15 +105,15 @@
     3. 赋予文件运行权限
       1. 打开Terminal.app
       2. 在控制台中输入
-
-    chmod a+x
+      ```bash
+      chmod a+x
+      ```
 	
 	  **警告**：不要敲击_返回_
       3. 将 start_server.command拖入控制台
       4. 敲击_返回_
-  4. Starting the server
-
-     现在你可以通过双击start_server.command来启动服务器。
+  4. 启动服务器
+     现在你可以通过双击start_server.command来启动服务器。
 	 你至少需要启动一次服务器来生成文件。
 
 
@@ -121,6 +123,7 @@
 
 打开终端(你可以在程序/工具中找到)然后黏贴以下文本：
 
+```bash
 	cd ~/Desktop/
 	mkdir BukkitServer
 	cd BukkitServer/
@@ -128,6 +131,7 @@
 	echo "cd ~/Desktop/BukkitServer/" >> start.command
 	echo " java -Xmx1024M -jar craftbukkit.jar -o true" >> start.command
 	chmod +x start.command
+```
 
 
 服务端已经安装在了你的桌面上的_Bukkit Server_文件夹中。启动服务器只需双击"LaunchServer.command"。
